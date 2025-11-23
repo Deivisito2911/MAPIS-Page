@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Permitimos imágenes de Cloudinary
     remotePatterns: [
       {
         protocol: 'https',
@@ -9,14 +8,10 @@ const nextConfig = {
       },
     ],
   },
-  // Opcional: Si usas TypeScript estricto, esto ayuda a evitar errores de compilación en builds rápidos
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Importante para evitar errores en ciertos entornos de Vercel
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // Hemos quitado el bloque 'eslint' que daba problemas en esta versión
 };
 
 export default nextConfig;
