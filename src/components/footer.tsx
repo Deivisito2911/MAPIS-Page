@@ -21,7 +21,7 @@ export function Footer() {
             </div>
             <p className="text-mapis-yellow font-serif italic text-lg">"Ars - Veritas - Humanitas"</p>
             <p className="text-blue-100 text-sm">
-              Formando líderes integrales para el futuro con excelencia académica y valores humanos.
+              Fundada el 01 de Septiembre de 2008. 17 años de servicio formando líderes integrales con excelencia académica.
             </p>
           </div>
 
@@ -30,20 +30,30 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-mapis-yellow">Contacto</h3>
             <ul className="space-y-3 text-blue-100">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 mt-0.5 text-mapis-yellow" />
-                <span>
-                  Calle Principal, Urb. Jorge Coll,
-                  <br />
-                  Pampatar, Estado Nueva Esparta.
+                <MapPin className="h-5 w-5 mt-0.5 text-mapis-yellow shrink-0" />
+                <span className="text-sm">
+                  Calle Fraternidad Vía Ppal Los Robles,<br />
+                  Quinta Giraluna, Sector Mundo Nuevo,<br />
+                  Los Robles, Nueva Esparta.
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-mapis-yellow" />
-                <span>+58 (295) 123-4567</span>
+                <Phone className="h-5 w-5 text-mapis-yellow shrink-0" />
+                <div className="flex flex-col text-sm">
+                  <a href="tel:02952672963" className="hover:text-white transition-colors">0295-2672963</a>
+                  <a href="tel:04141984093" className="hover:text-white transition-colors">0414-1984093</a>
+                </div>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-mapis-yellow" />
-                <span>info@uemapiss.edu.ve</span>
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 mt-0.5 text-mapis-yellow shrink-0" />
+                <div className="flex flex-col text-sm gap-1">
+                  <a href="mailto:controlestudios@uemapis.org" className="hover:text-white transition-colors break-all">
+                    controlestudios@uemapis.org
+                  </a>
+                  <a href="mailto:administracion@uemapis.org" className="hover:text-white transition-colors break-all">
+                    administracion@uemapis.org
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -53,7 +63,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-mapis-yellow">Horario de Atención</h3>
             <ul className="space-y-3 text-blue-100">
               <li className="flex items-start gap-3">
-                <Clock className="h-5 w-5 mt-0.5 text-mapis-yellow" />
+                <Clock className="h-5 w-5 mt-0.5 text-mapis-yellow shrink-0" />
                 <div>
                   <p className="font-medium">Lunes a Viernes</p>
                   <p>7:00 AM - 3:30 PM</p>

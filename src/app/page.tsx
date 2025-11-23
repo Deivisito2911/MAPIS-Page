@@ -84,7 +84,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-black/10">
             <div>
-              <div className="text-3xl font-bold text-mapis-blue mb-1">+20</div>
+              <div className="text-3xl font-bold text-mapis-blue mb-1">+15</div>
               <div className="text-sm font-medium text-blue-900 uppercase tracking-wide">Años de Historia</div>
             </div>
             <div>
