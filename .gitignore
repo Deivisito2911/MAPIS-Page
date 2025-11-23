@@ -1,4 +1,4 @@
-# Dependencias (¡Los culpables de los 14000 archivos!)
+# Dependencias
 /node_modules
 /.pnpm-store
 
