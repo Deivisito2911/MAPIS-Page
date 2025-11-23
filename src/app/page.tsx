@@ -237,10 +237,13 @@ export default function Home() {
                 </div>
                 <div className="pt-4">
                   <Button
+                    asChild // ¡IMPORTANTE: Agregar esta prop!
                     variant="outline"
-                    className="border-mapis-blue text-mapis-blue hover:bg-blue-50 bg-transparent"
+                    className="mt-5 x-full bg-mapis-yellow text-mapis-blue font-bold text-lg py-6 hover:bg-yellow-400 hover:scale-[1.02] hover:shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 ease-in-out transform"
                   >
-                    Conoce nuestra historia
+                    <Link href="/nosotros"> {/* Enlace corregido */}
+                      Conoce nuestra historia
+                    </Link>
                   </Button>
                 </div>
               </div>

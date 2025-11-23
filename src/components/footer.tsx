@@ -21,7 +21,8 @@ export function Footer() {
             </div>
             <p className="text-mapis-yellow font-serif italic text-lg">"Ars - Veritas - Humanitas"</p>
             <p className="text-blue-100 text-sm">
-              Fundada el 01 de Septiembre de 2008. 17 años de servicio formando líderes integrales con excelencia académica.
+              Fundada el 01 de Septiembre de 2008. <br />
+              17 años de servicio formando líderes integrales con excelencia académica.
             </p>
           </div>
 
@@ -80,8 +81,19 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-mapis-yellow">Enlaces de Interés</h3>
             <ul className="space-y-2 text-blue-100">
               <li>
+                <a 
+                  href="https://form.jotform.com/U_EMapis/Formulario_de_PreInsripcion_Mapis" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-mapis-yellow transition-colors font-bold flex items-center gap-2"
+                >
+                  Preinscripción Online
+                  <span className="text-xs bg-mapis-yellow text-mapis-blue px-1.5 py-0.5 rounded-full">Nuevo</span>
+                </a>
+              </li>
+              <li>
                 <Link href="/admisiones" className="hover:text-white transition-colors">
-                  Proceso de Admisión
+                  Requisitos de Admisión
                 </Link>
               </li>
               <li>
@@ -94,22 +106,51 @@ export function Footer() {
                   Intranet Docente
                 </Link>
               </li>
-              <li>
-                <Link href="/portal-padres" className="hover:text-white transition-colors">
-                  Portal de Padres
-                </Link>
-              </li>
             </ul>
 
+            {/* Redes Sociales */}
             <div className="mt-6 flex gap-4">
-              <a href="#" className="text-blue-200 hover:text-white hover:scale-110 transition-all">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-blue-200 hover:text-white hover:scale-110 transition-all">
+              <a 
+                href="https://www.instagram.com/colegiomapis" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-200 hover:text-[#E1306C] hover:scale-110 transition-all"
+                aria-label="Instagram"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-blue-200 hover:text-white hover:scale-110 transition-all">
+              <a 
+                href="https://twitter.com/mapis_news" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-200 hover:text-[#1DA1F2] hover:scale-110 transition-all"
+                aria-label="Twitter"
+              >
                 <Twitter className="h-6 w-6" />
+              </a>
+              {/* Icono de WhatsApp (SVG Custom) */}
+              <a 
+                href="https://wa.me/584141984093" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-200 hover:text-[#25D366] hover:scale-110 transition-all"
+                aria-label="WhatsApp"
+              >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="h-6 w-6"
+                >
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+                </svg>
               </a>
             </div>
           </div>
