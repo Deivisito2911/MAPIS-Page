@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Trophy, Users, ArrowRight, GraduationCap, Music, Globe } from "lucide-react"
 import { EventsCarousel } from "@/components/home/events-carousel" // Importamos el carrusel nuevo
+import { SelectionsShowcase } from "@/components/home/selections-showcase"
 
 export default function Home() {
   return (
@@ -205,6 +206,11 @@ export default function Home() {
       {/* NUEVA SECCIÓN: Carrusel de Eventos y Logros */}
       <section className="py-20 bg-slate-50">
         <EventsCarousel />
+      </section>
+
+      {/* SECCIÓN 2: NUEVO - Showcase de Selecciones (Efecto WOW) */}
+      <section className="py-10 bg-slate-50 overflow-hidden border-y border-gray-100">
+        <SelectionsShowcase />
       </section>
 
       {/* About / Mission Section */}
