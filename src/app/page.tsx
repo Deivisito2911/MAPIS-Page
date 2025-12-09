@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Trophy, Users, ArrowRight, GraduationCap, Music, Globe } from "lucide-react"
+import { EventsCarousel } from "@/components/home/events-carousel" // Importamos el carrusel nuevo
 
 export default function Home() {
   return (
@@ -84,7 +85,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-black/10">
             <div>
-              <div className="text-3xl font-bold text-mapis-blue mb-1">+15</div>
+              <div className="text-3xl font-bold text-mapis-blue mb-1">+17</div>
               <div className="text-sm font-medium text-blue-900 uppercase tracking-wide">Años de Historia</div>
             </div>
             <div>
@@ -201,6 +202,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NUEVA SECCIÓN: Carrusel de Eventos y Logros */}
+      <section className="py-20 bg-slate-50">
+        <EventsCarousel />
+      </section>
+
       {/* About / Mission Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -237,11 +243,11 @@ export default function Home() {
                 </div>
                 <div className="pt-4">
                   <Button
-                    asChild // ¡IMPORTANTE: Agregar esta prop!
+                    asChild
                     variant="outline"
                     className="mt-5 x-full bg-mapis-yellow text-mapis-blue font-bold text-lg py-6 hover:bg-yellow-400 hover:scale-[1.02] hover:shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 ease-in-out transform"
                   >
-                    <Link href="/nosotros"> {/* Enlace corregido */}
+                    <Link href="/nosotros">
                       Conoce nuestra historia
                     </Link>
                   </Button>
