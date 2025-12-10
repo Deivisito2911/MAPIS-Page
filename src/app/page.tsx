@@ -6,8 +6,40 @@ import { EventsCarousel } from "@/components/home/events-carousel" // Importamos
 import { SelectionsShowcase } from "@/components/home/selections-showcase"
 
 export default function Home() {
+  // Datos estructurados para Google (Schema.org)
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'School',
+    name: 'Unidad Educativa Mariano Picón Salas',
+    image: 'https://uemapiss.edu.ve/images/logo.png', // URL absoluta necesaria en prod
+    description: 'Colegio privado en Nueva Esparta ofreciendo educación integral desde primaria hasta bachillerato.',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Calle Fraternidad, Qta. Giraluna, Sector Mundo Nuevo',
+      addressLocality: 'Los Robles',
+      addressRegion: 'Nueva Esparta',
+      postalCode: '6316',
+      addressCountry: 'VE'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 11.0098341, 
+      longitude: -63.8360685
+    },
+    url: 'https://uemapiss.edu.ve',
+    telephone: '+582952672963',
+    email: 'info@uemapiss.edu.ve',
+    sameAs: [
+      'https://www.instagram.com/colegiomapis',
+      'https://twitter.com/mapis_news'
+    ]
+  }
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Section */}
       <section className="relative bg-mapis-blue text-white overflow-hidden">
         {/* Abstract Background shapes */}

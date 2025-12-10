@@ -19,7 +19,7 @@ const [isLoading, setIsLoading] = useState(true)
 
 // Verificar si ya inició sesión anteriormente
 useEffect(() => {
-const auth = localStorage.getItem("mapis_preview_auth")
+const auth = sessionStorage.getItem("mapis_preview_auth")
 if (auth === "true") {
     setIsAuthorized(true)
 }
@@ -30,7 +30,7 @@ const handleLogin = (e: React.FormEvent) => {
 e.preventDefault()
 // Credenciales solicitadas
 if (username === "MAPISWEB" && password === "MapisWeb2025-6") {
-    localStorage.setItem("mapis_preview_auth", "true")
+    sessionStorage.setItem("mapis_preview_auth", "true")
     setIsAuthorized(true)
     setShowLogin(false)
 } else {
