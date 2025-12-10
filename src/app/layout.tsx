@@ -10,10 +10,15 @@ import { MaintenanceGate } from "@/components/maintenance-gate"
 const inter = Inter({ subsets: ["latin"] })
 
 // URL REAL DEL COLEGIO
-const BASE_URL = "https://www.mapis.com.ve"
+const BASE_URL = "https://www.colegiomapis.com.ve"
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  
+  alternates: {
+    canonical: "/",
+  },
+
   title: {
     default: "U.E. Mariano Picón Salas | Colegio en Nueva Esparta",
     template: "%s | U.E. Mariano Picón Salas",
@@ -110,7 +115,7 @@ export default function RootLayout({
     },
     url: BASE_URL,
     telephone: '+582952672963',
-    email: 'info@uemapiss.edu.ve', // ¿Este correo sigue siendo el oficial o cambiamos a @mapis.com.ve?
+    email: 'info@uemapiss.edu.ve',
     sameAs: [
       'https://www.instagram.com/colegiomapis',
       'https://twitter.com/mapis_news'

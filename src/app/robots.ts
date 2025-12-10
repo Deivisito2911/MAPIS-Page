@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: '/',
         },
-        sitemap: 'https://www.mapis.com.ve/sitemap.xml',
+        sitemap: 'https://www.colegiomapis.com.ve/sitemap.xml',
     }
 }
