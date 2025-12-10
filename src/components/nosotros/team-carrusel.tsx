@@ -12,7 +12,7 @@ const TEAM_MEMBERS = [
 {
     name: "Dra. María Rodríguez",
     role: "Directora General",
-    image: "/placeholder-user.jpg",
+    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1765393597/cld-sample-5.jpg",
     shortBio: "Magíster en Gerencia Educativa con 25 años de trayectoria.",
     fullBio: "La Dra. María Rodríguez es educadora de vocación y Magíster en Gerencia Educativa. Ha dedicado más de dos décadas a la transformación de procesos pedagógicos en Nueva Esparta. Su visión se centra en el aprendizaje humanista y la integración de la tecnología en el aula. Antes de unirse al MAPIS, lideró proyectos educativos regionales premiados por su innovación."
 },
