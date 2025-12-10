@@ -1,12 +1,16 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Construction } from "lucide-react"
+
+export default function ModeloEducativoPage() {
 return (
 <div className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4 bg-slate-50">
     <div className="bg-white p-6 rounded-full shadow-sm mb-6 animate-pulse">
     <Construction className="h-16 w-16 text-mapis-blue" />
     </div>
     
-    {/* CAMBIAR ESTE TÍTULO EN CADA PÁGINA */}
     <h1 className="text-3xl md:text-5xl font-bold text-mapis-blue mb-4">
-    Nuestro modelo Educativo
+    Nuestro Modelo Educativo
     </h1>
     
     <p className="text-xl text-gray-600 max-w-md mb-8">
@@ -18,3 +22,4 @@ return (
     </Button>
 </div>
 )
+}
