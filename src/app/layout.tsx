@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   
   keywords: [
     "colegio", 
+    "colegiomapis",
+    "uemapis",
+    "nueva esparta mapis",
+    "mariano picon salas",
     "colegio nueva esparta", 
     "nueva esparta liceo", 
     "nueva esparta colegio", 
