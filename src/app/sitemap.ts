@@ -1,7 +1,6 @@
 import { MetadataRoute } from 'next'
 
-// Cambia esto por tu dominio real cuando lo tengas
-const BASE_URL = 'https://uemapiss.edu.ve'
+const BASE_URL = 'https://www.mapis.com.ve'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
@@ -35,6 +34,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'yearly',
         priority: 0.7,
         },
-        // Agrega aquí las demás rutas importantes
+        {
+            url: `${BASE_URL}/vida-mapis/selecciones`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        },
+        {
+            url: `${BASE_URL}/vida-mapis/semana-mapis`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.6,
+        }
     ]
 }
