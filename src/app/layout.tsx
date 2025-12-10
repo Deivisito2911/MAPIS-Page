@@ -10,7 +10,7 @@ import { MaintenanceGate } from "@/components/maintenance-gate"
 const inter = Inter({ subsets: ["latin"] })
 
 // URL REAL DEL COLEGIO
-const BASE_URL = "https://www.colegiomapis.com.ve"
+const BASE_URL = "https://www.mapis.com.ve"
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
