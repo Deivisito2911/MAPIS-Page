@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { MaintenanceGate } from "@/components/maintenance-gate" // <--- IMPORTAR
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -14,7 +15,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/logo.png",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -25,9 +25,14 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.className} antialiased flex flex-col min-h-screen`}>
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        {/* Envolvemos TODO con el Gatekeeper */}
+        <MaintenanceGate>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </MaintenanceGate>
+        
+        {/* Analytics queda fuera para trackear visitas a la página de construcción también */}
         <Analytics />
       </body>
     </html>

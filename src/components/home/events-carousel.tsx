@@ -16,6 +16,14 @@ const EVENTS = [
         description: "3er Lugar en la Categoría Aventura, Sigue Líneas en la Final Nacional de Robótica Creativa.",
         fullDescription: "Recordamos la exitosa participación del Mapis Robotic Team en la final nacional de la Olimpiada de Robótica Creativa, organizada por el Ministerio de Ciencia y Tecnología (MinCyT), logrando el 🥉 tercer lugar en la Categoría Aventura, Sigue Líneas. ¡Ustedes son un orgullo para nuestro colegio y el estado Nueva Esparta! #somosmapis #orgullomapis #innovacioneducativa",
         instagramUrl: "https://www.instagram.com/reel/DOeW7J9jwTE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },{
+        title: "Concierto navidad",
+        category: "Robótica",
+        date: "Ene 2025",
+        image: "/kids-learning.jpg", // Placeholder ideal para robótica
+        description: "3er Lugar en la Categoría Aventura, Sigue Líneas en la Final Nacional de Robótica Creativa.",
+        fullDescription: "Recordamos la exitosa participación del Mapis Robotic Team en la final nacional de la Olimpiada de Robótica Creativa, organizada por el Ministerio de Ciencia y Tecnología (MinCyT), logrando el 🥉 tercer lugar en la Categoría Aventura, Sigue Líneas. ¡Ustedes son un orgullo para nuestro colegio y el estado Nueva Esparta! #somosmapis #orgullomapis #innovacioneducativa",
+        instagramUrl: "https://www.instagram.com/reel/DOeW7J9jwTE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         title: "Feria Científica 2024",
