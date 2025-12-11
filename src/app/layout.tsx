@@ -128,7 +128,7 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className={`${inter.className} antialiased flex flex-col min-h-screen`}>
+      <body className={`${inter.className} antialiased flex flex-col min-h-screen bg-warm-cream`}>
         {/* Inyectamos el JSON-LD para Google Maps */}
         <script
           type="application/ld+json"

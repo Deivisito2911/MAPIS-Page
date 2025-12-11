@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Oferta Educativa (Nuevo diseño interactivo) */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-[#F5F5F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-mapis-blue mb-4">Nuestra Oferta Educativa</h2>
@@ -240,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* Carrusel de Eventos */}
-      <FadeIn delay={200} className="py-20 bg-slate-50">
+      <FadeIn delay={200} className="py-20 bg-[#FFFDF7]">
         <EventsCarousel />
       </FadeIn>
 

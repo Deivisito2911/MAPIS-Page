@@ -48,6 +48,10 @@
   --color-mapis-blue: #1e3a8a;
   --color-mapis-yellow: #fbbf24;
   --color-mapis-light: #f8f9fa;
+
+  /* COLORES ACOGEDORES (Ajustados para que se noten más) */
+  --color-warm-cream: #FEF9E6; /* Un crema un poco más cálido */
+  --color-warm-stone: #F0EFEA; /* Un gris piedra más notable */
 }
 
 @layer base {
@@ -85,6 +89,8 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --warm-cream: #FFFDF7; 
+    --warm-stone: #F5F5F0;
   }
   .dark {
     --background: 222.2 84% 4.9%;

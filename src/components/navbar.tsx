@@ -60,6 +60,13 @@ export function Navbar() {
                 Vida MAPIS <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
+                {/* --- NUEVO ÍTEM AGREGADO AQUÍ --- */}
+                <DropdownMenuItem asChild>
+                  <Link href="/instalaciones" className="w-full cursor-pointer">
+                    Instalaciones
+                  </Link>
+                </DropdownMenuItem>
+                {/* -------------------------------- */}
                 <DropdownMenuItem asChild>
                   <Link href="/vida-mapis/selecciones" className="w-full cursor-pointer">
                     Selecciones
@@ -111,6 +118,8 @@ export function Navbar() {
             >
               Nosotros
             </Link>
+            
+            {/* Académico Móvil */}
             <div className="px-3 py-2 text-base font-medium text-gray-500">Académico</div>
             <Link
               href="/academico/primaria"
@@ -124,7 +133,17 @@ export function Navbar() {
             >
               Bachillerato
             </Link>
+
+            {/* Vida MAPIS Móvil */}
             <div className="px-3 py-2 text-base font-medium text-gray-500">Vida MAPIS</div>
+            {/* --- NUEVO ÍTEM AGREGADO AQUÍ (MÓVIL) --- */}
+            <Link
+              href="/instalaciones"
+              className="block pl-6 pr-3 py-1 text-sm font-semibold text-mapis-blue hover:text-blue-800"
+            >
+              Instalaciones
+            </Link>
+            {/* ---------------------------------------- */}
             <Link
               href="/vida-mapis/selecciones"
               className="block pl-6 pr-3 py-1 text-sm text-gray-600 hover:text-mapis-blue"
@@ -137,6 +156,7 @@ export function Navbar() {
             >
               Semana MAPIS
             </Link>
+            
             <Link
               href="/admisiones"
               className="block px-3 py-2 mt-4 text-center rounded-md bg-mapis-blue text-white font-medium"
