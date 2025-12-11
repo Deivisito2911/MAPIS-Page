@@ -203,9 +203,11 @@ export default function Home() {
                         fill
                         className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-mapis-blue/95 via-mapis-blue/70 to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/80"></div>
+                    {/* CORRECCIÓN 1: Gradiente vertical en móvil (bg-gradient-to-t) y horizontal en PC (md:bg-gradient-to-r) */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/95 via-mapis-blue/70 to-transparent md:bg-gradient-to-r md:from-mapis-blue/95 md:via-mapis-blue/70 md:to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/80"></div>
 
-                    <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-12 lg:w-2/3">
+                    {/* CORRECCIÓN 2: Flex centrado en móvil (items-center text-center) y a la izquierda en PC (md:items-start md:text-left) */}
+                    <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-12 lg:w-2/3 items-center text-center md:items-start md:text-left">
                         <div className="flex gap-4 mb-6">
                             <div className="flex h-14 w-14 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-mapis-yellow">
                                 <Trophy className="h-6 w-6" />
