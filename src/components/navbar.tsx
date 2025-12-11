@@ -139,7 +139,7 @@ export function Navbar() {
             {/* --- NUEVO ÍTEM AGREGADO AQUÍ (MÓVIL) --- */}
             <Link
               href="/instalaciones"
-              className="block pl-6 pr-3 py-1 text-sm font-semibold text-mapis-blue hover:text-blue-800"
+              className="block pl-6 pr-3 py-1 text-sm text-gray-600 hover:text-mapis-blue"
             >
               Instalaciones
             </Link>
