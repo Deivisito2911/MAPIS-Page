@@ -156,8 +156,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-blue-800 mt-12 pt-8 text-center text-blue-200 text-sm">
+       {/* --- SECCIÓN DE CREDITOS Y COPYRIGHT --- */}
+        <div className="border-t border-blue-800 mt-12 pt-8 text-center text-blue-200 text-sm flex flex-col md:flex-row justify-center items-center gap-2">
           <p>&copy; {new Date().getFullYear()} U.E. Mariano Picón Salas. Todos los derechos reservados.</p>
+          <span className="hidden md:inline opacity-50">|</span>
+          <p>
+            Realizado por{" "}
+            <a 
+              href="https://w.app/1fhkyr"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors font-bold underline decoration-mapis-yellow underline-offset-4 cursor-pointer"
+              title="Contactar al desarrollador por WhatsApp"
+            >
+              Deivith Zanella
+            </a>
+          </p>
         </div>
       </div>
     </footer>
