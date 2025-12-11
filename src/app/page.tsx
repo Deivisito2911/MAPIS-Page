@@ -196,32 +196,41 @@ export default function Home() {
 
             {/* Vida MAPIS */}
             <FadeIn delay={300} direction="up" className="md:col-span-2 h-full">
-                <Link href="/vida-mapis/selecciones" className="group relative block h-[350px] w-full overflow-hidden rounded-3xl bg-neutral-900 shadow-xl transition-all hover:shadow-2xl">
+                <Link 
+                    href="/vida-mapis/selecciones" 
+                    // CAMBIO 1: Aumentamos altura en móvil (h-[500px]) para que quepa todo sin cortarse. En PC se queda en 350px.
+                    className="group relative block h-[500px] md:h-[350px] w-full overflow-hidden rounded-3xl bg-neutral-900 shadow-xl transition-all hover:shadow-2xl"
+                >
                     <Image
                         src="/happy-students-in-school-uniforms-studying.jpg"
                         alt="Vida MAPIS Deportes y Cultura"
                         fill
                         className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100"
                     />
-                    {/* CORRECCIÓN 1: Gradiente vertical en móvil (bg-gradient-to-t) y horizontal en PC (md:bg-gradient-to-r) */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/95 via-mapis-blue/70 to-transparent md:bg-gradient-to-r md:from-mapis-blue/95 md:via-mapis-blue/70 md:to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/80"></div>
+                    {/* Gradiente: Vertical en móvil (para leer texto centrado), Horizontal en PC */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/95 via-mapis-blue/80 to-transparent md:bg-gradient-to-r md:from-mapis-blue/95 md:via-mapis-blue/70 md:to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/90"></div>
 
-                    {/* CORRECCIÓN 2: Flex centrado en móvil (items-center text-center) y a la izquierda en PC (md:items-start md:text-left) */}
-                    <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-12 lg:w-2/3 items-center text-center md:items-start md:text-left">
-                        <div className="flex gap-4 mb-6">
-                            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-mapis-yellow">
-                                <Trophy className="h-6 w-6" />
+                    {/* Contenido: Flex vertical centrado */}
+                    <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12 lg:w-2/3 items-center text-center md:items-start md:text-left">
+                        <div className="flex gap-4 mb-4 md:mb-6">
+                            <div className="flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-mapis-yellow">
+                                <Trophy className="h-5 w-5 md:h-6 md:w-6" />
                             </div>
-                            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-purple-100/90 text-purple-700 shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-purple-200">
-                                <Music className="h-6 w-6" />
+                            <div className="flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full bg-purple-100/90 text-purple-700 shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-purple-200">
+                                <Music className="h-5 w-5 md:h-6 md:w-6" />
                             </div>
                         </div>
-                        <h3 className="mb-4 text-3xl md:text-4xl font-bold text-white">Vida MAPIS: Deporte y Cultura</h3>
-                        <p className="mb-8 text-blue-100 opacity-90 transition-opacity duration-300 group-hover:opacity-100 text-lg max-w-xl">
+                        
+                        <h3 className="mb-3 md:mb-4 text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+                            Vida MAPIS: <br className="md:hidden"/> Deporte y Cultura
+                        </h3>
+                        
+                        <p className="mb-6 md:mb-8 text-blue-50 opacity-95 transition-opacity duration-300 group-hover:opacity-100 text-base md:text-lg max-w-sm md:max-w-xl">
                             Más allá del aula: desarrollamos el talento, la disciplina y el trabajo en equipo a través de nuestras selecciones deportivas y grupos artísticos.
                         </p>
-                        <span className="inline-flex w-fit items-center gap-2 rounded-full bg-mapis-yellow px-8 py-4 text-base font-bold text-mapis-blue shadow-md transition-all duration-300 hover:bg-white hover:scale-105">
-                            Explorar actividades extracurriculares <ArrowRight className="h-6 w-6" />
+                        
+                        <span className="inline-flex w-fit items-center gap-2 rounded-full bg-mapis-yellow px-6 py-3 md:px-8 md:py-4 text-sm md:text-base font-bold text-mapis-blue shadow-md transition-all duration-300 hover:bg-white hover:scale-105">
+                            Explorar actividades <ArrowRight className="h-5 w-5" />
                         </span>
                     </div>
                 </Link>
