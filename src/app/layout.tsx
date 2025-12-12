@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
 
   title: {
-    default: "U.E. Mariano Picón Salas | Colegio en Nueva Esparta",
-    template: "%s | U.E. Mariano Picón Salas",
+    default: "U.E. Mariano Picón Salas | Colegio en Nueva Esparta | Colegio MAPIS",
+    template: "%s | Colegio MAPIS | U.E. Mariano Picón Salas",
   },
   description: "La U.E. Mariano Picón Salas es un colegio líder en Margarita, Nueva Esparta. Ofrecemos educación integral en Primaria y Bachillerato con excelencia académica, robótica, deportes y valores humanos.",
   
@@ -61,8 +61,14 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/images/logo.png",
-    apple: "/apple-icon.png", 
+    icon: [
+      { url: '/images/logo.png' },
+      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
+    ],
+    shortcut: ['/images/logo.png'],
+    apple: [
+      { url: '/apple-icon.png' },
+    ],
   },
 
   openGraph: {
