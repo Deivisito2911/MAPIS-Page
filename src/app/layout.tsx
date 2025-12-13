@@ -60,16 +60,15 @@ export const metadata: Metadata = {
     },
   },
 
-  icons: {
-    icon: [
-      { url: '/images/logo.png' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
-    ],
-    shortcut: ['/images/logo.png'],
-    apple: [
-      { url: '/apple-icon.png' },
-    ],
-  },
+    icons: {
+      icon: [
+        { url: '/images/logo.png', href: '/images/logo.png' },
+      ],
+      shortcut: ['/images/logo.png'],
+      apple: [
+        { url: '/images/logo.png' }, // O '/apple-icon.png' si ya la creaste cuadrada
+      ],
+    },
 
   openGraph: {
     title: "U.E. Mariano Picón Salas - Excelencia en Margarita",
