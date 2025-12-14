@@ -7,7 +7,7 @@ import { FadeIn } from "@/components/animations/fade-in"
 
 export function EducationalOffer() {
     return (
-        <section className="py-24 bg-[#F5F5F0]"> {/* Fondo Warm Stone */}
+        <section className="py-24 bg-[#F5F5F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-mapis-blue mb-4">Nuestra Oferta Educativa</h2>
@@ -17,7 +17,7 @@ export function EducationalOffer() {
             </FadeIn>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Primaria */}
+            {/* Primaria (Altura 400px) */}
             <FadeIn delay={100} direction="up" className="h-full">
                 <Link href="/academico/primaria" className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl">
                 <Image src="/kids-learning.jpg" alt="Educación Primaria" fill className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" />
@@ -37,7 +37,7 @@ export function EducationalOffer() {
                 </Link>
             </FadeIn>
 
-            {/* Bachillerato */}
+            {/* Bachillerato (Altura 400px) */}
             <FadeIn delay={200} direction="up" className="h-full">
                 <Link href="/academico/bachillerato" className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl">
                 <Image src="/school-building-architecture-modern.jpg" alt="Bachillerato" fill className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" />
@@ -57,22 +57,29 @@ export function EducationalOffer() {
                 </Link>
             </FadeIn>
 
-            {/* Vida MAPIS */}
+            {/* Vida MAPIS (CORREGIDO: Altura 400px en móvil para simetría) */}
             <FadeIn delay={300} direction="up" className="md:col-span-2 h-full">
-                <Link href="/vida-mapis/selecciones" className="group relative block h-[350px] md:h-[350px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl">
+                <Link 
+                    href="/vida-mapis/selecciones" 
+                    className="group relative block h-[400px] md:h-[350px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl"
+                >
                 <Image src="/happy-students-in-school-uniforms-studying.jpg" alt="Vida MAPIS" fill className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" />
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/95 via-mapis-blue/80 to-transparent md:bg-gradient-to-r md:from-mapis-blue/95 md:via-mapis-blue/70 md:to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/80" />
+                
                 <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12 lg:w-2/3 items-center text-center md:items-start md:text-left">
                     <div className="flex gap-4 mb-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg"><Trophy className="h-6 w-6" /></div>
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-purple-100/90 text-purple-700 shadow-lg"><Music className="h-6 w-6" /></div>
                     </div>
-                    <h3 className="mb-4 text-3xl md:text-4xl font-bold text-white">Vida MAPIS: Deporte y Cultura</h3>
-                    <p className="mb-8 text-blue-100 opacity-90 transition-opacity duration-300 group-hover:opacity-100 text-lg max-w-xl">
-                    Más allá del aula: desarrollamos el talento y la disciplina a través de nuestras selecciones deportivas y grupos artísticos.
+                    
+                    <h3 className="mb-2 text-3xl md:text-4xl font-bold text-white">Vida MAPIS</h3>
+                    
+                    <p className="mb-6 text-blue-100 opacity-95 transition-opacity duration-300 group-hover:opacity-100 text-base md:text-lg max-w-xl leading-relaxed">
+                    Más allá del aula: desarrollamos talento y disciplina en deporte y cultura.
                     </p>
-                    <span className="inline-flex w-fit items-center gap-2 rounded-full bg-mapis-yellow px-8 py-4 text-base font-bold text-mapis-blue shadow-md transition-all hover:bg-white hover:scale-105">
-                    Explorar actividades <ArrowRight className="h-6 w-6" />
+                    
+                    <span className="inline-flex w-fit items-center gap-2 rounded-full bg-mapis-yellow px-8 py-3 text-base font-bold text-mapis-blue shadow-md transition-all hover:bg-white hover:scale-105">
+                    Explorar actividades <ArrowRight className="h-5 w-5" />
                     </span>
                 </div>
                 </Link>
