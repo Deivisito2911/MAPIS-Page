@@ -13,7 +13,7 @@ export function Navbar() {
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
+        <div className="flex justify-between h-24 md:h-28 transition-all">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center gap-3">
               <div className="relative h-12 w-12">
