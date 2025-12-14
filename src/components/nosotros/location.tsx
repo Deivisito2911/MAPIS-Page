@@ -8,7 +8,7 @@ export function LocationSection() {
     return (
         <section className="py-0">
         <div className="grid md:grid-cols-2 h-full min-h-[400px]">
-            <FadeIn direction="right" className="bg-gray-200 min-h-[400px] relative grayscale hover:grayscale-0 transition-all duration-500">
+            <FadeIn direction="right" className="bg-gray-200 min-h-[400px] relative w-full h-full">
             <iframe
                 src="https://maps.google.com/maps?q=U.E.+Mariano+Picón+Salas,+Los+Robles,+Nueva+Esparta&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
