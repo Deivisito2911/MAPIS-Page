@@ -10,10 +10,14 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+  // Función para cerrar el menú al hacer clic en un enlace
+  const closeMenu = () => setIsOpen(false)
+
   return (
+    // Si deseas la navbar más ancha como pediste antes, cambia 'h-20' por 'h-24 md:h-28' aquí abajo
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-24 md:h-28 transition-all">
+        <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center gap-3">
               <div className="relative h-12 w-12">
@@ -60,13 +64,11 @@ export function Navbar() {
                 Vida MAPIS <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                {/* --- NUEVO ÍTEM AGREGADO AQUÍ --- */}
                 <DropdownMenuItem asChild>
                   <Link href="/instalaciones" className="w-full cursor-pointer">
                     Instalaciones
                   </Link>
                 </DropdownMenuItem>
-                {/* -------------------------------- */}
                 <DropdownMenuItem asChild>
                   <Link href="/vida-mapis/selecciones" className="w-full cursor-pointer">
                     Selecciones
@@ -102,64 +104,84 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (CORREGIDO) */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="md:hidden bg-white border-t border-gray-100 h-screen overflow-y-auto pb-20">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="/"
+              onClick={closeMenu} // <--- Cierra el menú al hacer clic
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-mapis-blue hover:bg-gray-50"
             >
               Inicio
             </Link>
             <Link
               href="/nosotros"
+              onClick={closeMenu} // <--- Cierra el menú al hacer clic
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-mapis-blue hover:bg-gray-50"
             >
               Nosotros
             </Link>
             
             {/* Académico Móvil */}
-            <div className="px-3 py-2 text-base font-medium text-gray-500">Académico</div>
+            <div className="px-3 py-2 text-base font-medium text-gray-500 bg-gray-50/50 mt-2 rounded-lg">Académico</div>
             <Link
               href="/academico/primaria"
-              className="block pl-6 pr-3 py-1 text-sm text-gray-600 hover:text-mapis-blue"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
             >
               Primaria
             </Link>
             <Link
               href="/academico/bachillerato"
-              className="block pl-6 pr-3 py-1 text-sm text-gray-600 hover:text-mapis-blue"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
             >
               Bachillerato
             </Link>
+            <Link
+              href="/academico/calendario"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
+            >
+              Calendario
+            </Link>
 
             {/* Vida MAPIS Móvil */}
-            <div className="px-3 py-2 text-base font-medium text-gray-500">Vida MAPIS</div>
-            {/* --- NUEVO ÍTEM AGREGADO AQUÍ (MÓVIL) --- */}
+            <div className="px-3 py-2 text-base font-medium text-gray-500 bg-gray-50/50 mt-2 rounded-lg">Vida MAPIS</div>
             <Link
               href="/instalaciones"
-              className="block pl-6 pr-3 py-1 text-sm text-gray-600 hover:text-mapis-blue"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
             >
               Instalaciones
             </Link>
-            {/* ---------------------------------------- */}
             <Link
               href="/vida-mapis/selecciones"
-              className="block pl-6 pr-3 py-1 text-sm text-gray-600 hover:text-mapis-blue"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
             >
               Selecciones
             </Link>
             <Link
               href="/vida-mapis/semana-mapis"
-              className="block pl-6 pr-3 py-1 text-sm text-gray-600 hover:text-mapis-blue"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
             >
               Semana MAPIS
+            </Link>
+            <Link
+              href="/vida-mapis/eventos"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
+            >
+              Eventos
             </Link>
             
             <Link
               href="/admisiones"
-              className="block px-3 py-2 mt-4 text-center rounded-md bg-mapis-blue text-white font-medium"
+              onClick={closeMenu}
+              className="block px-3 py-3 mt-6 text-center rounded-full bg-mapis-blue text-white font-bold shadow-lg mx-4"
             >
               Admisiones
             </Link>
