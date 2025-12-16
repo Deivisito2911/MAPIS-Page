@@ -22,10 +22,9 @@ export function HeroImageSlider() {
     }, [])
 
     return (
-        // 1. ELIMINADO: Ya no ponemos 'border-8' aquí para evitar el bug visual
-        <div className="relative h-[500px] w-full rounded-[2rem] overflow-hidden shadow-2xl group bg-mapis-blue">
+        // Agregamos 'isolate' para crear un contexto de apilamiento nuevo
+        <div className="relative h-[500px] w-full rounded-[2rem] shadow-2xl group bg-mapis-blue isolate">
         
-        {/* Imágenes del Slider */}
         {images.map((src, index) => (
             <Image
             key={src}
@@ -33,16 +32,15 @@ export function HeroImageSlider() {
             alt={`Imagen MAPIS ${index + 1}`}
             fill
             className={cn(
-                "object-cover transition-opacity duration-1000 ease-in-out",
+                // AQUÍ ESTÁ EL TRUCO: Le ponemos rounded a la imagen también
+                "rounded-[2rem] object-cover transition-opacity duration-1000 ease-in-out", 
                 index === currentImageIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             )}
             priority={index === 0}
             />
         ))}
 
-        {/* 2. SOLUCIÓN: Capa Estática del Borde (z-30) 
-            Este div dibuja el borde POR ENCIMA de las fotos. 
-            Al ser estático, nunca parpadea ni se corta durante la transición. */}
+        {/* Capa de Borde Estática (z-30) */}
         <div className="absolute inset-0 rounded-[2rem] border-8 border-white/20 z-30 pointer-events-none"></div>
 
         {/* Badge Flotante */}
@@ -54,8 +52,8 @@ export function HeroImageSlider() {
             <p className="text-xs text-gray-600">Reconocidos por nuestro alto nivel académico.</p>
         </div>
         
-        {/* Capa oscura sutil para que el texto resalte más */}
-        <div className="absolute inset-0 bg-mapis-blue/10 z-10 pointer-events-none mix-blend-overlay"></div>
+        {/* Capa oscura sutil (con rounded también para asegurar) */}
+        <div className="absolute inset-0 bg-mapis-blue/10 z-10 pointer-events-none mix-blend-overlay rounded-[2rem]"></div>
         </div>
     )
 }
