@@ -163,7 +163,7 @@ export function Footer() {
           <p>
             Realizado por{" "}
             <a 
-              href="https://w.app/1fhkyr"
+              href="https://wa.me/584129672251" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-white transition-colors font-bold underline decoration-mapis-yellow underline-offset-4 cursor-pointer"
