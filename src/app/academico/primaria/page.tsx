@@ -156,7 +156,7 @@ export default function PrimariaPage() {
             </div>
         </section>
 
-        {/* 4. PERFIL DEL ALUMNO (NUEVA SECCIÓN INTEGRADA) */}
+        {/* 4. PERFIL DEL ALUMNO (NUEVA SECCIÓN SIMÉTRICA) */}
         <section className="py-16 px-4 bg-white border-t border-gray-100">
             <div className="max-w-6xl mx-auto">
                 <FadeIn className="text-center mb-16">
@@ -164,7 +164,8 @@ export default function PrimariaPage() {
                     <p className="text-gray-600 mt-2 text-lg">Cultivamos estudiantes que:</p>
                 </FadeIn>
 
-                <div className="grid md:grid-cols-3 gap-6">
+                {/* CAMBIO AQUÍ: Usamos Flexbox para centrar la última fila automáticamente */}
+                <div className="flex flex-wrap justify-center gap-6">
                     {[
                         { icon: Heart, text: "Compartan alegrías y se relacionen con todos los miembros de nuestra comunidad." },
                         { icon: Brain, text: "Proyecten dinamismo y entusiasmo en actividades académicas, sociales y deportivas." },
@@ -172,7 +173,12 @@ export default function PrimariaPage() {
                         { icon: Globe, text: "Cumplan con sus responsabilidades como alumno, hijo, joven y ciudadano del país." },
                         { icon: BookOpen, text: "Valoren la educación como principio de vida para el crecimiento personal." }
                     ].map((item, idx) => (
-                        <FadeIn key={idx} delay={idx * 100} className="bg-blue-50 p-6 rounded-2xl flex flex-col items-center text-center hover:-translate-y-1 transition-transform">
+                        <FadeIn 
+                            key={idx} 
+                            delay={idx * 100} 
+                            // w-full md:w-[30%] asegura que sean del mismo tamaño (aprox 3 columnas)
+                            className="bg-blue-50 p-6 rounded-2xl flex flex-col items-center text-center hover:-translate-y-1 transition-transform w-full md:w-[30%] min-w-[280px]"
+                        >
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-mapis-blue shadow-sm mb-4">
                                 <item.icon className="w-6 h-6" />
                             </div>

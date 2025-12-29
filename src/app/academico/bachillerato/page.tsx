@@ -6,25 +6,27 @@ import { Button } from "@/components/ui/button"
 import { 
     Atom, 
     Beaker, 
-    BookOpen, 
-    Brain, 
     Briefcase, 
     Compass, 
-    GraduationCap, 
+    Lightbulb, 
     Microscope, 
     Rocket, 
-    Users 
+    ShieldCheck, 
+    Trophy, 
+    Users,
+    Brain,
+    GraduationCap
 } from "lucide-react"
 
 export default function BachilleratoPage() {
-    return (
-        <div className="flex flex-col min-h-screen bg-warm-cream">
-        
-        {/* 1. HERO: ASPIRACIONAL */}
-        <section className="relative h-[60vh] overflow-hidden flex items-center justify-center">
+return (
+    <div className="flex flex-col min-h-screen bg-warm-cream">
+    
+      {/* 1. HERO */}
+    <section className="relative h-[60vh] overflow-hidden flex items-center justify-center">
             <Image
-            src="/school-building-architecture-modern.jpg" // Foto de adolescentes en laboratorio o pasillo
-            alt="Estudiantes de Bachillerato MAPIS"
+            src="/school-building-architecture-modern.jpg"
+            alt="Bachillerato MAPIS"
             fill
             className="object-cover brightness-50"
             priority
@@ -32,11 +34,11 @@ export default function BachilleratoPage() {
             <div className="relative z-10 text-center px-4 max-w-5xl mx-auto text-white">
             <FadeIn>
                 <span className="inline-block py-1 px-4 rounded-full bg-mapis-blue text-white border border-white/20 text-sm font-bold tracking-widest uppercase mb-4 shadow-lg">
-                Educación Media General (1º a 5º Año)
+                Media General (1º a 5º Año)
                 </span>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg leading-tight">
-                Construyendo el camino hacia la <br/>
-                <span className="text-mapis-yellow italic">Excelencia Universitaria</span>
+                Ciudadanos Potencialmente <br/>
+                <span className="text-mapis-yellow italic">Exitosos</span>
                 </h1>
                 <p className="text-xl md:text-2xl font-light text-blue-50 max-w-3xl mx-auto">
                 Una etapa de retos, descubrimiento vocacional y alto rendimiento académico.
@@ -44,22 +46,31 @@ export default function BachilleratoPage() {
             </FadeIn>
             </div>
             
-            {/* Curva decorativa */}
             <div className="absolute bottom-0 w-full overflow-hidden leading-[0]">
-            <svg className="relative block w-full h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-warm-cream"></path>
-            </svg>
+                <svg className="relative block w-full h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-warm-cream"></path>
+                </svg>
             </div>
-        </section>
+    </section>
 
-        {/* 2. PILARES ACADÉMICOS */}
-        <section className="py-20 px-4">
-            <div className="max-w-6xl mx-auto">
-            <FadeIn className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-mapis-blue">Formación Integral</h2>
-                <p className="text-gray-600 text-lg mt-2">Equilibrio entre ciencias exactas, humanidades y tecnología.</p>
+      {/* 2. ENFOQUE (TEXTO ACTUALIZADO) */}
+    <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+            <FadeIn>
+                <h2 className="text-3xl font-bold text-mapis-blue mb-8">Formación para el Desarrollo Sustentable</h2>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                    En esta etapa enfocamos nuestra labor a consolidar valores esenciales con miras a la formación de ciudadanos potencialmente exitosos, conscientes de las herramientas comunicacionales, científicas y tecnológicas de esta era.
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                    Impulsamos procesos dinámicos e innovadores para lograr educandos capaces de adaptarse con éxito a los desafíos académicos y sociales que se presentan en los diversos contextos.
+                </p>
             </FadeIn>
+        </div>
+    </section>
 
+      {/* 3. PILARES ACADÉMICOS (RESTAURADO) */}
+    <section className="py-12 px-4">
+            <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
                 <FadeIn delay={100} className="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-blue-600 hover:shadow-xl transition-all group">
                 <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
@@ -92,13 +103,12 @@ export default function BachilleratoPage() {
                 </FadeIn>
             </div>
             </div>
-        </section>
+    </section>
 
-        {/* FLECHA CONECTORA */}
-        <CurvedArrow direction="right" className="text-mapis-blue/30" />
+    <CurvedArrow direction="right" className="text-mapis-blue/30" />
 
-        {/* 3. LA JORNADA DEL LICEO (Timeline) */}
-        <section className="py-16 px-4 relative">
+      {/* 4. LA JORNADA DEL LICEO (RESTAURADO) */}
+    <section className="py-16 px-4 relative">
             <div className="max-w-5xl mx-auto">
             <FadeIn className="text-center mb-16">
                 <span className="text-mapis-blue font-bold uppercase tracking-widest text-sm">Rutina de Alto Rendimiento</span>
@@ -106,7 +116,6 @@ export default function BachilleratoPage() {
             </FadeIn>
 
             <div className="relative">
-                {/* Línea central */}
                 <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 -translate-x-1/2" />
 
                 <div className="space-y-16">
@@ -123,9 +132,7 @@ export default function BachilleratoPage() {
                     </p>
                     </div>
                     <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-mapis-blue rounded-full border-4 border-white shadow-sm" />
-                    <div className="md:w-5/12 opacity-50 hidden md:block">
-                    {/* Imagen decorativa opcional o vacío */}
-                    </div>
+                    <div className="md:w-5/12 opacity-50 hidden md:block"></div>
                 </FadeIn>
 
                 {/* Bloque 2 */}
@@ -161,10 +168,10 @@ export default function BachilleratoPage() {
                 </div>
             </div>
             </div>
-        </section>
+    </section>
 
-        {/* 4. PREPARACIÓN PARA EL FUTURO (Diferencial) */}
-        <section className="py-20 px-4 bg-white">
+      {/* 5. PREPARACIÓN PARA EL FUTURO (ORIENTACIÓN VOCACIONAL - RESTAURADO) */}
+    <section className="py-20 px-4 bg-white">
             <div className="max-w-6xl mx-auto">
             <div className="bg-mapis-blue rounded-[3rem] p-8 md:p-16 text-white overflow-hidden relative">
                 {/* Fondo abstracto */}
@@ -204,20 +211,55 @@ export default function BachilleratoPage() {
                 </div>
             </div>
             </div>
-        </section>
+    </section>
 
-            {/* 5. CTA SIMÉTRICO */}
-        <section className="py-20 px-4 text-center">
+    {/* 6. PERFIL DEL ESTUDIANTE (NUEVO - INTEGRADO) */}
+    {/*}
+    <section className="py-16 px-4 bg-warm-cream">
+        <div className="max-w-6xl mx-auto">
+            <FadeIn className="text-center mb-16">
+                <h2 className="text-3xl font-bold text-gray-800">Formamos alumnos que:</h2>
+            </FadeIn>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[
+                    { icon: ShieldCheck, title: "Auténticos", desc: "Sean auténticos en su comportamiento." },
+                    { icon: Lightbulb, title: "Solucionadores", desc: "Proporcionen soluciones a las dificultades que se les presentan a diario." },
+                    { icon: Users, title: "Ciudadanos", desc: "Acaten y definan normas en beneficio de la sociedad." },
+                    { icon: Trophy, title: "Resilientes", desc: "No se conformen con un éxito ni se rindan con un fracaso." },
+                    { icon: Compass, title: "Integrales", desc: "Valoren y disfruten las manifestaciones deportivas, científicas, literarias y artísticas." },
+                    { icon: Briefcase, title: "Críticos", desc: "Sean analíticos, críticos, cultos, reflexivos y comprometidos con sus acciones en la sociedad." }
+                ].map((item, idx) => (
+                    <FadeIn key={idx} delay={idx * 100} className="bg-white p-8 rounded-2xl border-l-4 border-mapis-blue hover:shadow-lg transition-all group">
+                        <div className="flex items-center gap-4 mb-3">
+                            <div className="p-3 bg-blue-50 rounded-full shadow-sm text-mapis-blue group-hover:text-mapis-yellow transition-colors">
+                                <item.icon className="w-6 h-6" />
+                            </div>
+                            <h3 className="font-bold text-xl text-gray-800">{item.title}</h3>
+                        </div>
+                        <p className="text-gray-600">{item.desc}</p>
+                    </FadeIn>
+                ))}
+            </div>
+            
+            <FadeIn className="mt-12 text-center p-6 bg-white rounded-xl border border-blue-100 max-w-3xl mx-auto shadow-sm">
+                <p className="text-mapis-blue font-medium italic">
+                    "Sean conscientes de que la educación es un proceso que se fortalece todos los días y de vital importancia para el desarrollo integral del ser humano."
+                </p>
+            </FadeIn>
+        </div>
+    </section>
+    */}
+
+      {/* 7. CTA (DOBLE BOTÓN RESTAURADO) */}
+    <section className="py-20 px-4 text-center">
             <FadeIn>
             <h2 className="text-3xl font-bold text-mapis-blue mb-4">Asegura el futuro de tus hijos</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
                 Formamos a los líderes que transformarán el mañana. Inicia el proceso de admisión hoy mismo.
             </p>
             
-            {/* CAMBIO: Agregamos 'items-center' y mejoramos el estilo del segundo botón */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                
-                {/* Botón 1: Sólido (Llamado Principal) */}
                 <Button 
                 asChild 
                 size="xl" 
@@ -226,7 +268,6 @@ export default function BachilleratoPage() {
                 <Link href="/admisiones">Postularse</Link>
                 </Button>
 
-                {/* Botón 2: Borde Sólido (Balance Visual) */}
                 <Button 
                 asChild 
                 size="xl" 
@@ -235,11 +276,10 @@ export default function BachilleratoPage() {
                 >
                 <Link href="/academico/primaria">Ver Primaria</Link>
                 </Button>
-                
             </div>
             </FadeIn>
-        </section>
+    </section>
 
-        </div>
-    )
+    </div>
+    ) 
 }
