@@ -6,19 +6,18 @@ import { cn } from "@/lib/utils"
 interface FadeInProps {
     children: React.ReactNode
     className?: string
-    delay?: number // Retraso opcional para efectos en cascada
+    delay?: number
     direction?: "up" | "down" | "left" | "right" | "none"
 }
 
 export function FadeIn({ children, className, delay = 0, direction = "up" }: FadeInProps) {
-  // useInView detecta cuando el elemento entra en la pantalla
-  // triggerOnce: true asegura que la animación solo ocurra la primera vez que se ve
     const [ref, inView] = useInView({
         triggerOnce: true,
-        threshold: 0.1, // Se activa cuando el 10% del elemento es visible
+        threshold: 0.1,
+        // Agregamos rootMargin para que empiece a cargar un poco antes de que el usuario llegue
+        rootMargin: "-50px 0px", 
     })
 
-    // Definimos las animaciones de entrada basadas en tailwindcss-animate
     const directionClasses = {
         up: "animate-in fade-in slide-in-from-bottom-8",
         down: "animate-in fade-in slide-in-from-top-8",
@@ -29,16 +28,21 @@ export function FadeIn({ children, className, delay = 0, direction = "up" }: Fad
 
     return (
         <div
-        ref={ref}
-        // Si inView es true, aplicamos la clase de animación. Si no, lo mantenemos invisible (opacity-0)
-        className={cn(
-            "transition-all duration-700 ease-out",
-            inView ? directionClasses[direction] : "opacity-0 translate-y-8", // Estado inicial: invisible y desplazado
-            className
-        )}
-        style={{ animationDelay: `${delay}ms`, transitionDelay: `${delay}ms` }}
+            ref={ref}
+            className={cn(
+                // Eliminamos transition-all para evitar conflictos
+                // Usamos 'duration-700' que tailwindcss-animate entiende para la animación
+                "duration-700 fill-mode-forwards",
+                inView ? directionClasses[direction] : "invisible", // Usamos invisible en lugar de opacity-0 manual
+                className
+            )}
+            style={{ 
+                // Aplicamos el delay solo a la animación
+                animationDelay: `${delay}ms`, 
+                animationFillMode: 'both' 
+            }}
         >
-        {children}
+            {children}
         </div>
     )
 }
