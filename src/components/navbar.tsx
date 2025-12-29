@@ -56,6 +56,11 @@ export function Navbar() {
                     Calendario
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/academico/modelo-educativo" className="w-full cursor-pointer">
+                    Modelo Educativo
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
