@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { FadeIn } from "@/components/animations/fade-in"
-import { CurvedArrow } from "@/components/ui/curved-arrow" // Recuerda crear este componente
+import { CurvedArrow } from "@/components/ui/curved-arrow"
 import { Button } from "@/components/ui/button"
 import { 
     BookOpen, 
@@ -11,7 +11,8 @@ import {
     Sun, 
     Palette, 
     Cpu, 
-    Globe 
+    Globe,
+    UserCheck
 } from "lucide-react"
 
 export default function PrimariaPage() {
@@ -21,7 +22,7 @@ export default function PrimariaPage() {
         {/* 1. HERO: EMOCIONAL Y FAMILIAR */}
         <section className="relative h-[60vh] overflow-hidden flex items-center justify-center">
             <Image
-            src="/kids-learning.jpg" // Usa una foto grupal de niños sonriendo
+            src="/kids-learning.jpg"
             alt="Niños felices en MAPIS"
             fill
             className="object-cover brightness-50"
@@ -33,8 +34,8 @@ export default function PrimariaPage() {
                 Etapa Primaria (1º a 6º Grado)
                 </span>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg leading-tight">
-                Despertamos el amor por <br/>
-                <span className="text-mapis-yellow italic">descubrir el mundo</span>
+                La tierra fértil para <br/>
+                <span className="text-mapis-yellow italic">plantar el futuro</span>
                 </h1>
                 <p className="text-xl md:text-2xl font-light text-blue-50 max-w-2xl mx-auto">
                 Más que materias, enseñamos a pensar, crear y convivir en un ambiente seguro y estimulante.
@@ -42,7 +43,6 @@ export default function PrimariaPage() {
             </FadeIn>
             </div>
             
-            {/* Curva suave decorativa */}
             <div className="absolute bottom-0 w-full overflow-hidden leading-[0]">
             <svg className="relative block w-full h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-warm-cream"></path>
@@ -50,40 +50,29 @@ export default function PrimariaPage() {
             </div>
         </section>
 
-        {/* 2. ENFOQUE DIFERENCIADOR (Estilo Guayamurí/Caribe) */}
+        {/* 2. ENFOQUE (TEXTO ACTUALIZADO) */}
         <section className="py-20 px-4">
             <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <FadeIn direction="right">
-                <div className="relative h-[400px] w-full rounded-[2rem] overflow-hidden shadow-xl border-8 border-white">
-                    <Image src="/kids-learning.jpg" alt="Lectura y Escritura" fill className="object-cover" />
+                <div className="relative h-[450px] w-full rounded-[2rem] overflow-hidden shadow-xl border-8 border-white">
+                    <Image src="/happy-students-in-school-uniforms-studying.jpg" alt="Primaria MAPIS" fill className="object-cover" />
                 </div>
                 </FadeIn>
                 
                 <FadeIn direction="left" className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-mapis-blue leading-tight">
-                    Lectores apasionados y <br/>
-                    <span className="text-orange-500">pensadores críticos</span>
+                <h2 className="text-3xl font-bold text-mapis-blue leading-tight">
+                    Desarrollo Integral y <br/>
+                    <span className="text-orange-500">Convivencia Comunitaria</span>
                 </h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                    Nuestro programa académico va más allá de memorizar. Nos enfocamos en que el niño comprenda lo que lee y sepa expresar sus ideas con claridad.
-                </p>
-                <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                    <div className="bg-orange-100 p-2 rounded-full text-orange-600"><BookOpen className="w-5 h-5" /></div>
-                    <div>
-                        <h4 className="font-bold text-gray-800">Lectoescritura Creativa</h4>
-                        <p className="text-sm text-gray-500">Talleres de cuentacuentos y redacción desde 1er grado.</p>
-                    </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                    <div className="bg-blue-100 p-2 rounded-full text-mapis-blue"><Brain className="w-5 h-5" /></div>
-                    <div>
-                        <h4 className="font-bold text-gray-800">Lógica Matemática</h4>
-                        <p className="text-sm text-gray-500">Aprendizaje basado en problemas reales y manipulación de objetos.</p>
-                    </div>
-                    </li>
-                </ul>
+                <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+                    <p>
+                    Orientamos a los niños y niñas a fortalecer esencialmente valores de vida y convivencia comunitaria, sumado a las diferentes áreas de aprendizaje fundamentales.
+                    </p>
+                    <p>
+                    Nuestras acciones pedagógicas modelan percepciones como <strong>aprender a conocer</strong>, <strong>aprender a hacer</strong> en contexto y <strong>aprender a vivir juntos</strong>. Utilizamos herramientas didácticas adecuadas para promover, además, la música, la tecnología y la inducción a otro idioma.
+                    </p>
+                </div>
                 </FadeIn>
             </div>
             </div>
@@ -92,7 +81,7 @@ export default function PrimariaPage() {
         {/* FLECHA CONECTORA 1 */}
         <CurvedArrow direction="right" className="text-mapis-yellow/50" />
 
-        {/* 3. LA RUTINA MAPIS (Sin horas, solo flujo) */}
+        {/* 3. LA RUTINA MAPIS (CONSERVADA) */}
         <section className="py-16 px-4 relative">
             <div className="max-w-5xl mx-auto">
             <FadeIn className="text-center mb-16">
@@ -101,14 +90,12 @@ export default function PrimariaPage() {
                 <p className="text-gray-600 mt-2">Así vive un estudiante del MAPIS su jornada escolar.</p>
             </FadeIn>
 
-            {/* El Flujo Visual (Timeline sin horas) */}
             <div className="relative">
-                {/* Línea conectora central (solo desktop) */}
                 <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-mapis-yellow/20 via-mapis-yellow to-mapis-yellow/20 -translate-x-1/2 rounded-full" />
 
                 <div className="space-y-12">
                 
-                {/* Momento 1: Bienvenida */}
+                {/* Momento 1 */}
                 <FadeIn direction="up" className="flex flex-col md:flex-row items-center justify-between gap-8 relative">
                     <div className="md:w-5/12 bg-white p-6 rounded-2xl shadow-sm border-t-4 border-yellow-400 text-center md:text-right hover:-translate-y-1 transition-transform">
                     <h3 className="text-xl font-bold text-gray-800 mb-2">☀️ El Recibimiento</h3>
@@ -119,10 +106,10 @@ export default function PrimariaPage() {
                     <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex w-10 h-10 bg-yellow-400 rounded-full items-center justify-center text-white shadow-lg z-10">
                     <Sun className="w-5 h-5" />
                     </div>
-                    <div className="md:w-5/12" /> {/* Espaciador */}
+                    <div className="md:w-5/12" />
                 </FadeIn>
 
-                {/* Momento 2: Bloque Académico */}
+                {/* Momento 2 */}
                 <FadeIn direction="up" className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 relative">
                     <div className="md:w-5/12 bg-white p-6 rounded-2xl shadow-sm border-t-4 border-blue-600 text-center md:text-left hover:-translate-y-1 transition-transform">
                     <h3 className="text-xl font-bold text-gray-800 mb-2">📚 Inmersión Académica</h3>
@@ -136,7 +123,7 @@ export default function PrimariaPage() {
                     <div className="md:w-5/12" />
                 </FadeIn>
 
-                {/* Momento 3: Especialidades */}
+                {/* Momento 3 */}
                 <FadeIn direction="up" className="flex flex-col md:flex-row items-center justify-between gap-8 relative">
                     <div className="md:w-5/12 bg-white p-6 rounded-2xl shadow-sm border-t-4 border-purple-500 text-center md:text-right hover:-translate-y-1 transition-transform">
                     <h3 className="text-xl font-bold text-gray-800 mb-2">🚀 Talentos y Especialidades</h3>
@@ -150,7 +137,7 @@ export default function PrimariaPage() {
                     <div className="md:w-5/12" />
                 </FadeIn>
 
-                {/* Momento 4: Recreación */}
+                {/* Momento 4 */}
                 <FadeIn direction="up" className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 relative">
                     <div className="md:w-5/12 bg-white p-6 rounded-2xl shadow-sm border-t-4 border-green-500 text-center md:text-left hover:-translate-y-1 transition-transform">
                     <h3 className="text-xl font-bold text-gray-800 mb-2">⚽ Juego y Convivencia</h3>
@@ -169,11 +156,35 @@ export default function PrimariaPage() {
             </div>
         </section>
 
-        {/* FLECHA CONECTORA 2 (Invertida) */}
-        <CurvedArrow direction="left" className="text-mapis-yellow/50" />
+        {/* 4. PERFIL DEL ALUMNO (NUEVA SECCIÓN INTEGRADA) */}
+        <section className="py-16 px-4 bg-white border-t border-gray-100">
+            <div className="max-w-6xl mx-auto">
+                <FadeIn className="text-center mb-16">
+                    <h2 className="text-3xl font-bold text-mapis-blue">Nuestro Propósito</h2>
+                    <p className="text-gray-600 mt-2 text-lg">Cultivamos estudiantes que:</p>
+                </FadeIn>
 
-        {/* 4. SECCIÓN DIFERENCIADORES (ICONOS GRANDES) */}
-        <section className="py-20 px-4 bg-white">
+                <div className="grid md:grid-cols-3 gap-6">
+                    {[
+                        { icon: Heart, text: "Compartan alegrías y se relacionen con todos los miembros de nuestra comunidad." },
+                        { icon: Brain, text: "Proyecten dinamismo y entusiasmo en actividades académicas, sociales y deportivas." },
+                        { icon: UserCheck, text: "Sean capaces de respetar y exigir respeto." },
+                        { icon: Globe, text: "Cumplan con sus responsabilidades como alumno, hijo, joven y ciudadano del país." },
+                        { icon: BookOpen, text: "Valoren la educación como principio de vida para el crecimiento personal." }
+                    ].map((item, idx) => (
+                        <FadeIn key={idx} delay={idx * 100} className="bg-blue-50 p-6 rounded-2xl flex flex-col items-center text-center hover:-translate-y-1 transition-transform">
+                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-mapis-blue shadow-sm mb-4">
+                                <item.icon className="w-6 h-6" />
+                            </div>
+                            <p className="text-gray-700 font-medium">{item.text}</p>
+                        </FadeIn>
+                    ))}
+                </div>
+            </div>
+        </section>
+
+        {/* 5. SECCIÓN DIFERENCIADORES (CONSERVADA) */}
+        <section className="py-20 px-4 bg-warm-cream">
             <div className="max-w-7xl mx-auto">
             <FadeIn className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-mapis-blue">¿Qué hace única a nuestra Primaria?</h2>
@@ -205,7 +216,7 @@ export default function PrimariaPage() {
             </div>
         </section>
 
-        {/* 5. CTA FINAL */}
+        {/* 6. CTA FINAL */}
         <section className="bg-mapis-blue py-16 px-4 text-center mt-auto">
             <FadeIn>
             <Heart className="w-12 h-12 text-mapis-yellow mx-auto mb-6 animate-pulse" />
