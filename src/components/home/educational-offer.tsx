@@ -19,8 +19,17 @@ export function EducationalOffer() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Primaria (Altura 400px) */}
             <FadeIn delay={100} direction="up" className="h-full">
-                <Link href="/academico/primaria" className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl">
-                <Image src="/kids-learning.jpg" alt="Educación Primaria" fill className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" />
+                <Link 
+                    href="/academico/primaria" 
+                    // SOLUCIÓN AQUÍ: [mask-image:linear-gradient(white,white)]
+                    className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
+                >
+                <Image 
+                    src="/kids-learning.jpg" 
+                    alt="Educación Primaria" 
+                    fill 
+                    className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" 
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/90 via-mapis-blue/40 to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/60" />
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg group-hover:scale-110 transition-transform">
@@ -39,8 +48,17 @@ export function EducationalOffer() {
 
             {/* Bachillerato (Altura 400px) */}
             <FadeIn delay={200} direction="up" className="h-full">
-                <Link href="/academico/bachillerato" className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl">
-                <Image src="/school-building-architecture-modern.jpg" alt="Bachillerato" fill className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" />
+                <Link 
+                    href="/academico/bachillerato" 
+                    // SOLUCIÓN AQUÍ: [mask-image:linear-gradient(white,white)]
+                    className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
+                >
+                <Image 
+                    src="/school-building-architecture-modern.jpg" 
+                    alt="Bachillerato" 
+                    fill 
+                    className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" 
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/90 via-mapis-blue/40 to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/60" />
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg group-hover:scale-110 transition-transform">
@@ -57,13 +75,19 @@ export function EducationalOffer() {
                 </Link>
             </FadeIn>
 
-            {/* Vida MAPIS (CORREGIDO: Altura 400px en móvil para simetría) */}
+            {/* Vida MAPIS */}
             <FadeIn delay={300} direction="up" className="md:col-span-2 h-full">
                 <Link 
                     href="/vida-mapis/selecciones" 
-                    className="group relative block h-[400px] md:h-[350px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl"
+                    // SOLUCIÓN AQUÍ: [mask-image:linear-gradient(white,white)]
+                    className="group relative block h-[400px] md:h-[350px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
                 >
-                <Image src="/happy-students-in-school-uniforms-studying.jpg" alt="Vida MAPIS" fill className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" />
+                <Image 
+                    src="/happy-students-in-school-uniforms-studying.jpg" 
+                    alt="Vida MAPIS" 
+                    fill 
+                    className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" 
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/95 via-mapis-blue/80 to-transparent md:bg-gradient-to-r md:from-mapis-blue/95 md:via-mapis-blue/70 md:to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/80" />
                 
                 <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12 lg:w-2/3 items-center text-center md:items-start md:text-left">
