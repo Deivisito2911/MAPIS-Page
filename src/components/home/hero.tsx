@@ -37,7 +37,7 @@ export function HomeHero() {
                     </Link>
                 </Button>
                 <Button asChild size="xl" variant="outline" className="border-white text-white hover:bg-white/10 font-medium bg-transparent transition-transform hover:scale-105">
-                    <Link href="/modelo-educativo">Nuestro Modelo</Link>
+                    <Link href="/academico/modelo-educativo">Nuestro Modelo</Link>
                 </Button>
                 </div>
             </FadeIn>
