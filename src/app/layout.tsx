@@ -6,6 +6,7 @@ import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { MaintenanceGate } from "@/components/maintenance-gate"
+import { AnnouncementBar } from "@/components/announcement-bar" // <--- NUEVA IMPORTACIÓN
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -60,15 +61,15 @@ export const metadata: Metadata = {
     },
   },
 
-    icons: {
-      icon: [
-        { url: '/images/logo.png', href: '/images/logo.png' },
-      ],
-      shortcut: ['/images/logo.png'],
-      apple: [
-        { url: '/images/logo.png' }, // O '/apple-icon.png' si ya la creaste cuadrada
-      ],
-    },
+   icons: {
+     icon: [
+       { url: '/images/logo.png', href: '/images/logo.png' },
+     ],
+     shortcut: ['/images/logo.png'],
+     apple: [
+       { url: '/images/logo.png' }, // O '/apple-icon.png' si ya la creaste cuadrada
+     ],
+   },
 
   openGraph: {
     title: "U.E. Mariano Picón Salas - Excelencia en Margarita",
@@ -142,6 +143,9 @@ export default function RootLayout({
         
         <MaintenanceGate>
           <Navbar />
+          
+          <AnnouncementBar /> {/* <--- AQUI LA COLOCAMOS: Debajo del Navbar */}
+          
           <main className="flex-grow">{children}</main>
           <Footer />
         </MaintenanceGate>
