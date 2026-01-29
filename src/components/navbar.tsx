@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, ExternalLink } from "lucide-react" // <--- Agregamos ExternalLink
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
@@ -92,6 +92,13 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            {/* BOTÓN ARCADAT (Escritorio) - AGREGADO AQUÍ */}
+            <Button asChild variant="outline" className="border-mapis-blue text-mapis-blue hover:bg-blue-50 font-bold gap-2">
+                <a href="https://uemapis.com.ve/" target="_blank" rel="noopener noreferrer">
+                    ARCADAT <ExternalLink className="w-4 h-4" />
+                </a>
+            </Button>
+
             <Button asChild className="bg-mapis-blue hover:bg-blue-900 text-white font-semibold rounded-full px-6">
               <Link href="/admisiones">Admisiones</Link>
             </Button>
@@ -151,6 +158,13 @@ export function Navbar() {
             >
               Calendario
             </Link>
+             <Link
+              href="/modelo-educativo"
+              onClick={closeMenu}
+              className="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-mapis-blue hover:bg-blue-50 rounded-md transition-colors"
+            >
+              Modelo Educativo
+            </Link>
 
             {/* Vida MAPIS Móvil */}
             <div className="px-3 py-2 text-base font-medium text-gray-500 bg-gray-50/50 mt-2 rounded-lg">Vida MAPIS</div>
@@ -182,11 +196,20 @@ export function Navbar() {
             >
               Eventos
             </Link>
+
+            {/* BOTÓN ARCADAT MÓVIL (NUEVO) */}
+            <div className="px-3 mt-6">
+                <Button asChild variant="outline" className="w-full border-mapis-blue text-mapis-blue font-bold justify-center">
+                    <a href="https://uemapis.com.ve/" target="_blank" rel="noopener noreferrer">
+                        Ingresar a ARCADAT
+                    </a>
+                </Button>
+            </div>
             
             <Link
               href="/admisiones"
               onClick={closeMenu}
-              className="block px-3 py-3 mt-6 text-center rounded-full bg-mapis-blue text-white font-bold shadow-lg mx-4"
+              className="block px-3 py-3 mt-3 text-center rounded-full bg-mapis-blue text-white font-bold shadow-lg mx-4"
             >
               Admisiones
             </Link>
