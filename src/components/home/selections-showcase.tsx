@@ -11,7 +11,7 @@ const SELECTIONS = [
     { name: "Voleibol", image: "/happy-students-in-school-uniforms-studying.jpg" },
     { name: "Ajedrez", image: "/placeholder.jpg" },
     { name: "Danza", image: "/school-building-architecture-modern.jpg" },
-    { name: "Robótica", image: "/kids-learning.jpg" },
+    { name: "Robótica", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769689946/Mapis_Robotic_Team_smyrm5.png" },
     { name: "Coral", image: "/happy-students-in-school-uniforms-studying.jpg" },
     { name: "Atletismo", image: "/placeholder.jpg" },
 ]
