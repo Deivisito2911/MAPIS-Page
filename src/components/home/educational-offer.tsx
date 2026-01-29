@@ -25,7 +25,7 @@ export function EducationalOffer() {
                     className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
                 >
                 <Image 
-                    src="/kids-learning.jpg" 
+                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769692998/primaria_wo73tg.jpg" 
                     alt="Educación Primaria" 
                     fill 
                     className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" 
@@ -54,7 +54,7 @@ export function EducationalOffer() {
                     className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
                 >
                 <Image 
-                    src="/school-building-architecture-modern.jpg" 
+                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769693153/bachillerato_y8mtnk.jpg" 
                     alt="Bachillerato" 
                     fill 
                     className="object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100" 

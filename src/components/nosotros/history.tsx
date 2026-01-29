@@ -28,7 +28,7 @@ export function HistorySection() {
             <div className="absolute inset-0 bg-mapis-yellow/20 rounded-[2rem] rotate-3 transform transition-transform group-hover:rotate-0"></div>
             <div className="relative h-full w-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                src="/school-building-architecture-modern.jpg"
+                src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769693280/colegio_fniulu.jpg"
                 alt="Historia del MAPIS"
                 fill
                 className="object-cover"

@@ -25,7 +25,7 @@ return (
       {/* 1. HERO */}
     <section className="relative h-[60vh] overflow-hidden flex items-center justify-center">
             <Image
-            src="/school-building-architecture-modern.jpg"
+            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769693153/bachillerato_y8mtnk.jpg"
             alt="Bachillerato MAPIS"
             fill
             className="object-cover brightness-50"

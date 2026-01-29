@@ -22,7 +22,7 @@ export default function PrimariaPage() {
         {/* 1. HERO: EMOCIONAL Y FAMILIAR */}
         <section className="relative h-[60vh] overflow-hidden flex items-center justify-center">
             <Image
-            src="/kids-learning.jpg"
+            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769692998/primaria_wo73tg.jpg"
             alt="Niños felices en MAPIS"
             fill
             className="object-cover brightness-50"
