@@ -19,13 +19,12 @@ export const metadata: Metadata = {
     description: "Nuestros equipos deportivos y grupos culturales que nos llenan de orgullo.",
 }
 
-// Unificamos todo en una sola lista para el efecto Zig-Zag continuo
 const ACTIVIDADES = [
     {
-        name: "Fútbol Sala",
+        name: "Fútbol",
         category: "Deporte",
         description: "Nuestra selección más laureada. Fomentamos la táctica, velocidad y juego limpio en cada partido. Nuestros atletas aprenden que la verdadera victoria está en el esfuerzo compartido.",
-        image: "/school-building-architecture-modern.jpg",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692472/Futbol_aytopv.png",
         icon: Trophy,
     },
     {
@@ -36,38 +35,45 @@ const ACTIVIDADES = [
         icon: Cpu,
     },
     {
-        name: "Baloncesto",
-        category: "Deporte",
-        description: "Desarrollo de habilidades motrices y trabajo en equipo en nuestra cancha techada. Formamos carácter y disciplina bajo el aro.",
-        image: "/school-building-architecture-modern.jpg",
+        name: "MAPIS MUN",
+        category: "Cultura",
+        description: "Debate y diplomacia juvenil. Nuestro equipo de Modelo de Naciones Unidas ha representado a MAPIS en conferencias internacionales, desarrollando habilidades de oratoria, negociación y pensamiento crítico.",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692102/13988190_1444960418864013_2553848460531388932_o_jgjltj.jpg",
         icon: Activity,
     },
     {
-        name: "Coral MAPIS",
+        name: "Coral",
         category: "Cultura",
         description: "Voces que inspiran. Nuestra coral participa activamente en festivales regionales y eventos navideños, educando el oído y el espíritu artístico.",
-        image: "/happy-students-in-school-uniforms-studying.jpg",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692719/coro_ductqw.jpg",
         icon: Music,
     },
     {
         name: "Kickingball",
         category: "Deporte",
         description: "El deporte femenino por excelencia en nuestra institución. Nuestras alumnas demuestran fuerza, estrategia y compañerismo en cada inning.",
-        image: "/school-building-architecture-modern.jpg",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg",
         icon: Medal,
     },
     {
-        name: "Teatro y Danza",
+        name: "Ajedrez",
         category: "Cultura",
-        description: "Expresión corporal y artes escénicas para desarrollar la confianza. Un espacio donde la imaginación toma el control del escenario.",
-        image: "/kids-learning.jpg",
+        description: "Lógica, estrategia y concentración. Nuestro club de ajedrez ha participado en múltiples torneos, destacándose por su pensamiento crítico y habilidades analíticas.",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769691905/chess-tournament-kids-adults-participate-600nw-2476201135_ppih1f.webp",
         icon: Palette,
     },
     {
         name: "Voleibol",
         category: "Deporte",
         description: "Coordinación y reflejos. Entrenamientos intensivos donde la comunicación entre compañeros es la clave del éxito.",
-        image: "/school-building-architecture-modern.jpg",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692394/Voleibol_hzkrzw.jpg",
+        icon: Users,
+    },
+    {
+        name: "Baloncesto",
+        category: "Deporte",
+        description: "Agilidad y trabajo en equipo. Nuestro equipo de baloncesto ha competido en ligas intercolegiales, promoviendo la salud física y el espíritu competitivo.",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692841/baloncesto_a9vu8f.jpg",
         icon: Users,
     }
 ]
@@ -76,7 +82,7 @@ export default function SeleccionesPage() {
     return (
         <div className="flex flex-col min-h-screen">
         
-        {/* 1. HERO SECTION (Encabezado) */}
+        {/* 1. HERO SECTION */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-mapis-blue">
             <div className="absolute inset-0 bg-[url('/happy-students-in-school-uniforms-studying.jpg')] bg-cover bg-center opacity-30" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-mapis-blue/90" />
@@ -97,10 +103,9 @@ export default function SeleccionesPage() {
             </div>
         </section>
 
-        {/* 2. LISTA ZIG-ZAG (El diseño que pediste) */}
+        {/* 2. LISTA ZIG-ZAG */}
         <div className="flex flex-col">
             {ACTIVIDADES.map((item, idx) => {
-            // Determinamos si es par (Fondo Azul) o impar (Fondo Amarillo)
             const isEven = idx % 2 === 0
             
             return (
@@ -112,36 +117,40 @@ export default function SeleccionesPage() {
                     : "bg-mapis-yellow text-mapis-blue"
                 }`}
                 >
-                {/* Elementos decorativos de fondo */}
                 <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                     <div className={`absolute top-[-20%] ${isEven ? 'right-[-10%]' : 'left-[-10%]'} w-96 h-96 rounded-full ${isEven ? 'bg-white' : 'bg-white'}`} />
                 </div>
 
                 <div className="max-w-6xl mx-auto relative z-10">
                     <div className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 ${
-                    !isEven ? "md:flex-row-reverse" : "" // Invierte el orden si es fila Amarilla
+                    !isEven ? "md:flex-row-reverse" : ""
                     }`}>
                     
-                    {/* LADO DE LA FOTO Y TÍTULO */}
+                    {/* LADO DE LA FOTO (MOLDE FIJO) */}
                     <div className="w-full md:w-1/2 flex flex-col items-center text-center">
                         <FadeIn direction={isEven ? "right" : "left"}>
-                        {/* Contenedor de Imagen con Borde llamativo */}
-                        <div className={`relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border-8 ${
+                        
+                        {/* SOLUCIÓN DEFINITIVA: 
+                            1. Usamos dimensiones fijas: w-[320px] h-[320px] (móvil) y md:w-[400px] md:h-[400px] (PC).
+                            2. flex-none: Evita que flexbox aplaste la imagen si falta espacio.
+                            3. mx-auto: La centra perfectamente.
+                        */}
+                        <div className={`relative flex-none mx-auto w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border-8 ${
                             isEven ? "border-mapis-yellow" : "border-white"
                         } transform transition-transform hover:scale-105 duration-500 mb-6`}>
                             <Image 
-                            src={item.image}
-                            alt={item.name}
-                            fill
-                            className="object-cover"
+                                src={item.image}
+                                alt={item.name}
+                                fill
+                                sizes="(max-width: 768px) 320px, 400px"
+                                className="object-cover"
                             />
                         </div>
                         
-                        {/* Título Llamativo (Arriba o Abajo de la foto, aquí lo puse abajo para jerarquía) */}
                         <div className="flex items-center justify-center gap-3">
                             <item.icon className={`w-8 h-8 ${isEven ? "text-mapis-yellow" : "text-white"}`} />
                             <h2 className={`text-3xl md:text-4xl font-bold uppercase tracking-tight ${
-                            isEven ? "text-mapis-yellow" : "text-white" // Contraste según fondo
+                            isEven ? "text-mapis-yellow" : "text-white"
                             }`}>
                             {item.name}
                             </h2>

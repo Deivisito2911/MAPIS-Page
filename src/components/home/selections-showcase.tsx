@@ -6,14 +6,14 @@ import { Trophy } from "lucide-react"
 
 // Datos de las selecciones (Placeholder)
 const SELECTIONS = [
-    { name: "Futsal", image: "/school-building-architecture-modern.jpg" }, // Usa tus fotos reales luego
-    { name: "Baloncesto", image: "/kids-learning.jpg" },
-    { name: "Voleibol", image: "/happy-students-in-school-uniforms-studying.jpg" },
-    { name: "Ajedrez", image: "/placeholder.jpg" },
-    { name: "Danza", image: "/school-building-architecture-modern.jpg" },
+    { name: "Futbol", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692472/Futbol_aytopv.png" }, // Usa fotos reales luego
+    { name: "MAPIS MUN", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692102/13988190_1444960418864013_2553848460531388932_o_jgjltj.jpg" },
+    { name: "Voleibol", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692394/Voleibol_hzkrzw.jpg" },
+    { name: "Ajedrez", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769691905/chess-tournament-kids-adults-participate-600nw-2476201135_ppih1f.webp" },
+    { name: "kickingball", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg" },
     { name: "Robótica", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769690548/Mapis_Robotic_Team_2_zhnoor.png" },
-    { name: "Coral", image: "/happy-students-in-school-uniforms-studying.jpg" },
-    { name: "Atletismo", image: "/placeholder.jpg" },
+    { name: "Coral", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692719/coro_ductqw.jpg" },
+    { name: "Baloncesto", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692841/baloncesto_a9vu8f.jpg" },
 ]
 
 // Función para duplicar elementos y crear el loop infinito
