@@ -12,27 +12,34 @@ const TEAM_MEMBERS = [
 {
     name: "Lic. Gisella Menoni",
     role: "Directora General",
-    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769693741/Gisella_Menoni_sr6fxm.jpg",
+    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769774001/Gisella_Minoni_lpv5lq.jpg",
     shortBio: "Magíster en Educación con 25 años de trayectoria.",
     fullBio: "La Dra. Gisella Menoni es una líder educativa con más de dos décadas de experiencia en gestión escolar. Su trayectoria se centra en la mejora continua del proceso educativo y el fortalecimiento de la cultura institucional. Ha liderado proyectos innovadores en educación técnica y ha sido reconocida por su compromiso con la excelencia académica."
 },
 {
     name: "Lic. Barbara Hernandez",
-    role: "Coord. Académico",
-    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769693807/Barbara_Hernandez_wxcnaq.jpg",
+    role: "Consejo Superior",
+    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769773917/Barbara_Hernandez_cmw8an.jpg",
     shortBio: "Especialista en planificación curricular y evaluación.",
     fullBio: "Licenciada en Educación con mención en Ciencias Pedagógicas. Carlos es el arquitecto detrás de nuestro robusto plan de estudios. Su enfoque se basa en el desarrollo de competencias críticas y el aprendizaje basado en proyectos. Es un apasionado de la lectura y promotor de clubes de debate estudiantil."
 },
 {
     name: "Lic. Carolina",
     role: "Coord. de Relaciones Institucionales",
-    image: "/placeholder-user.jpg",
+    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769774001/Carolina_Real_cn0jhj.jpg",
     shortBio: "Dedicada a la formación integral en la primera infancia.",
     fullBio: "Con una especialización en Psicopedagogía, la profesora Ana vela por el bienestar emocional y académico de nuestros alumnos más jóvenes. Cree firmemente que 'un niño feliz aprende mejor'. Ha implementado programas de inteligencia emocional que son pilar fundamental de nuestra primaria."
 },
 {
-    name: "Lic. Yusmely Albarrán",
-    role: "Coord. de Bachillerato",
+    name: "Lic. Santiago Perera",
+    role: "Consejo Superior",
+    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769694057/Yusmely_Albarran_tzuej3.jpg",
+    shortBio: "Experta en orientación vocacional y desarrollo estudiantil.",
+    fullBio: "La Lic. Yusmely Albarrán es la guía de nuestros estudiantes de bachillerato en su camino hacia la educación superior y el desarrollo personal. Con una maestría en Orientación Educativa, ha ayudado a innumerables jóvenes a descubrir sus pasiones y fortalezas académicas. Es una ferviente defensora del aprendizaje experiencial y las actividades extracurriculares."
+},
+{
+    name: "Lic. Jaime Picón",
+    role: "Consejo Superior",
     image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769694057/Yusmely_Albarran_tzuej3.jpg",
     shortBio: "Experta en orientación vocacional y desarrollo estudiantil.",
     fullBio: "La Lic. Yusmely Albarrán es la guía de nuestros estudiantes de bachillerato en su camino hacia la educación superior y el desarrollo personal. Con una maestría en Orientación Educativa, ha ayudado a innumerables jóvenes a descubrir sus pasiones y fortalezas académicas. Es una ferviente defensora del aprendizaje experiencial y las actividades extracurriculares."
