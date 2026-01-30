@@ -44,14 +44,22 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Custom Brand Colors */
-  --color-mapis-blue: #1e3a8a;
+  /* --- COLORES MAPIS (Corregidos) --- */
+  
+  /* Azul Institucional: Más oscuro y sobrio (#002855 Navy Blue) */
+  --color-mapis-blue: #002855; 
+
+  /* Amarillo Institucional */
   --color-mapis-yellow: #fbbf24;
+  
+  /* Naranja Complementario */
+  --color-mapis-orange: #f97316;
+
   --color-mapis-light: #f8f9fa;
 
-  /* COLORES ACOGEDORES (Ajustados para que se noten más) */
-  --color-warm-cream: #FEF9E6; /* Un crema un poco más cálido */
-  --color-warm-stone: #F0EFEA; /* Un gris piedra más notable */
+  /* Fondo General: Amarillo Crema muy suave (#FFFDE7) */
+  --color-warm-cream: #FFFDE7; 
+  --color-warm-stone: #F0EFEA;
 }
 
 @layer base {
@@ -89,7 +97,7 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-    --warm-cream: #FFFDF7; 
+    --warm-cream: #FFFDE7; 
     --warm-stone: #F5F5F0;
   }
   .dark {
@@ -133,10 +141,17 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[var(--warm-cream)] text-foreground;
+  }
+
+  /* TIPOGRAFÍA: Todos los títulos Bold y Mayúsculas */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-extrabold uppercase tracking-tight;
   }
 }
-/* Animaciones para el Carrusel Infinito */
+
+/* --- CLASES DE UTILIDAD --- */
+
 @keyframes scroll-left {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -155,8 +170,48 @@
   animation: scroll-right 40s linear infinite;
 }
 
-/* Pausar animación al pasar el mouse (Efecto "Scatter" controlado) */
 .group:hover .animate-scroll-left,
 .group:hover .animate-scroll-right {
   animation-play-state: paused;
+}
+
+/* Animación de Palpitación (Heartbeat) para Somos MAPIS */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  15% { transform: scale(1.15); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.15); }
+  60% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 2s infinite ease-in-out;
+}
+
+/* --- PATRÓN DE FONDO (MARCA DE AGUA CORREGIDA) --- */
+.bg-mapis-pattern {
+  position: relative;
+  background-color: var(--color-mapis-blue);
+  /* overflow: hidden;  <-- Opcional, dependiendo si quieres cortar los bordes */
+}
+
+/* Usamos ::before para que la opacidad solo afecte al patrón, NO al texto */
+.bg-mapis-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Ocupa todo el contenedor */
+  background-image: url('/images/logo.png');
+  background-repeat: repeat;
+  background-size: 300px; /* Tamaño grande para que se vea bien */
+  opacity: 0.05; /* Muy sutil (5%) */
+  pointer-events: none;
+  z-index: 0; /* Detrás del contenido */
+  background-position: center;
+}
+
+/* Aseguramos que el contenido hijo esté por encima del patrón */
+.bg-mapis-pattern > * {
+  position: relative;
+  z-index: 10;
 }

@@ -15,7 +15,7 @@ export function AboutSummary() {
             <FadeIn direction="right" delay={200} className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full border-2 border-mapis-yellow rounded-[2rem]" />
                 <div className="relative h-[400px] w-full rounded-[2rem] overflow-hidden shadow-lg group">  {/* Imagen del colegio */}
-                <Image src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769693280/colegio_fniulu.jpg" alt="Campus MAPIS" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769709450/Principal_del_colegio_icjucm.jpg" alt="Campus MAPIS" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
             </FadeIn>
 
