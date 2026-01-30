@@ -5,10 +5,12 @@ import Image from "next/image"
 import { Trophy } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const images = [
-    "/happy-students-in-school-uniforms-studying.jpg",
-    "/kids-learning.jpg",
-    "/school-building-architecture-modern.jpg"
+const images = [ // imagenes de transición
+    "https://res.cloudinary.com/dnwyno39r/image/upload/v1769815493/IMG_20260130_084408_pfjou6.jpg",
+    "https://res.cloudinary.com/dnwyno39r/image/upload/v1769815585/IMG_20260130_105950_l7jdye.jpg",
+    "https://res.cloudinary.com/dnwyno39r/image/upload/v1769815822/IMG_20260129_113447_s0yxnc.jpg",
+    "https://res.cloudinary.com/dnwyno39r/image/upload/v1769815590/IMG_20260129_113415_mzebjh.jpg",
+    "https://res.cloudinary.com/dnwyno39r/image/upload/v1769815591/IMG_20260129_113403_r2zybw.jpg",
 ]
 
 export function HeroImageSlider() {

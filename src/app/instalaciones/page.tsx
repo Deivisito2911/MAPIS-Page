@@ -17,7 +17,7 @@ const SPACES = [
             { name: "Teatrino", desc: "Espacio mágico para artes plásticas y manualidades.", icon: Palette, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709450/Salon_de_arte_ykn2so.jpg" },
             { name: "Salón de Música", desc: "Donde desarrollamos el oído y el talento artístico.", icon: Music, image: "/kids-learning.jpg" },
             { name: "HUB", desc: "Más que una biblioteca, un espacio libre de encuentro y lectura.", icon: Book, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709437/HUB_3_kdf7rl.jpg" },
-            { name: "Aulas de Clase", desc: "Espacios iluminados y cómodos para el aprendizaje diario.", icon: Book, image: "/kids-learning.jpg" },
+            { name: "Aulas de Clase", desc: "Espacios iluminados y cómodos para el aprendizaje diario.", icon: Book, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769815493/IMG_20260130_084408_pfjou6.jpg" },
         ]
     },
     {
@@ -25,7 +25,7 @@ const SPACES = [
         items: [
             { name: "Cancha de Fútbol", desc: "El corazón de nuestra pasión deportiva.", icon: Dumbbell, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709469/Cancha_de_futbol_zwq5on.jpg" },
             { name: "Cancha Techada", desc: "Espacio polideportivo protegido del sol y la lluvia.", icon: Dumbbell, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709438/Cancha_techada_ib1ctf.jpg" },
-            { name: "Cancha de Pickleball", desc: "Innovando con nuevos deportes de tendencia.", icon: Dumbbell, image: "/school-building-architecture-modern.jpg" },
+            { name: "Cancha de Pickleball", desc: "Innovando con nuevos deportes de tendencia.", icon: Dumbbell, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769816045/Cancha_de_pickenball_gbmbh0.jpg" },
             { name: "Cancha de Kikinball", desc: "Para la diversión y competencia sana.", icon: Dumbbell, image: "/school-building-architecture-modern.jpg" },
             { name: "Patio Central", desc: "El lugar de encuentro, juegos y amistades.", icon: Heart, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709438/Patio_central_hguwjl.jpg" },
         ]
@@ -33,9 +33,9 @@ const SPACES = [
     {
         category: "Bienestar y Servicios",
         items: [
-            { name: "Salón DOBE", desc: "Departamento de Orientación y Bienestar Estudiantil. Atención especializada (TDA, TDH).", icon: Heart, image: "/kids-learning.jpg" },
-            { name: "Comedor", desc: "Alimentación balanceada en un ambiente higiénico y familiar.", icon: Coffee, image: "/kids-learning.jpg" },
-            { name: "Enfermería", desc: "Atención primaria inmediata para la seguridad de todos.", icon: Stethoscope, image: "/kids-learning.jpg" },
+            { name: "Salón DOBE", desc: "Departamento de Orientación y Bienestar Estudiantil. Atención especializada (TDA, TDH).", icon: Heart, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769816142/Salon_DOBE_llhkdr.jpg" },
+            { name: "Comedor", desc: "Alimentación balanceada en un ambiente higiénico y familiar.", icon: Coffee, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769816133/Comedor_Bachillerato_gcuie5.jpg" },
+            { name: "Enfermería", desc: "Atención primaria inmediata para la seguridad de todos.", icon: Stethoscope, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769816134/Enfermer%C3%ADa_wbsclg.jpg" },
         ]
     }
 ]
