@@ -81,7 +81,7 @@ export default function CalendarioPage() {
                 <CalendarDays className="w-5 h-5" />
                 <span className="text-sm font-bold uppercase tracking-wider">Año Escolar 2025-2026</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">Planificación y Organización</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Planificación y Organización</h1>
                 <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
                 Mantente al día con las fechas clave de nuestra institución. La organización es la base del éxito académico.
                 </p>

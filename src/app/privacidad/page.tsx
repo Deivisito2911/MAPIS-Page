@@ -16,7 +16,7 @@ export default function PrivacidadPage() {
             <div className="bg-mapis-blue px-8 py-10 text-white text-center">
                 <FadeIn>
                     <Shield className="w-12 h-12 mx-auto mb-4 text-mapis-yellow" />
-                    <h1 className="text-3xl font-bold">Política de Privacidad</h1>
+                    <h1 className="text-3xl font-bold uppercase">Política de Privacidad</h1>
                     <p className="mt-2 text-blue-100">Protección de Datos y Seguridad de la Información</p>
                 </FadeIn>
             </div>

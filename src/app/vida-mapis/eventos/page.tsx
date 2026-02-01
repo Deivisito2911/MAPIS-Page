@@ -10,7 +10,7 @@ export default function EventosPage() {
         </div>
         
         {/* 1. CORRECCIÓN: Quitamos 'font-bold' para que Bebas Neue se vea limpia */}
-        <h1 className="text-3xl md:text-5xl text-mapis-blue mb-4">
+        <h1 className="text-3xl md:text-5xl text-mapis-blue mb-4 uppercase">
             Eventos y Noticias
         </h1>
         

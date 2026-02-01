@@ -37,8 +37,8 @@ return (
                 Media General (1º a 5º Año)
                 </span>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg leading-tight">
-                Ciudadanos Potencialmente <br/>
-                <span className="text-mapis-yellow italic">Exitosos</span>
+                CIUDADANOS POTENCIALMENTE<br/>
+                <span className="text-mapis-yellow italic">EXITOSOS</span>
                 </h1>
                 <p className="text-xl md:text-2xl font-light text-blue-50 max-w-3xl mx-auto">
                 Una etapa de retos, descubrimiento vocacional y alto rendimiento académico.

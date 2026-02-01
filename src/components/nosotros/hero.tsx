@@ -15,7 +15,7 @@ export function AboutHero() {
             <span className="inline-block py-1 px-4 rounded-full bg-white/10 border border-white/20 text-mapis-yellow font-bold tracking-widest uppercase text-sm mb-6 backdrop-blur-sm">
             Nuestra Cultura
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Identidad MAPIS</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">IDENTIDAD MAPIS</h1>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
             Más que un colegio, somos una comunidad transformadora comprometida con la excelencia y el crecimiento humano.
             </p>

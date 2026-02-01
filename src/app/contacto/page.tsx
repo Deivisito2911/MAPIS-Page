@@ -27,7 +27,7 @@ export default function ContactoPage() {
             </div>
             <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
             <FadeIn>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">Estamos aquí para escucharte</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Estamos aquí para escucharte</h1>
                 <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
                 ¿Tienes dudas sobre el proceso de admisión o quieres conocer nuestras instalaciones?
                 Contáctanos y con gusto te atenderemos.

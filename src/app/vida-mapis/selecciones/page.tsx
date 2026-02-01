@@ -89,11 +89,11 @@ export default function SeleccionesPage() {
             
             <div className="relative z-10 text-center px-4 max-w-4xl">
             <FadeIn>
-                <div className="inline-flex items-center gap-2 bg-mapis-yellow text-mapis-blue px-4 py-1 rounded-full font-bold uppercase tracking-widest text-xs mb-6 shadow-lg">
+                <div className="inline-flex items-center gap-2 bg-mapis-yellow text-mapis-blue px-4 py-1 rounded-full font-bold uppercase tracking-widest text-xs mb-6 shadow-lg ">
                 <Trophy className="w-4 h-4" />
                 Talento MAPIS
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 uppercase">
                 Nuestras Selecciones
                 </h1>
                 <p className="text-xl text-blue-50 max-w-2xl mx-auto font-light">

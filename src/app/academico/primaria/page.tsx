@@ -33,9 +33,9 @@ export default function PrimariaPage() {
                 <span className="inline-block py-1 px-4 rounded-full bg-mapis-yellow text-mapis-blue text-sm font-bold tracking-widest uppercase mb-4 shadow-lg border border-white/20">
                 Etapa Primaria (1º a 6º Grado)
                 </span>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg leading-tight uppercase">
                 La tierra fértil para <br/>
-                <span className="text-mapis-yellow italic">plantar el futuro</span>
+                <span className="text-mapis-yellow italic uppercase">plantar el futuro</span>
                 </h1>
                 <p className="text-xl md:text-2xl font-light text-blue-50 max-w-2xl mx-auto">
                 Más que materias, enseñamos a pensar, crear y convivir en un ambiente seguro y estimulante.

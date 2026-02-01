@@ -51,7 +51,7 @@ export default function FacilitiesPage() {
                     <span className="inline-block py-1 px-4 rounded-full bg-white/10 text-mapis-yellow text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-sm border border-white/20">
                         Nuestro Campus
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 uppercase">
                         Espacios para <span className="text-mapis-yellow">Crecer Feliz</span>
                     </h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">

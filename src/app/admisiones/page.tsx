@@ -43,7 +43,7 @@ export default function AdmisionesPage() {
                 </span>
                 <span className="text-sm font-bold uppercase tracking-wider">Proceso Abierto 2025-2026</span>
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6">Únete a la Familia MAPIS</h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 uppercase">Únete a la Familia MAPIS</h1>
                 <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
                 Estamos ansiosos por conocer a los nuevos talentos que formarán parte de nuestra comunidad educativa.
                 </p>
