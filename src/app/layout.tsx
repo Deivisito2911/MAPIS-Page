@@ -1,14 +1,30 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+// 1. IMPORTAMOS LAS NUEVAS FUENTES
+import { Poppins, Bebas_Neue } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { MaintenanceGate } from "@/components/maintenance-gate"
-import { AnnouncementBar } from "@/components/announcement-bar" // <--- NUEVA IMPORTACIÓN
+import { AnnouncementBar } from "@/components/announcement-bar"
+import Template from "./template" // Importamos el template para la transición
 
-const inter = Inter({ subsets: ["latin"] })
+// 2. CONFIGURAMOS POPPINS (Cuerpo de texto)
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "900"],
+  variable: "--font-poppins",
+  display: "swap",
+})
+
+// 3. CONFIGURAMOS BEBAS NEUE (Títulos)
+const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"], // Bebas es display, solo tiene un peso
+  variable: "--font-bebas",
+  display: "swap",
+})
 
 // URL REAL DEL COLEGIO
 const BASE_URL = "https://www.mapis.com.ve"
@@ -61,15 +77,15 @@ export const metadata: Metadata = {
     },
   },
 
-   icons: {
-     icon: [
-       { url: '/images/logo.png', href: '/images/logo.png' },
-     ],
-     shortcut: ['/images/logo.png'],
-     apple: [
-       { url: '/images/logo.png' }, // O '/apple-icon.png' si ya la creaste cuadrada
-     ],
-   },
+  icons: {
+    icon: [
+      { url: '/images/logo.png', href: '/images/logo.png' },
+    ],
+    shortcut: ['/images/logo.png'],
+    apple: [
+      { url: '/images/logo.png' },
+    ],
+  },
 
   openGraph: {
     title: "U.E. Mariano Picón Salas - Excelencia en Margarita",
@@ -103,7 +119,6 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   
-  // Datos estructurados para Google (Schema.org) con el dominio real
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'School',
@@ -134,21 +149,22 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className={`${inter.className} antialiased flex flex-col min-h-screen bg-warm-cream`}>
-        {/* Inyectamos el JSON-LD para Google Maps */}
+      {/* 4. AGREGAMOS LAS VARIABLES DE FUENTE AL BODY */}
+      <body className={`${poppins.variable} ${bebas.variable} antialiased flex flex-col min-h-screen bg-warm-cream`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         
-        <MaintenanceGate>
-          <Navbar />
-          
-          <AnnouncementBar /> {/* <--- AQUI LA COLOCAMOS: Debajo del Navbar */}
-          
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </MaintenanceGate>
+        {/* Envolvemos en Template para la animación de transición */}
+        <Template>
+            <MaintenanceGate>
+              <Navbar />
+              <AnnouncementBar />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+            </MaintenanceGate>
+        </Template>
         <Analytics />
       </body>
     </html>

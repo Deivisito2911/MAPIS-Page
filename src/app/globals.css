@@ -1,12 +1,16 @@
 @import "tailwindcss";
-
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
+  /* --- TIPOGRAFÍA (Poppins + Bebas Neue) --- */
+  --font-sans: var(--font-poppins), sans-serif;
+  --font-heading: var(--font-bebas), sans-serif; /* Nueva variable para títulos */
+  
   --font-mono: "Geist Mono", "Geist Mono Fallback";
+
+  /* ... Colores del sistema ... */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -44,21 +48,13 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* --- COLORES MAPIS (Corregidos) --- */
+  /* --- COLORES MAPIS OFICIALES (Exactos) --- */
+  --color-mapis-blue: #110E42;    /* Azul Medianoche */
+  --color-mapis-yellow: #FEBF0F;  /* Amarillo Dorado */
+  --color-mapis-orange: #FF5500;  /* Naranja Vibrante */
   
-  /* Azul Institucional: Más oscuro y sobrio (#002855 Navy Blue) */
-  --color-mapis-blue: #002855; 
-
-  /* Amarillo Institucional */
-  --color-mapis-yellow: #fbbf24;
-  
-  /* Naranja Complementario */
-  --color-mapis-orange: #f97316;
-
   --color-mapis-light: #f8f9fa;
-
-  /* Fondo General: Amarillo Crema muy suave (#FFFDE7) */
-  --color-warm-cream: #FFFDE7; 
+  --color-warm-cream: #FFFDE7;    /* Fondo Crema Suave */
   --color-warm-stone: #F0EFEA;
 }
 
@@ -70,10 +66,15 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
+    
+    /* Mapeamos el Azul Oficial como Primario */
+    --primary: 244 65% 16%; /* Aprox HSL de #110E42 */
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
+    
+    /* Mapeamos el Amarillo Oficial como Secundario */
+    --secondary: 44 99% 53%; /* Aprox HSL de #FEBF0F */
     --secondary-foreground: 222.2 47.4% 11.2%;
+    
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
@@ -83,11 +84,6 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
     --radius: 0.5rem;
     --sidebar: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -98,7 +94,7 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
     --warm-cream: #FFFDE7; 
-    --warm-stone: #F5F5F0;
+    --warm-stone: #F0EFEA;
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -120,19 +116,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -141,12 +124,14 @@
     @apply border-border;
   }
   body {
-    @apply bg-[var(--warm-cream)] text-foreground;
+    @apply bg-[var(--warm-cream)] text-foreground font-sans; /* Poppins por defecto */
   }
 
-  /* TIPOGRAFÍA: Todos los títulos Bold y Mayúsculas */
+  /* --- REGLA TIPOGRÁFICA OFICIAL --- */
+  /* Todos los títulos usarán Bebas Neue (Bold & Uppercase) */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-extrabold uppercase tracking-tight;
+    font-family: var(--font-heading);
+    @apply font-normal uppercase tracking-wide; /* Bebas es visualmente bold */
   }
 }
 
@@ -175,7 +160,7 @@
   animation-play-state: paused;
 }
 
-/* Animación de Palpitación (Heartbeat) para Somos MAPIS */
+/* Animación de Palpitación (Heartbeat) */
 @keyframes heartbeat {
   0% { transform: scale(1); }
   15% { transform: scale(1.15); }
@@ -189,28 +174,25 @@
   animation: heartbeat 2s infinite ease-in-out;
 }
 
-/* --- PATRÓN DE FONDO (MARCA DE AGUA CORREGIDA) --- */
+/* --- PATRÓN DE FONDO (MARCA DE AGUA) --- */
 .bg-mapis-pattern {
   position: relative;
   background-color: var(--color-mapis-blue);
-  /* overflow: hidden;  <-- Opcional, dependiendo si quieres cortar los bordes */
 }
 
-/* Usamos ::before para que la opacidad solo afecte al patrón, NO al texto */
 .bg-mapis-pattern::before {
   content: "";
   position: absolute;
-  inset: 0; /* Ocupa todo el contenedor */
+  inset: 0;
   background-image: url('/images/logo.png');
   background-repeat: repeat;
-  background-size: 300px; /* Tamaño grande para que se vea bien */
-  opacity: 0.05; /* Muy sutil (5%) */
+  background-size: 300px;
+  opacity: 0.05; /* Muy sutil */
   pointer-events: none;
-  z-index: 0; /* Detrás del contenido */
+  z-index: 0;
   background-position: center;
 }
 
-/* Aseguramos que el contenido hijo esté por encima del patrón */
 .bg-mapis-pattern > * {
   position: relative;
   z-index: 10;
