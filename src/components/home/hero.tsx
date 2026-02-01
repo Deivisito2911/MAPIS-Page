@@ -38,13 +38,13 @@ export function HomeHero() {
             </div>
 
             {/* --- CONTENIDO DEL HERO --- */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     
                     {/* COLUMNA IZQUIERDA */}
                     <FadeIn delay={200} className="space-y-8">
                         {/* Badge */}
-                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-mapis-yellow border border-mapis-yellow/30 text-sm   backdrop-blur-md shadow-sm">
+                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-mapis-yellow border border-mapis-yellow/30 text-sm font-bold backdrop-blur-md shadow-sm">
                             <span className="w-2 h-2 rounded-full bg-mapis-yellow mr-3 animate-pulse shadow-[0_0_10px_#FEBF0F]" />
                             INSCRIPCIONES ABIERTAS 2025-2026
                         </div>
@@ -62,13 +62,13 @@ export function HomeHero() {
                             En la U.E. Mariano Picón Salas, cultivamos una mentalidad de crecimiento, curiosidad y un compromiso inquebrantable con la excelencia académica y humana.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-5 pt-4">
-                            <Button asChild size="xl" className="bg-mapis-orange text-white hover:bg-orange-600   shadow-lg shadow-orange-900/20 transition-all hover:scale-105 hover:-translate-y-1 text-lg px-8 h-14">
+                        <div className="flex flex-col sm:flex-row gap-5 pt-0">
+                            <Button asChild size="xl" className="bg-mapis-orange text-white hover:bg-orange-600 font-bold shadow-lg shadow-orange-900/20 transition-all hover:scale-105 hover:-translate-y-1 text-lg px-8 h-14">
                                 <Link href="/admisiones">
                                     Admisiones <ArrowRight className="ml-2 h-6 w-6" />
                                 </Link>
                             </Button>
-                            <Button asChild size="xl" variant="outline" className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white   bg-transparent transition-all hover:scale-105 text-lg h-14 px-8">
+                            <Button asChild size="xl" variant="outline" className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white font-bold bg-transparent transition-all hover:scale-105 text-lg h-14 px-8">
                                 <Link href="/academico/modelo-educativo">Nuestro Modelo</Link>
                             </Button>
                         </div>
