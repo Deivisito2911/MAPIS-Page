@@ -52,7 +52,7 @@ export default function ContactoPage() {
                     href="https://wa.me/584141984093" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="block text-lg font-bold text-green-600 hover:text-green-700 hover:underline mt-1 flex items-center justify-center gap-2"
+                    className=" text-lg font-bold text-green-600 hover:text-green-700 hover:underline mt-1 flex items-center justify-center gap-2"
                 >
                     <Image src="/images/logo.png" width={20} height={20} alt="ws" className="w-5 h-5 hidden" /> 
                     WhatsApp: 0414-198-4093
