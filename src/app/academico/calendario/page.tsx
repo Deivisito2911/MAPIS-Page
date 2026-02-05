@@ -138,13 +138,13 @@ export default function CalendarioPage() {
                 <div className="flex flex-col gap-3 w-full md:w-auto">
                 {/* BOTÓN HABILITADO */}
                 <Button asChild size="xl" className="bg-mapis-blue text-white hover:bg-blue-900 w-full shadow-lg transition-transform hover:scale-105">
-                    <a href="/calendario-academico.pdf" download="Calendario_MAPIS_Diciembre.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/calendario-academico.pdf" download="Calendario_MAPIS_Febrero.pdf" target="_blank" rel="noopener noreferrer">
                         <Download className="w-5 h-5 mr-2" />
-                        Descargar PDF Diciembre
+                        Descargar PDF Febrero
                     </a>
                 </Button>
                 <span className="text-xs text-center text-green-600 font-bold bg-green-50 py-1 px-2 rounded-full">
-                    ● Actualizado Diciembre 2025
+                    ● Actualizado Febrero 2025
                 </span>
                 </div>
             </FadeIn>
