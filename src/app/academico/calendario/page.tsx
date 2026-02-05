@@ -16,49 +16,85 @@ export const metadata: Metadata = {
 }
 
 export default function CalendarioPage() {
-    // DATOS REALES EXTRAÍDOS DEL PDF DE DICIEMBRE
+    // DATOS REALES EXTRAÍDOS DEL PDF DE FEBRERO 2026
     const eventos = [
         {
-        mes: "Diciembre",
-        dia: "02",
-        titulo: "Día de la Abolición de la Esclavitud",
-        descripcion: "Actividad especial MapisMun y entrega de reconocimientos."
+            mes: "Febrero",
+            dia: "04",
+            titulo: "Día Mundial contra el Cáncer",
+            descripcion: "Acto Cívico y concienciación en la comunidad educativa."
         },
         {
-        mes: "Diciembre",
-        dia: "03",
-        titulo: "Día Internacional de las Personas con Discapacidad",
-        descripcion: "Charla sobre Educación Internacional y Superación Pedagógica."
+            mes: "Febrero",
+            dia: "10",
+            titulo: "Inicio del Mundialito MAPIS 2026",
+            descripcion: "Apertura del evento deportivo escolar más esperado del año."
         },
         {
-        mes: "Diciembre",
-        dia: "05",
-        titulo: "II Mapis Global Expo Fair",
-        descripcion: "Anuncio de resultados del Concurso de Cuentos y planificación del II Momento."
+            mes: "Febrero",
+            dia: "11",
+            titulo: "Mujer y Niña en la Ciencia",
+            descripcion: "Día Internacional para reconocer el rol de la mujer en la ciencia."
         },
         {
-        mes: "Diciembre",
-        dia: "10",
-        titulo: "Despedida de Navidad (Bachillerato)",
-        descripcion: "Reuniones con padres para entrega de boletas y compartir navideño."
+            mes: "Febrero",
+            dia: "12",
+            titulo: "Día de la Juventud",
+            descripcion: "Acto Cívico conmemorativo de la Batalla de la Victoria."
         },
         {
-        mes: "Diciembre",
-        dia: "11",
-        titulo: "Christmas Concerts",
-        descripcion: "Presentaciones de 1ero, 2do y 3er grado. Cierre de la Unidad 3."
+            mes: "Febrero",
+            dia: "13",
+            titulo: "Cantinazo Promo X",
+            descripcion: "Actividad especial organizada por la promoción."
         },
         {
-        mes: "Diciembre",
-        dia: "13",
-        titulo: "Festival Navideño",
-        descripcion: "Participación en el Gran Festival de ANDIEP y cierre administrativo."
+            mes: "Febrero",
+            dia: "14",
+            titulo: "Día del Amor y la Amistad",
+            descripcion: "Celebración de San Valentín en el colegio."
         },
         {
-        mes: "Diciembre",
-        dia: "15",
-        titulo: "Inicio de Vacaciones",
-        descripcion: "Comienzo del asueto decembrino para toda la comunidad educativa."
+            mes: "Febrero",
+            dia: "16",
+            titulo: "Carnaval",
+            descripcion: "Día feriado por fiestas de Carnaval."
+        },
+        {
+            mes: "Febrero",
+            dia: "17",
+            titulo: "Carnaval",
+            descripcion: "Segundo día feriado por fiestas de Carnaval."
+        },
+        {
+            mes: "Febrero",
+            dia: "19",
+            titulo: "Splash Party Primaria",
+            descripcion: "Actividad recreativa acuática para los alumnos de Primaria."
+        },
+        {
+            mes: "Febrero",
+            dia: "20",
+            titulo: "Splash Party Bachillerato",
+            descripcion: "Actividad recreativa para Bachillerato y Día del Fotógrafo."
+        },
+        {
+            mes: "Febrero",
+            dia: "25",
+            titulo: "Miércoles Ciudadano",
+            descripcion: "Actividades de formación ciudadana y convivencia."
+        },
+        {
+            mes: "Febrero",
+            dia: "27",
+            titulo: "Fun Friday: 100 Días de Clases",
+            descripcion: "Celebración especial por cumplir los primeros 100 días del año escolar."
+        },
+        {
+            mes: "Febrero",
+            dia: "28",
+            titulo: "Competencia de Robótica",
+            descripcion: "Evento 'IA For Good' y natalicio de José María España."
         }
     ]
 
