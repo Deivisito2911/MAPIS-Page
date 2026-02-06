@@ -12,7 +12,7 @@ export function AnnouncementBar() {
     return (
         // 1. COLOR AZUL Y FUENTES
         // Usamos 'bg-mapis-blue'
-        <div className="bg-mapis-blue text-white overflow-hidden py-2 relative z-50 border-b border-blue-800">
+        <div className="bg-mapis-blue text-white overflow-hidden py-2 relative z-40 border-b border-blue-800">
             <div className="max-w-7xl mx-auto px-4 flex items-center gap-4">
                 
                 {/* 2. ETIQUETA "AVISOS" */}

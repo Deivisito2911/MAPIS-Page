@@ -14,7 +14,7 @@ export function Navbar() {
   const closeMenu = () => setIsOpen(false)
 
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 h-20">
+    <nav className="bg-white border-b border-gray-100 sticky top-0 z-[100] h-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
           
@@ -107,9 +107,9 @@ export function Navbar() {
           {/* BOTÓN MENÚ MÓVIL */}
           <div className="flex items-center md:hidden gap-4">
              {/* Contacto visible en móvil */}
-             <Link href="/contacto" className="text-gray-600 hover:text-mapis-blue p-2">
-                <Phone className="w-5 h-5" />
-             </Link>
+              <Link href="/contacto" className="text-gray-600 hover:text-mapis-blue p-2">
+                  <Phone className="w-5 h-5" />
+              </Link>
 
             <button
               onClick={() => setIsOpen(!isOpen)}
