@@ -44,7 +44,9 @@ export function Navbar() {
               <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-mapis-blue font-medium transition-colors outline-none cursor-pointer">
                 Académico <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              
+              {/* CAMBIO AQUÍ: Agregamos z-[200] y bg-white */}
+              <DropdownMenuContent className="z-[200] bg-white border-gray-100 shadow-lg">
                 <DropdownMenuItem asChild>
                   <Link href="/academico/primaria" className="w-full cursor-pointer">Primaria</Link>
                 </DropdownMenuItem>
@@ -65,7 +67,9 @@ export function Navbar() {
               <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-mapis-blue font-medium transition-colors outline-none cursor-pointer">
                 Vida MAPIS <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              
+              {/* CAMBIO AQUÍ: Agregamos z-[200] y bg-white */}
+              <DropdownMenuContent className="z-[200] bg-white border-gray-100 shadow-lg">
                 <DropdownMenuItem asChild>
                   <Link href="/instalaciones" className="w-full cursor-pointer">Instalaciones</Link>
                 </DropdownMenuItem>
@@ -81,8 +85,7 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* BOTÓN ARCADAT (CORREGIDO: FONDO AZUL SÓLIDO) */}
-            {/* Quitamos variant="outline" y ponemos bg-mapis-blue */}
+            {/* BOTÓN ARCADAT */}
             <Button asChild size="sm" className="bg-mapis-blue text-white hover:bg-blue-900 font-bold gap-2 hidden lg:flex shadow-sm">
                 <a href="https://uemapis.com.ve/" target="_blank" rel="noopener noreferrer">
                     ARCADAT <ExternalLink className="w-3 h-3" />
@@ -91,14 +94,14 @@ export function Navbar() {
             
             <div className="h-6 w-px bg-gray-200 hidden lg:block" />
 
-            {/* BOTÓN CONTACTO (Icono Redondo) */}
+            {/* BOTÓN CONTACTO */}
             <Button asChild variant="ghost" size="icon" className="rounded-full text-gray-600 hover:text-mapis-blue hover:bg-blue-50" title="Contáctanos">
                 <Link href="/contacto">
                     <Phone className="w-5 h-5" />
                 </Link>
             </Button>
 
-            {/* BOTÓN ADMISIONES (Naranja Vibrante) */}
+            {/* BOTÓN ADMISIONES */}
             <Button asChild className="bg-mapis-orange hover:bg-orange-600 text-white font-bold rounded-full px-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
               <Link href="/admisiones">Admisiones</Link>
             </Button>
@@ -106,7 +109,6 @@ export function Navbar() {
 
           {/* BOTÓN MENÚ MÓVIL */}
           <div className="flex items-center md:hidden gap-4">
-             {/* Contacto visible en móvil */}
               <Link href="/contacto" className="text-gray-600 hover:text-mapis-blue p-2">
                   <Phone className="w-5 h-5" />
               </Link>
@@ -123,7 +125,7 @@ export function Navbar() {
 
       {/* MENÚ MÓVIL DESPLEGABLE */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-20 shadow-xl h-[calc(100vh-80px)] overflow-y-auto pb-20 animate-in slide-in-from-top-5">
+        <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-20 shadow-xl h-[calc(100vh-80px)] overflow-y-auto pb-20 animate-in slide-in-from-top-5 z-[200]">
           <div className="px-4 pt-4 pb-8 space-y-1">
             <Link
               href="/"
@@ -160,7 +162,7 @@ export function Navbar() {
 
             {/* BOTONES DE ACCIÓN MÓVIL */}
             <div className="space-y-3 mt-8 px-2">
-                {/* ARCADAT MÓVIL (CORREGIDO: FONDO AZUL) */}
+                {/* ARCADAT MÓVIL */}
                 <Button asChild className="w-full bg-mapis-blue text-white hover:bg-blue-900 font-bold justify-center h-12 shadow-sm">
                     <a href="https://uemapis.com.ve/" target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
