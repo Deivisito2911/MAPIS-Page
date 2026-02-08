@@ -42,13 +42,6 @@ const ACTIVIDADES = [
         icon: Activity,
     },
     {
-        name: "Coral",
-        category: "Cultura",
-        description: "Voces que inspiran. Nuestra coral participa activamente en festivales regionales y eventos navideños, educando el oído y el espíritu artístico.",
-        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692719/coro_ductqw.jpg",
-        icon: Music,
-    },
-    {
         name: "Kickingball",
         category: "Deporte",
         description: "El deporte femenino por excelencia en nuestra institución. Nuestras alumnas demuestran fuerza, estrategia y compañerismo en cada inning.",

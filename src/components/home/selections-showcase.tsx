@@ -12,7 +12,6 @@ const SELECTIONS = [
     { name: "Ajedrez", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769691905/chess-tournament-kids-adults-participate-600nw-2476201135_ppih1f.webp" },
     { name: "kickingball", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg" },
     { name: "Robótica", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769690548/Mapis_Robotic_Team_2_zhnoor.png" },
-    { name: "Coral", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692719/coro_ductqw.jpg" },
     { name: "Baloncesto", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692841/baloncesto_a9vu8f.jpg" },
 ]
 
