@@ -50,6 +50,19 @@ export function LocationSection() {
                 <Button className="mt-6 w-full bg-mapis-yellow text-mapis-blue hover:bg-yellow-400 font-bold">
                     Agendar una Visita
                 </Button>
+                <Button 
+                    asChild 
+                    className="w-full bg-green-600 hover:bg-green-700 text-white font-bold shadow-lg"
+                    >
+                    <a 
+                        href="https://maps.app.goo.gl/rE5DXKQtErdtKU2e6" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <MapPin className="mr-2 h-5 w-5" />
+                        Abrir en GPS (Google Maps)
+                    </a>
+                </Button>   
                 </div>
             </FadeIn>
             </div>
