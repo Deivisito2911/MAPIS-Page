@@ -124,8 +124,8 @@ const ALIANZAS = [
         textColor: "text-white", 
         description: "Simboliza la agilidad, la pureza y la perseverancia de quienes nadan con determinación en las corrientes cristalinas de la montaña.",
         gallery: [
-             "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698632/mascotas_trucha_xpomjl.png",
-             "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698632/mascotas_trucha_xpomjl.png"
+                "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698632/mascotas_trucha_xpomjl.png",
+                "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698632/mascotas_trucha_xpomjl.png"
         ]
     },
 ]
@@ -147,7 +147,7 @@ export default function SemanaMapisPage() {
                     <h1 className="text-6xl md:text-9xl font-extrabold tracking-tighter uppercase leading-none mb-6 drop-shadow-xl text-transparent bg-clip-text bg-gradient-to-b from-white to-blue-200">
                         SEMANA <br className="md:hidden"/> MAPIS
                     </h1>
-                    <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed font-medium">
+                    <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed font-medium !text-center">
                         La semana más divertida y esperada por todos los miembros de la comunidad escolar MAPIS. ¡Es una tradición que se celebra año tras año!
                     </p>
                 </FadeIn>

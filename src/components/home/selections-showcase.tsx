@@ -60,7 +60,7 @@ return (
     <div className="text-center mb-8 px-4 relative z-10">
     <span className="text-mapis-yellow font-bold tracking-widest uppercase text-sm">Orgullo MAPIS</span>
     <h2 className="text-3xl md:text-4xl font-bold text-mapis-blue mt-2">Nuestras Selecciones</h2>
-    <p className="text-gray-500 mt-2 max-w-2xl mx-auto text-sm">
+    <p className="text-gray-500 mt-2 max-w-2xl mx-auto text-sm !text-center">
         Disciplina, pasión y talento. Pasa el mouse sobre las tarjetas para explorar.
     </p>
     </div>

@@ -169,7 +169,7 @@ export default function CalendarioPage() {
             <div className="max-w-3xl mx-auto">
             <FadeIn className="text-center mb-16">
                 <h2 className="text-3xl font-bold text-mapis-blue">Hitos del Mes</h2>
-                <p className="text-gray-600 mt-2">Las fechas más importantes que debes tener en cuenta.</p>
+                <p className="text-gray-600 mt-2 !text-center">Las fechas más importantes que debes tener en cuenta.</p>
             </FadeIn>
 
             <div className="relative space-y-12 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">

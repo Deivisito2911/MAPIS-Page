@@ -54,7 +54,7 @@ export default function FacilitiesPage() {
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 uppercase">
                         Espacios para <span className="text-mapis-yellow">Crecer Feliz</span>
                     </h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light !text-center">
                         Cada rincón del MAPIS está diseñado para inspirar, proteger y potenciar el talento de tus hijos.
                     </p>
                 </FadeIn>
@@ -117,7 +117,7 @@ export default function FacilitiesPage() {
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-mapis-blue mb-4">¿Te gustaría conocerlos en persona?</h2>
-                        <p className="text-gray-700 mb-8 text-lg">
+                        <p className="text-gray-700 mb-8 text-lg !text-center">
                             Nada se compara con recorrer nuestros pasillos y sentir la energía del MAPIS.
                         </p>
                         <a href="/admisiones" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all bg-mapis-blue rounded-full shadow-lg hover:bg-blue-900 hover:scale-105 hover:shadow-xl">

@@ -37,7 +37,7 @@ export default function PrimariaPage() {
                 La tierra fértil para <br/>
                 <span className="text-mapis-yellow italic uppercase">plantar el futuro</span>
                 </h1>
-                <p className="text-xl md:text-2xl font-light text-blue-50 max-w-2xl mx-auto">
+                <p className="text-xl md:text-2xl font-light text-blue-50 max-w-2xl mx-auto !text-center">
                 Más que materias, enseñamos a pensar, crear y convivir en un ambiente seguro y estimulante.
                 </p>
             </FadeIn>
@@ -87,7 +87,7 @@ export default function PrimariaPage() {
             <FadeIn className="text-center mb-16">
                 <span className="text-mapis-yellow font-bold uppercase tracking-widest text-sm">Nuestro Día a Día</span>
                 <h2 className="text-3xl font-bold text-mapis-blue mt-2">Una rutina diseñada para crecer</h2>
-                <p className="text-gray-600 mt-2">Así vive un estudiante del MAPIS su jornada escolar.</p>
+                <p className="text-gray-600 mt-2 !text-center">Así vive un estudiante del MAPIS su jornada escolar.</p>
             </FadeIn>
 
             <div className="relative">
@@ -161,7 +161,7 @@ export default function PrimariaPage() {
             <div className="max-w-6xl mx-auto">
                 <FadeIn className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-mapis-blue">Nuestro Propósito</h2>
-                    <p className="text-gray-600 mt-2 text-lg">Cultivamos estudiantes que:</p>
+                    <p className="text-gray-600 mt-2 text-lg !text-center">Cultivamos estudiantes que:</p>
                 </FadeIn>
 
                 {/* CAMBIO AQUÍ: Usamos Flexbox para centrar la última fila automáticamente */}
@@ -229,7 +229,7 @@ export default function PrimariaPage() {
             <h2 className="text-3xl font-bold text-white mb-6">
                 Queremos conocer a tu familia
             </h2>
-            <p className="text-blue-100 max-w-2xl mx-auto mb-10 text-lg">
+            <p className="text-blue-100 max-w-2xl mx-auto mb-10 text-lg !text-center">
                 Te invitamos a recorrer nuestras instalaciones y ver en persona cómo aprenden nuestros alumnos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

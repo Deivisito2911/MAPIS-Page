@@ -25,7 +25,7 @@ import { FadeIn } from "@/components/animations/fade-in"
             </div>
             </FadeIn>
 
-            <FadeIn delay={200} className="space-y-8 font-serif italic text-lg md:text-xl leading-relaxed text-blue-100 opacity-90 max-w-2xl mx-auto">
+            <FadeIn delay={200} className="space-y-8 font-serif italic text-lg md:text-xl leading-relaxed text-blue-100 opacity-90 max-w-2xl mx-auto px-25"> /* Letra del Himno del Colegio Mariano Picón Salas */
             <p>
                 En el 2008, un sueño nació, Mariano Picón Salas,<br />
                 sus puertas abrió, ladrillo a ladrillo, salón por salón,<br />

@@ -89,7 +89,7 @@ export default function SeleccionesPage() {
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 uppercase">
                 Nuestras Selecciones
                 </h1>
-                <p className="text-xl text-blue-50 max-w-2xl mx-auto font-light">
+                <p className="text-xl text-blue-50 max-w-2xl mx-auto font-light !text-center">
                 Donde la disciplina se encuentra con la pasión. Conoce a los equipos que representan nuestros colores.
                 </p>
             </FadeIn>

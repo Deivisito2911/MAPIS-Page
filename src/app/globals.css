@@ -176,3 +176,9 @@
 }
 
 @custom-variant dark (&:is(.dark *));
+
+@layer base {
+  p {
+    @apply text-justify hyphens-auto; /* hyphens-auto ayuda a que no queden huecos grandes */
+  }
+}

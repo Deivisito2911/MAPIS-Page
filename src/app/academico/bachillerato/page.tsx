@@ -40,7 +40,7 @@ return (
                 CIUDADANOS POTENCIALMENTE<br/>
                 <span className="text-mapis-yellow italic">EXITOSOS</span>
                 </h1>
-                <p className="text-xl md:text-2xl font-light text-blue-50 max-w-3xl mx-auto">
+                <p className="text-xl md:text-2xl font-light text-blue-50 max-w-3xl mx-auto !text-center">
                 Una etapa de retos, descubrimiento vocacional y alto rendimiento académico.
                 </p>
             </FadeIn>
@@ -255,7 +255,7 @@ return (
     <section className="py-20 px-4 text-center">
             <FadeIn>
             <h2 className="text-3xl font-bold text-mapis-blue mb-4">Asegura el futuro de tus hijos</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8 !text-center">
                 Formamos a los líderes que transformarán el mañana. Inicia el proceso de admisión hoy mismo.
             </p>
             

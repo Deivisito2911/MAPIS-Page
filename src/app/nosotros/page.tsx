@@ -38,8 +38,8 @@ export default function NosotrosPage() {
         {/* 6. Equipo Directivo */}
         <section className="py-20 bg-warm-cream">
             <FadeIn className="text-center mb-12 px-4">
-            <h2 className="text-3xl font-bold text-mapis-blue mb-4">Liderazgo que Inspira</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-mapis-blue mb-4 ">Liderazgo que Inspira</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto !text-center">
                 Profesionales guiando el camino hacia la excelencia.
             </p>
             </FadeIn>

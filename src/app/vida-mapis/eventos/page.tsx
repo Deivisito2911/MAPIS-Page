@@ -64,7 +64,7 @@ export default function EventosPage() {
                         <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-4">
                             Noticias y Eventos
                         </h1>
-                        <p className="text-xl text-blue-100 font-medium">
+                        <p className="text-xl text-blue-100 font-medium !text-center">
                             Entérate de todo lo que sucede en nuestra comunidad educativa.
                         </p>
                     </FadeIn>

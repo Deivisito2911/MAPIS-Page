@@ -84,7 +84,7 @@ return (
                 />
                 </div>
                 <h3 className="text-xl font-bold text-mapis-blue mb-1 group-hover:text-blue-700 transition-colors">{member.name}</h3>
-                <p className="text-sm font-bold text-mapis-yellow mb-4 uppercase tracking-wide">{member.role}</p>
+                <p className="text-sm font-bold text-mapis-yellow mb-4 uppercase tracking-wide !text-center">{member.role}</p>
                 <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">
                 {member.shortBio}
                 </p>

@@ -9,7 +9,7 @@ export function ProfilesSection() {
         <div className="max-w-7xl mx-auto px-4">
             <FadeIn className="text-center mb-16">
             <h2 className="text-3xl font-bold text-mapis-blue">El ADN MAPIS</h2>
-            <p className="text-gray-600 mt-2">Lo que define a nuestra gente.</p>
+            <p className="text-gray-600 mt-2 !text-center">Lo que define a nuestra gente.</p>
             </FadeIn>
 
             <div className="grid md:grid-cols-2 gap-12">

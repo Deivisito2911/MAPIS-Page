@@ -35,7 +35,7 @@ export default function ModeloEducativoPage() {
                 <span className="text-sm font-bold uppercase tracking-wider">Nuestra Misión</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Objetivos Institucionales</h1>
-                <p className="text-xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed">
+                <p className="text-xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed !text-center">
                 Buscamos ser reconocidos como una Institución de calidad académica por nuestro aporte integral a la comunidad margariteña.
                 </p>
             </FadeIn>

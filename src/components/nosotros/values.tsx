@@ -14,7 +14,7 @@ export function ValuesSection() {
         <div className="max-w-6xl mx-auto">
             <FadeIn className="text-center mb-12">
             <h2 className="text-3xl font-bold text-mapis-blue mb-4">Valores que nos unen</h2>
-            <p className="text-gray-600">Los pilares fundamentales de nuestra convivencia.</p>
+            <p className="text-gray-600 !text-center">Los pilares fundamentales de nuestra convivencia.</p>
             </FadeIn>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">

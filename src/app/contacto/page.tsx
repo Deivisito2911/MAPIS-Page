@@ -28,7 +28,7 @@ export default function ContactoPage() {
             <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
             <FadeIn>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Estamos aquí para escucharte</h1>
-                <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
+                <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light !text-center">
                 ¿Tienes dudas sobre el proceso de admisión o quieres conocer nuestras instalaciones?
                 Contáctanos y con gusto te atenderemos.
                 </p>
@@ -94,14 +94,14 @@ export default function ContactoPage() {
                         <MapPin className="w-8 h-8 text-mapis-yellow" />
                     </div>
                     <h2 className="text-3xl font-bold text-mapis-blue">Visítanos</h2>
-                    <p className="text-gray-600 mt-2">Nuestras puertas están abiertas para recibirte.</p>
+                    <p className="text-gray-600 mt-2 !text-center">Nuestras puertas están abiertas para recibirte.</p>
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-8">
                     {/* Columna Mapa (Ocupa 2 espacios) */}
                     <div className="lg:col-span-2 bg-gray-50 p-2 rounded-[2rem] border border-gray-200 shadow-inner">
                          {/* Mapa agrandado */}
-                        <div className="h-[400px] w-full rounded-[1.5rem] overflow-hidden">
+                        <div className="h-[450px] w-full rounded-[1.5rem] overflow-hidden">
                             <LocationSection />
                         </div>
                     </div>
