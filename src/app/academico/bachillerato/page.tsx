@@ -169,7 +169,36 @@ return (
             </div>
             </div>
     </section>
+    {/* SECCIÓN DE ALIANZAS / CONVENIOS */}
+    <section className="py-20 bg-slate-50">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+            <h2 className="text-3xl font-black text-mapis-blue uppercase mb-12">Convenios Institucionales</h2>
+            
+            <div className="flex flex-wrap justify-center gap-12 items-center">
+                {/* UNIMET */}
+                <FadeIn className="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col items-center max-w-sm">
+                    {/* Nota: Pide el logo oficial a la diseñadora, usa un placeholder por ahora */}
+                    <div className="w-48 h-24 relative mb-6">
+                            <Image 
+                                src="https://res.cloudinary.com/dnwyno39r/image/upload/v1770570376/Logo-unimet-6_cfcsgv.png" // <--- PENDIENTE LOGO
+                                alt="Universidad Metropolitana" 
+                                fill 
+                                className="object-contain" 
+                            />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">Universidad Metropolitana</h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                        Alianza estratégica para el ingreso directo y reconocimiento académico de nuestros egresados.
+                    </p>
+                    <a href="https://www.unimet.edu.ve/" target="_blank" className="text-mapis-blue font-bold text-sm hover:underline">
+                        Visitar Sitio Web
+                    </a>
+                </FadeIn>
 
+                {/* AQUÍ PUEDES AGREGAR MÁS ASOCIACIONES CUANDO TE LAS PASEN */}
+            </div>
+        </div>
+    </section>
       {/* 5. PREPARACIÓN PARA EL FUTURO (ORIENTACIÓN VOCACIONAL - RESTAURADO) */}
     <section className="py-20 px-4 bg-white">
             <div className="max-w-6xl mx-auto">
@@ -250,7 +279,7 @@ return (
         </div>
     </section>
     */}
-
+    
       {/* 7. CTA (DOBLE BOTÓN RESTAURADO) */}
     <section className="py-20 px-4 text-center">
             <FadeIn>
