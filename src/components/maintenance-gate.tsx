@@ -76,7 +76,7 @@ return (
     </p>
 
     <div className="border-t border-gray-200 pt-6">
-        <p className="text-xs text-gray-400 uppercase tracking-widest mb-4">Acceso Administrativo</p>
+        <p className="text-xs text-gray-400 uppercase tracking-widest mb-4 !text-center">Acceso Administrativo</p>
         
         {/* EL BOTÓN SECRETO (LOGO) */}
         <button 
