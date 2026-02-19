@@ -3,7 +3,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Globe, Trophy, Star } from "lucide-react"
 import { FadeIn } from "@/components/animations/fade-in"
 
 export function AboutSummary() {
@@ -30,18 +29,34 @@ export function AboutSummary() {
                 </p>
                 
                 <div className="flex flex-col gap-4">
-                    {/* Propósito - NUEVO */}
+                    {/* Propósito - NUEVO ICONO */}
                     <div className="flex gap-4 items-start bg-warm-cream p-4 rounded-xl border border-yellow-100">
-                        <div className="bg-yellow-100 p-2 rounded-lg text-yellow-700 shrink-0"><Star className="w-5 h-5"/></div>
+                        {/* Se ajustó el padding (p-1) y se le dio tamaño fijo (w-10 h-10) al contenedor */}
+                        <div className="relative w-15 h-15 bg-yellow-100 p-1 rounded-lg shrink-0 overflow-hidden">
+                            <Image 
+                                src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771541682/proposito-removebg-preview_l0v1de.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE PROPÓSITO */
+                                alt="Icono Propósito"
+                                fill
+                                className="object-contain p-1.5" // object-contain para que el icono no se corte, y p-1.5 para darle aire
+                            />
+                        </div>
                         <div>
                             <h5 className="font-bold text-mapis-blue">Propósito</h5>
                             <p className="text-sm">Formar ciudadanos críticos, creativos y comprometidos con el desarrollo sostenible.</p>
                         </div>
                     </div>
                     
-                    {/* Visión - ACTUALIZADA */}
+                    {/* Visión - NUEVO ICONO */}
                     <div className="flex gap-4 items-start bg-blue-50 p-4 rounded-xl border border-blue-100">
-                        <div className="bg-blue-100 p-2 rounded-lg text-mapis-blue shrink-0"><Trophy className="w-5 h-5"/></div>
+                        {/* Se ajustó el padding (p-1) y se le dio tamaño fijo (w-10 h-10) al contenedor */}
+                        <div className="relative w-15 h-15 bg-blue-100 p-1 rounded-lg shrink-0 overflow-hidden">
+                            <Image 
+                                src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771541680/vision-removebg-preview_s5pnpf.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE VISIÓN */
+                                alt="Icono Visión"
+                                fill
+                                className="object-contain p-1.5" // object-contain para que el icono no se corte, y p-1.5 para darle aire
+                            />
+                        </div>
                         <div>
                             <h5 className="font-bold text-mapis-blue">Visión</h5>
                             <p className="text-sm">Ser reconocidos por nuestro aporte de una propuesta integral de educación.</p>
