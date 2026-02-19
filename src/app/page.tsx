@@ -19,7 +19,7 @@ export default function Home() {
       <SelectionsShowcase />
       
       {/* Carrusel con fondo cálido */}
-      <FadeIn delay={200} className="py-20 bg-warm-cream">
+      <FadeIn delay={200} className=" bg-warm-cream">
         <EventsCarousel />
       </FadeIn>
 

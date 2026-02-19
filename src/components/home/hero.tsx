@@ -18,7 +18,7 @@ export function HomeHero() {
             {/* --- CAPA DE FONDO --- */}
             <div className="absolute inset-0 pointer-events-none z-0">
                 <Image 
-                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769951828/fondo_logo_vu42iq.jpg" 
+                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538544/fondo_pagina_web_AZUL_ieijbj.jpg" 
                     alt="Fondo Institucional MAPIS"
                     fill
                     className="object-cover"
