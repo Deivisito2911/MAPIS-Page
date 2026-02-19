@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { BookOpen, GraduationCap, Trophy, Music, ArrowRight } from "lucide-react"
+// Eliminamos BookOpen y GraduationCap porque usaremos las imágenes de la diseñadora
+import { Trophy, Music, ArrowRight } from "lucide-react" 
 import { FadeIn } from "@/components/animations/fade-in"
 
 export function EducationalOffer() {
@@ -17,11 +18,11 @@ export function EducationalOffer() {
             </FadeIn>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Primaria (Altura 400px) */}
+            
+            {/* Primaria */}
             <FadeIn delay={100} direction="up" className="h-full">
                 <Link 
                     href="/academico/primaria" 
-                    // SOLUCIÓN AQUÍ: [mask-image:linear-gradient(white,white)]
                     className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
                 >
                 <Image 
@@ -32,9 +33,18 @@ export function EducationalOffer() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/90 via-mapis-blue/40 to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/60" />
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                    <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg group-hover:scale-110 transition-transform">
-                    <BookOpen className="h-7 w-7" />
+                    
+                    {/* --- NUEVO ICONO PRIMARIA CORREGIDO --- */}
+                    <div className="mb-4 relative h-16 w-16 md:h-18 md:w-18 rounded-full shadow-lg overflow-hidden group-hover:scale-110 transition-transform bg-mapis-blue flex-shrink-0">
+                        <Image
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538490/primaria_k4niyt.jpg"
+                            alt="Icono Primaria MAPIS"
+                            fill
+                            className="object-cover scale-110" // scale-110 ayuda a eliminar bordes si la imagen tiene un pequeño margen
+                        />
                     </div>
+                    {/* ------------------------------------ */}
+
                     <h3 className="mb-3 text-3xl font-bold text-white">Educación Primaria</h3>
                     <p className="mb-6 text-blue-100 opacity-90 transition-opacity duration-300 group-hover:opacity-100 max-w-md">
                     Fomentamos la curiosidad y sentamos las bases del conocimiento.
@@ -46,11 +56,10 @@ export function EducationalOffer() {
                 </Link>
             </FadeIn>
 
-            {/* Bachillerato (Altura 400px) */}
+            {/* Bachillerato */}
             <FadeIn delay={200} direction="up" className="h-full">
                 <Link 
                     href="/academico/bachillerato" 
-                    // SOLUCIÓN AQUÍ: [mask-image:linear-gradient(white,white)]
                     className="group relative block h-[400px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
                 >
                 <Image 
@@ -61,9 +70,18 @@ export function EducationalOffer() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/90 via-mapis-blue/40 to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/60" />
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                    <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg group-hover:scale-110 transition-transform">
-                    <GraduationCap className="h-7 w-7" />
+                    
+                    {/* --- NUEVO ICONO BACHILLERATO CORREGIDO --- */}
+                    <div className="mb-4 relative h-16 w-16 md:h-18 md:w-18 rounded-full shadow-lg overflow-hidden group-hover:scale-110 transition-transform bg-mapis-blue flex-shrink-0">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538509/bachillerato_plzgwc.jpg" 
+                            alt="Icono Bachillerato MAPIS"
+                            fill
+                            className="object-cover scale-110" // scale-110 ayuda a eliminar bordes si la imagen tiene un pequeño margen
+                        />
                     </div>
+                    {/* --------------------------------- */}
+
                     <h3 className="mb-3 text-3xl font-bold text-white">Bachillerato</h3>
                     <p className="mb-6 text-blue-100 opacity-90 transition-opacity duration-300 group-hover:opacity-100 max-w-md">
                     Formación pre-universitaria con enfoque en ciencias y liderazgo.
@@ -75,11 +93,10 @@ export function EducationalOffer() {
                 </Link>
             </FadeIn>
 
-            {/* Vida MAPIS */}
+            {/* Vida MAPIS (Este se mantuvo con los iconos Trophy y Music, dime si también quieres cambiarlos) */}
             <FadeIn delay={300} direction="up" className="md:col-span-2 h-full">
                 <Link 
                     href="/vida-mapis/selecciones" 
-                    // SOLUCIÓN AQUÍ: [mask-image:linear-gradient(white,white)]
                     className="group relative block h-[400px] md:h-[350px] w-full overflow-hidden rounded-[2rem] bg-neutral-900 shadow-xl transition-all hover:shadow-2xl [mask-image:linear-gradient(white,white)]"
                 >
                 <Image 
@@ -91,10 +108,16 @@ export function EducationalOffer() {
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/95 via-mapis-blue/80 to-transparent md:bg-gradient-to-r md:from-mapis-blue/95 md:via-mapis-blue/70 md:to-transparent transition-opacity duration-500 group-hover:via-mapis-blue/80" />
                 
                 <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12 lg:w-2/3 items-center text-center md:items-start md:text-left">
-                    <div className="flex gap-4 mb-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-mapis-yellow/90 text-mapis-blue shadow-lg"><Trophy className="h-6 w-6" /></div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-purple-100/90 text-purple-700 shadow-lg"><Music className="h-6 w-6" /></div>
+                    {/* --- NUEVO ICONO VIDA MAPIS CORREGIDO --- */}
+                    <div className="mb-4 relative h-16 w-16 md:h-18 md:w-18 rounded-full shadow-lg overflow-hidden group-hover:scale-110 transition-transform bg-mapis-blue flex-shrink-0">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538503/vida_mapis_fbsmoi.jpg" 
+                            alt="Icono Vida MAPIS"
+                            fill
+                            className="object-cover scale-110" // scale-110 ayuda a eliminar bordes si la imagen tiene un pequeño margen
+                        />
                     </div>
+                    {/* --------------------------------- */}
                     
                     <h3 className="mb-2 text-3xl md:text-4xl font-bold text-white">Vida MAPIS</h3>
                     
