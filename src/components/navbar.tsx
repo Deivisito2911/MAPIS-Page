@@ -93,18 +93,19 @@ export function Navbar() {
             
             <div className="h-6 w-px bg-gray-200 hidden lg:block" />
 
-            {/* --- NUEVO BOTÓN DE CONTACTO ESCRITORIO --- */}
-            <Button asChild variant="ghost" size="icon" className="rounded-full hover:bg-blue-50 relative h-15 w-15 overflow-hidden p-0" title="Contáctanos">
+            {/* BOTÓN CONTACTO ESCRITORIO */}
+            <Button asChild variant="ghost" size="icon" className="rounded-full hover:bg-blue-50" title="Contáctanos">
                 <Link href="/contacto">
-                    <Image 
-                        src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE TELÉFONO */
-                        alt="Icono Contacto"
-                        fill
-                        className="object-contain p-1.5" // object-contain y padding para que no se pegue a los bordes
-                    />
+                    <div className="relative w-15 h-15">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" 
+                            alt="Icono Contacto"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
                 </Link>
             </Button>
-            {/* ------------------------------------------- */}
 
             {/* BOTÓN ADMISIONES */}
             <Button asChild className="bg-mapis-orange hover:bg-orange-600 text-white font-bold rounded-full px-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
@@ -114,16 +115,17 @@ export function Navbar() {
 
           {/* BOTÓN MENÚ MÓVIL */}
           <div className="flex items-center md:hidden gap-4">
-              {/* --- NUEVO BOTÓN DE CONTACTO MÓVIL --- */}
-              <Link href="/contacto" className="relative h-8 w-8 p-1 hover:opacity-80 transition-opacity">
-                  <Image 
-                      src="/ruta-icono-telefono.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE TELÉFONO */
-                      alt="Icono Contacto"
-                      fill
-                      className="object-contain"
-                  />
+              {/* BOTÓN CONTACTO MÓVIL */}
+              <Link href="/contacto" className="p-2 hover:opacity-80 transition-opacity">
+                  <div className="relative w-6 h-6">
+                      <Image 
+                          src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" 
+                          alt="Icono Contacto"
+                          fill
+                          className="object-contain"
+                      />
+                  </div>
               </Link>
-              {/* --------------------------------------- */}
 
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -194,10 +196,9 @@ export function Navbar() {
             {/* Footer del menú móvil */}
             <div className="mt-8 text-center pb-8">
                 <Link href="/contacto" onClick={closeMenu} className="inline-flex items-center text-gray-500 text-sm hover:text-mapis-blue transition-colors">
-                    {/* --- NUEVO ICONO DE CONTACTO FOOTER MÓVIL --- */}
-                    <div className="relative h-4 w-4 mr-2">
+                    <div className="relative w-5 h-5 mr-2">
                         <Image 
-                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE TELÉFONO */
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" 
                             alt="Icono Contacto"
                             fill
                             className="object-contain"
