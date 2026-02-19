@@ -2,17 +2,44 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Trophy } from "lucide-react"
 
-// Datos de las selecciones (Placeholder)
+// Datos de las selecciones con el nuevo campo "iconImage"
 const SELECTIONS = [
-    { name: "Futbol", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692472/Futbol_aytopv.png" }, // Usa fotos reales luego
-    { name: "MAPIS MUN", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692102/13988190_1444960418864013_2553848460531388932_o_jgjltj.jpg" },
-    { name: "Voleibol", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692394/Voleibol_hzkrzw.jpg" },
-    { name: "Ajedrez", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769691905/chess-tournament-kids-adults-participate-600nw-2476201135_ppih1f.webp" },
-    { name: "kickingball", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg" },
-    { name: "Robótica", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769690548/Mapis_Robotic_Team_2_zhnoor.png" },
-    { name: "Baloncesto", image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692841/baloncesto_a9vu8f.jpg" },
+    { 
+        name: "Futbol", 
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692472/Futbol_aytopv.png",
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538476/futbol_dr2jn0.jpg" // <--- REEMPLAZA CON LA URL DE TU ICONO
+    }, 
+    { 
+        name: "MAPIS MUN", 
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692102/13988190_1444960418864013_2553848460531388932_o_jgjltj.jpg",
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538489/mun_blzlju.jpg"
+    },
+    { 
+        name: "Voleibol", 
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692394/Voleibol_hzkrzw.jpg",
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538504/voleibol_z9b40k.jpg"
+    },
+    { 
+        name: "Ajedrez", 
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769691905/chess-tournament-kids-adults-participate-600nw-2476201135_ppih1f.webp",
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538508/ajedrez_bt3oju.jpg"
+    },
+    { 
+        name: "kickingball", 
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg",
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538482/kickingball_lr1kbd.jpg"
+    },
+    { 
+        name: "Robótica", 
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769690548/Mapis_Robotic_Team_2_zhnoor.png",
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538496/robotica_e017xw.jpg"
+    },
+    { 
+        name: "Baloncesto", 
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692841/baloncesto_a9vu8f.jpg",
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538509/baloncesto_gj5pm6.jpg"
+    },
 ]
 
 // Función para duplicar elementos y crear el loop infinito
@@ -25,19 +52,32 @@ const InfiniteRow = ({ items, direction, speed }: { items: typeof SELECTIONS, di
             <Link 
                 href="/vida-mapis/selecciones" 
                 key={idx}
-                className="relative w-64 h-40 md:w-80 md:h-52 flex-shrink-0 rounded-2xl overflow-hidden border-4 border-white shadow-md transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:border-mapis-yellow hover:z-10 grayscale hover:grayscale-0 cursor-pointer"
+                // OPTIMIZACIÓN: transition-transform y filter en lugar de all. transform-gpu añadido.
+                className="relative w-64 h-40 md:w-80 md:h-52 flex-shrink-0 rounded-2xl overflow-hidden border-4 border-white shadow-md transition-[transform,filter,box-shadow,border-color] duration-300 hover:scale-110 hover:shadow-2xl hover:border-mapis-yellow hover:z-10 grayscale hover:grayscale-0 cursor-pointer transform-gpu"
             >
                 <Image
-                src={item.image}
-                alt={item.name}
-                fill
-                className="object-cover"
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    sizes="(max-width: 768px) 256px, 320px" // OPTIMIZACIÓN: Carga la imagen al tamaño necesario
+                    className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-mapis-blue/90 via-transparent to-transparent flex items-end p-4">
-                <div className="flex items-center gap-2">
-                    <Trophy className="h-4 w-4 text-mapis-yellow" />
-                    <span className="text-white font-bold text-lg uppercase tracking-wider">{item.name}</span>
-                </div>
+                    <div className="flex items-center gap-3">
+                        
+                        {/* --- CONTENEDOR REDONDO PARA EL ICONO --- */}
+                        <div className="relative h-8 w-8 md:h-10 md:w-10 rounded-full overflow-hidden flex-shrink-0 border border-mapis-yellow/30 bg-mapis-blue shadow-sm">
+                            <Image 
+                                src={item.iconImage} 
+                                alt={`Icono ${item.name}`}
+                                fill
+                                className="object-cover scale-110" // scale-110 asegura que llene el círculo
+                            />
+                        </div>
+                        {/* -------------------------------------- */}
+                        
+                        <span className="text-white font-bold text-base md:text-lg uppercase tracking-wider">{item.name}</span>
+                    </div>
                 </div>
             </Link>
             ))}
@@ -54,7 +94,7 @@ const row3 = [...SELECTIONS].reverse().slice(0, 5)
 
 return (
 <div className="w-full overflow-hidden bg-slate-50 py-10 relative">
-    {/* Fondo decorativo opcional */}
+    {/* Fondo decorativo opcional mantenido */}
     <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 pointer-events-none" />
     
     <div className="text-center mb-8 px-4 relative z-10">
@@ -77,8 +117,8 @@ return (
     </div>
 
     {/* Degradados laterales para suavizar la entrada/salida */}
-    <div className="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-slate-50 to-transparent z-20" />
-    <div className="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-slate-50 to-transparent z-20" />
+    <div className="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-slate-50 to-transparent z-20 pointer-events-none" />
+    <div className="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-slate-50 to-transparent z-20 pointer-events-none" />
 </div>
 )
 }
