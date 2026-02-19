@@ -3,7 +3,8 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, ChevronDown, ExternalLink, Phone } from "lucide-react"
+// Quitamos 'Phone' de la importación ya que usaremos tu imagen
+import { Menu, X, ChevronDown, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
@@ -45,7 +46,6 @@ export function Navbar() {
                 Académico <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               
-              {/* CAMBIO AQUÍ: Agregamos z-[200] y bg-white */}
               <DropdownMenuContent className="z-[200] bg-white border-gray-100 shadow-lg">
                 <DropdownMenuItem asChild>
                   <Link href="/academico/primaria" className="w-full cursor-pointer">Primaria</Link>
@@ -68,7 +68,6 @@ export function Navbar() {
                 Vida MAPIS <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               
-              {/* CAMBIO AQUÍ: Agregamos z-[200] y bg-white */}
               <DropdownMenuContent className="z-[200] bg-white border-gray-100 shadow-lg">
                 <DropdownMenuItem asChild>
                   <Link href="/instalaciones" className="w-full cursor-pointer">Instalaciones</Link>
@@ -94,12 +93,18 @@ export function Navbar() {
             
             <div className="h-6 w-px bg-gray-200 hidden lg:block" />
 
-            {/* BOTÓN CONTACTO */}
-            <Button asChild variant="ghost" size="icon" className="rounded-full text-gray-600 hover:text-mapis-blue hover:bg-blue-50" title="Contáctanos">
+            {/* --- NUEVO BOTÓN DE CONTACTO ESCRITORIO --- */}
+            <Button asChild variant="ghost" size="icon" className="rounded-full hover:bg-blue-50 relative h-15 w-15 overflow-hidden p-0" title="Contáctanos">
                 <Link href="/contacto">
-                    <Phone className="w-5 h-5" />
+                    <Image 
+                        src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE TELÉFONO */
+                        alt="Icono Contacto"
+                        fill
+                        className="object-contain p-1.5" // object-contain y padding para que no se pegue a los bordes
+                    />
                 </Link>
             </Button>
+            {/* ------------------------------------------- */}
 
             {/* BOTÓN ADMISIONES */}
             <Button asChild className="bg-mapis-orange hover:bg-orange-600 text-white font-bold rounded-full px-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
@@ -109,9 +114,16 @@ export function Navbar() {
 
           {/* BOTÓN MENÚ MÓVIL */}
           <div className="flex items-center md:hidden gap-4">
-              <Link href="/contacto" className="text-gray-600 hover:text-mapis-blue p-2">
-                  <Phone className="w-5 h-5" />
+              {/* --- NUEVO BOTÓN DE CONTACTO MÓVIL --- */}
+              <Link href="/contacto" className="relative h-8 w-8 p-1 hover:opacity-80 transition-opacity">
+                  <Image 
+                      src="/ruta-icono-telefono.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE TELÉFONO */
+                      alt="Icono Contacto"
+                      fill
+                      className="object-contain"
+                  />
               </Link>
+              {/* --------------------------------------- */}
 
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -181,8 +193,17 @@ export function Navbar() {
             
             {/* Footer del menú móvil */}
             <div className="mt-8 text-center pb-8">
-                <Link href="/contacto" onClick={closeMenu} className="inline-flex items-center text-gray-500 text-sm">
-                    <Phone className="w-4 h-4 mr-2" /> Contáctanos
+                <Link href="/contacto" onClick={closeMenu} className="inline-flex items-center text-gray-500 text-sm hover:text-mapis-blue transition-colors">
+                    {/* --- NUEVO ICONO DE CONTACTO FOOTER MÓVIL --- */}
+                    <div className="relative h-4 w-4 mr-2">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE TELÉFONO */
+                            alt="Icono Contacto"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                    Contáctanos
                 </Link>
             </div>
 
