@@ -1,73 +1,73 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Metadata } from "next"
 import { FadeIn } from "@/components/animations/fade-in"
 import { Button } from "@/components/ui/button"
+// Quitamos los íconos de lucide-react de las selecciones
 import { 
-    Trophy, 
-    Music, 
-    Cpu, 
-    Palette, 
-    Activity, 
-    Users, 
-    Medal, 
+    Trophy, // Lo dejamos solo para el badge del Hero
     ArrowRight
 } from "lucide-react"
 
-export const metadata: Metadata = {
-    title: "Selecciones y Cultura | U.E. Mariano Picón Salas",
-    description: "Nuestros equipos deportivos y grupos culturales que nos llenan de orgullo.",
-}
+// Aunque Next.js 13+ prefiere que Metadata esté en un layout o en un archivo page.tsx sin "use client",
+// lo dejaremos aquí tal como lo tenías, pero ten en cuenta que Next.js podría quejarse de esto si es "use client".
+// export const metadata: Metadata = {
+//     title: "Selecciones y Cultura | U.E. Mariano Picón Salas",
+//     description: "Nuestros equipos deportivos y grupos culturales que nos llenan de orgullo.",
+// }
 
+// Añadimos el campo iconImage con tus enlaces de Cloudinary
 const ACTIVIDADES = [
     {
         name: "Fútbol",
         category: "Deporte",
         description: "Nuestra selección más laureada. Fomentamos la táctica, velocidad y juego limpio en cada partido. Nuestros atletas aprenden que la verdadera victoria está en el esfuerzo compartido.",
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692472/Futbol_aytopv.png",
-        icon: Trophy,
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538476/futbol_dr2jn0.jpg",
     },
     {
         name: "MAPIS ROBOTIC TEAM",
         category: "Ciencia",
         description: "Programación y construcción con LEGO y Arduino. Nuestro equipo ha sido galardonado a nivel nacional, demostrando que la ingeniería y la creatividad van de la mano.",
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769690548/Mapis_Robotic_Team_2_zhnoor.png",
-        icon: Cpu,
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538496/robotica_e017xw.jpg",
     },
     {
         name: "MAPIS MUN",
         category: "Cultura",
         description: "Debate y diplomacia juvenil. Nuestro equipo de Modelo de Naciones Unidas ha representado a MAPIS en conferencias internacionales, desarrollando habilidades de oratoria, negociación y pensamiento crítico.",
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692102/13988190_1444960418864013_2553848460531388932_o_jgjltj.jpg",
-        icon: Activity,
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538489/mun_blzlju.jpg",
     },
     {
         name: "Kickingball",
         category: "Deporte",
         description: "El deporte femenino por excelencia en nuestra institución. Nuestras alumnas demuestran fuerza, estrategia y compañerismo en cada inning.",
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg",
-        icon: Medal,
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538482/kickingball_lr1kbd.jpg",
     },
     {
         name: "Ajedrez",
         category: "Cultura",
         description: "Lógica, estrategia y concentración. Nuestro club de ajedrez ha participado en múltiples torneos, destacándose por su pensamiento crítico y habilidades analíticas.",
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769691905/chess-tournament-kids-adults-participate-600nw-2476201135_ppih1f.webp",
-        icon: Palette,
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538508/ajedrez_bt3oju.jpg",
     },
     {
         name: "Voleibol",
         category: "Deporte",
         description: "Coordinación y reflejos. Entrenamientos intensivos donde la comunicación entre compañeros es la clave del éxito.",
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692394/Voleibol_hzkrzw.jpg",
-        icon: Users,
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538504/voleibol_z9b40k.jpg",
     },
     {
         name: "Baloncesto",
         category: "Deporte",
         description: "Agilidad y trabajo en equipo. Nuestro equipo de baloncesto ha competido en ligas intercolegiales, promoviendo la salud física y el espíritu competitivo.",
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692841/baloncesto_a9vu8f.jpg",
-        icon: Users,
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538509/baloncesto_gj5pm6.jpg",
     }
 ]
 
@@ -119,15 +119,10 @@ export default function SeleccionesPage() {
                     !isEven ? "md:flex-row-reverse" : ""
                     }`}>
                     
-                    {/* LADO DE LA FOTO (MOLDE FIJO) */}
+                    {/* LADO DE LA FOTO */}
                     <div className="w-full md:w-1/2 flex flex-col items-center text-center">
                         <FadeIn direction={isEven ? "right" : "left"}>
                         
-                        {/* SOLUCIÓN DEFINITIVA: 
-                            1. Usamos dimensiones fijas: w-[320px] h-[320px] (móvil) y md:w-[400px] md:h-[400px] (PC).
-                            2. flex-none: Evita que flexbox aplaste la imagen si falta espacio.
-                            3. mx-auto: La centra perfectamente.
-                        */}
                         <div className={`relative flex-none mx-auto w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border-8 ${
                             isEven ? "border-mapis-yellow" : "border-white"
                         } transform transition-transform hover:scale-105 duration-500 mb-6`}>
@@ -140,8 +135,17 @@ export default function SeleccionesPage() {
                             />
                         </div>
                         
-                        <div className="flex items-center justify-center gap-3">
-                            <item.icon className={`w-8 h-8 ${isEven ? "text-mapis-yellow" : "text-white"}`} />
+                        <div className="flex items-center justify-center gap-4">
+                            {/* --- CONTENEDOR DEL ICONO PERSONALIZADO --- */}
+                            <div className={`relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 shadow-sm border-2 ${isEven ? "border-mapis-yellow bg-mapis-yellow" : "border-white bg-white"}`}>
+                                <Image 
+                                    src={item.iconImage}
+                                    alt={`Icono ${item.name}`}
+                                    fill
+                                    className="object-cover scale-110"
+                                />
+                            </div>
+                            {/* ------------------------------------------ */}
                             <h2 className={`text-3xl md:text-4xl font-bold uppercase tracking-tight ${
                             isEven ? "text-mapis-yellow" : "text-white"
                             }`}>
