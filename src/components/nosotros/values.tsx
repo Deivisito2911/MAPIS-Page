@@ -1,49 +1,49 @@
 "use client"
 
+import Image from "next/image" // Importamos Image de Next.js
 import { useState } from "react"
 import { FadeIn } from "@/components/animations/fade-in"
-import { Heart, Users, Star, Shield, Zap, Target } from "lucide-react" // Usamos estos por mientras llegan los de la diseñadora
 
 const VALORES = [
     { 
         id: 1, 
         titulo: "Excelencia", 
-        icon: Star, 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538531/excelencia_coxid3.jpg", // <--- PEGA AQUÍ EL LINK DEL ICONO
         descripcion: "Buscamos la calidad superior en cada actividad académica y humana, superando las expectativas día a día." 
     },
     { 
         id: 2, 
         titulo: "Integridad", 
-        icon: Shield, 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538481/integridad_cuwmhu.jpg", 
         descripcion: "Actuamos con honestidad, transparencia y coherencia entre lo que decimos y hacemos." 
     },
     { 
         id: 3, 
         titulo: "Innovación", 
-        icon: Zap, 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538478/innovacion_dqwnyi.jpg", // <--- PEGA AQUÍ EL LINK DEL ICONO
         descripcion: "Abrazamos el cambio y la tecnología como herramientas para potenciar el aprendizaje." 
     },
     { 
         id: 4, 
         titulo: "Respeto", 
-        icon: Users, 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538495/respeto_xf9u9u.jpg", // <--- PEGA AQUÍ EL LINK DEL ICONO
         descripcion: "Valoramos la diversidad y fomentamos un trato digno para todos los miembros de la comunidad." 
     },
     { 
         id: 5, 
         titulo: "Compromiso", 
-        icon: Heart, 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538515/compromiso_ov8utq.jpg", // <--- PEGA AQUÍ EL LINK DEL ICONO
         descripcion: "Nos entregamos con pasión a la formación de ciudadanos ejemplares para Venezuela." 
     },
     { 
         id: 6, 
         titulo: "Liderazgo", 
-        icon: Target, 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538484/liderazgo_jalkzj.jpg", // <--- PEGA AQUÍ EL LINK DEL ICONO
         descripcion: "Formamos líderes capaces de influir positivamente en su entorno y generar cambios." 
     },
 ]
 
-    export function ValuesSection() {
+export function ValuesSection() {
     // Estado para saber cuál valor está seleccionado
     const [activeValue, setActiveValue] = useState<number | null>(null)
 
@@ -68,7 +68,20 @@ const VALORES = [
                     `}
                 >
                     <div className="flex flex-col items-center text-center h-full justify-center">
-                    <valor.icon className={`w-10 h-10 mb-4 transition-colors ${activeValue === valor.id ? 'text-mapis-yellow' : 'text-mapis-blue'}`} />
+                    
+                    {/* --- CONTENEDOR DEL ICONO CIRCULAR --- */}
+                    <div className={`
+                        relative w-14 h-14 mb-4 rounded-full overflow-hidden shadow-sm flex-shrink-0 
+                        transition-transform duration-300 ${activeValue === valor.id ? 'scale-110 shadow-lg' : 'group-hover:scale-110'}
+                    `}>
+                        <Image
+                            src={valor.iconImage}
+                            alt={`Icono ${valor.titulo}`}
+                            fill
+                            className="object-cover scale-110" // object-cover y scale-110 aseguran que la imagen cuadrada llene el círculo
+                        />
+                    </div>
+                    {/* -------------------------------------- */}
                     
                     <h3 className={`text-xl font-bold uppercase mb-2 ${activeValue === valor.id ? 'text-white' : 'text-gray-800'}`}>
                         {valor.titulo}
