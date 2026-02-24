@@ -37,7 +37,7 @@ const SPACES = [
             { name: "Comedor", desc: "Alimentación balanceada en un ambiente higiénico y familiar.", icon: Coffee, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769816133/Comedor_Bachillerato_gcuie5.jpg" },
             { name: "Enfermería", desc: "Atención primaria inmediata para la seguridad de todos.", icon: Stethoscope, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769816134/Enfermer%C3%ADa_wbsclg.jpg" },
         ]
-    }
+    }   
 ]
 
 export default function FacilitiesPage() {
@@ -46,7 +46,7 @@ export default function FacilitiesPage() {
         
             {/* Hero Section */}
             <section className="relative bg-mapis-blue text-white py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/school-building-architecture-modern.jpg')] bg-cover bg-center opacity-10" />
+                <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dnwyno39r/image/upload/v1769815591/IMG_20260129_113403_r2zybw.jpg')] bg-cover bg-center opacity-10" />
                 <FadeIn className="max-w-7xl mx-auto px-4 relative z-10 text-center">
                     <span className="inline-block py-1 px-4 rounded-full bg-white/10 text-mapis-yellow text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-sm border border-white/20">
                         Nuestro Campus
