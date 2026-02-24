@@ -2,12 +2,12 @@
 
 import Image from "next/image"
 import { useState } from "react"
+// Quitamos el 'Calendar' genérico de la importación
 import { 
     CalendarDays, 
     Download, 
     Clock, 
     AlertCircle,
-    Calendar,
     Star,
     ChevronDown,
     Check,
@@ -250,9 +250,18 @@ export default function CalendarioPage() {
                     return (
                         <FadeIn key={idx} delay={idx * 100} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                             
-                            <div className={`flex items-center justify-center w-10 h-10 rounded-full border-4 border-white ${theme.bg} ${theme.icon} shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-transform group-hover:scale-110`}>
-                                <Calendar className="w-5 h-5" />
+                            {/* --- CONTENEDOR DEL ICONO DE CALENDARIO MODIFICADO --- */}
+                            <div className={`relative flex items-center justify-center w-12 h-12 rounded-full border-4 border-white ${theme.bg} shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-transform group-hover:scale-110 overflow-hidden`}>
+                                <div className="relative w-full h-full rounded-full overflow-hidden">
+                                    <Image 
+                                        src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538514/calendario_tfz3ex.jpg" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE CALENDARIO */
+                                        alt="Icono Calendario MAPIS"
+                                        fill
+                                        className="object-cover scale-110"
+                                    />
+                                </div>
                             </div>
+                            {/* ---------------------------------------------------- */}
                             
                             <div className={`w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-2xl shadow-sm border-l-4 ${theme.border} hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1`}>
                                 
