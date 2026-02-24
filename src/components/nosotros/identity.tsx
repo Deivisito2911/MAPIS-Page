@@ -1,6 +1,7 @@
 "use client"
 
-import { Sparkles, Star, Globe, Trophy } from "lucide-react"
+import Image from "next/image" // Importamos Image de Next.js
+import { Sparkles } from "lucide-react" // Mantenemos Sparkles para el adorno de fondo
 import { FadeIn } from "@/components/animations/fade-in"
 
 export function IdentitySection() {
@@ -23,7 +24,16 @@ export function IdentitySection() {
                 </div>
                 <div className="relative z-10 max-w-3xl mx-auto">
                 <div className="inline-flex items-center justify-center p-3 bg-white/10 rounded-full mb-6 backdrop-blur-sm">
-                    <Star className="w-8 h-8 text-mapis-yellow" />
+                    {/* --- ICONO NUESTRO PROPÓSITO --- */}
+                    <div className="relative w-14 h-14">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771541682/proposito-removebg-preview_l0v1de.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE PROPÓSITO */
+                            alt="Icono Nuestro Propósito"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                    {/* -------------------------------- */}
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-mapis-yellow">Nuestro Propósito</h3>
                 <p className="text-xl leading-relaxed font-light">
@@ -34,8 +44,17 @@ export function IdentitySection() {
 
             {/* Misión */}
             <FadeIn delay={200} className="bg-warm-cream border border-orange-100 p-8 rounded-[2rem] shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-                <div className="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-600">
-                <Globe className="w-7 h-7" />
+                <div className="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-600 overflow-hidden">
+                    {/* --- ICONO MISIÓN --- */}
+                    <div className="relative w-14 h-14">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771943635/mision-removebg-preview_yuonin.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE MISIÓN */
+                            alt="Icono Misión"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                    {/* --------------------- */}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Misión</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -45,8 +64,17 @@ export function IdentitySection() {
 
             {/* Visión */}
             <FadeIn delay={300} className="bg-warm-cream border border-blue-100 p-8 rounded-[2rem] shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 lg:col-span-2">
-                <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-mapis-blue">
-                <Trophy className="w-7 h-7" />
+                <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-mapis-blue overflow-hidden">
+                    {/* --- ICONO VISIÓN --- */}
+                    <div className="relative w-14 h-14">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771541680/vision-removebg-preview_s5pnpf.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE VISIÓN */
+                            alt="Icono Visión"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                    {/* --------------------- */}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Visión</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
