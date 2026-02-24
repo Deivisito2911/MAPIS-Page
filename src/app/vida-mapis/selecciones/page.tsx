@@ -5,21 +5,16 @@ import Link from "next/link"
 import { Metadata } from "next"
 import { FadeIn } from "@/components/animations/fade-in"
 import { Button } from "@/components/ui/button"
-// Quitamos los íconos de lucide-react de las selecciones
+// Quitamos Trophy porque usaremos la imagen
 import { 
-    Trophy, // Lo dejamos solo para el badge del Hero
     ArrowRight
 } from "lucide-react"
 
-// Aunque Next.js 13+ prefiere que Metadata esté en un layout o en un archivo page.tsx sin "use client",
-// lo dejaremos aquí tal como lo tenías, pero ten en cuenta que Next.js podría quejarse de esto si es "use client".
-// export const metadata: Metadata = {
-//     title: "Selecciones y Cultura | U.E. Mariano Picón Salas",
-//     description: "Nuestros equipos deportivos y grupos culturales que nos llenan de orgullo.",
-// }
+// ... (metadata comentada)
 
 // Añadimos el campo iconImage con tus enlaces de Cloudinary
 const ACTIVIDADES = [
+    // ... (tus actividades con iconImage tal como las pasaste)
     {
         name: "Fútbol",
         category: "Deporte",
@@ -27,6 +22,7 @@ const ACTIVIDADES = [
         image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692472/Futbol_aytopv.png",
         iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538476/futbol_dr2jn0.jpg",
     },
+    // ... resto de las actividades ...
     {
         name: "MAPIS ROBOTIC TEAM",
         category: "Ciencia",
@@ -83,8 +79,17 @@ export default function SeleccionesPage() {
             <div className="relative z-10 text-center px-4 max-w-4xl">
             <FadeIn>
                 <div className="inline-flex items-center gap-2 bg-mapis-yellow text-mapis-blue px-4 py-1 rounded-full font-bold uppercase tracking-widest text-xs mb-6 shadow-lg ">
-                <Trophy className="w-4 h-4" />
-                Talento MAPIS
+                    {/* --- CONTENEDOR DEL ICONO DE TALENTO MAPIS --- */}
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden bg-mapis-blue/10">
+                        <Image 
+                            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538497/talento_mapis_bbzsob.jpg" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE TALENTO MAPIS */
+                            alt="Icono Talento MAPIS"
+                            fill
+                            className="object-cover scale-110"
+                        />
+                    </div>
+                    {/* --------------------------------------------- */}
+                    Talento MAPIS
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 uppercase">
                 Nuestras Selecciones
