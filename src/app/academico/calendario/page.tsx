@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 import { 
     CalendarDays, 
@@ -153,9 +154,13 @@ export default function CalendarioPage() {
         
         {/* 1. HERO */}
         <section className="relative bg-mapis-blue text-white py-20 overflow-hidden">
-            <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0 bg-[url('/images/logo.png')] bg-repeat bg-[length:300px]" />
-            </div>
+            <Image
+            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538544/fondo_pagina_web_AZUL_ieijbj.jpg"
+            alt="Fondo utiles MAPIS"
+            fill
+            className="object-cover brightness-50"
+            priority
+            />
             <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <FadeIn>
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-mapis-yellow mb-6 border border-white/20">

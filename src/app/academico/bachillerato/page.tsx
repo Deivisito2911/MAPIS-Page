@@ -25,8 +25,8 @@ return (
       {/* 1. HERO */}
     <section className="relative h-[60vh] overflow-hidden flex items-center justify-center">
             <Image
-            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1769693153/bachillerato_y8mtnk.jpg"
-            alt="Bachillerato MAPIS"
+            src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538544/fondo_pagina_web_AZUL_ieijbj.jpg"
+            alt="Fondo utiles MAPIS"
             fill
             className="object-cover brightness-50"
             priority
