@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Phone, Mail, Clock, Instagram, Twitter } from "lucide-react"
+import { Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -32,11 +32,21 @@ export function Footer() {
 
           {/* Column 2: Contact Info */}
           <div>
-            {/* H3 sin font-bold para que Bebas Neue se vea nítida */}
             <h3 className="text-2xl mb-6 text-mapis-yellow tracking-wide">Contacto</h3>
             <ul className="space-y-4 text-blue-100">
               <li className="flex items-start gap-3 group">
-                <MapPin className="h-5 w-5 mt-0.5 text-mapis-yellow shrink-0 group-hover:text-white transition-colors" />
+                
+                {/* --- NUEVO ICONO UBICACIÓN CIRCULAR --- */}
+                <div className="relative h-10 w-10 mt-0.5 shrink-0 group-hover:scale-110 transition-transform rounded-full overflow-hidden">
+                  <Image 
+                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538526/direccion_fniszi.jpg" 
+                    alt="Icono Ubicación"
+                    fill
+                    className="object-cover scale-110" 
+                  />
+                </div>
+                {/* -------------------------------------- */}
+
                 <span className="text-sm leading-relaxed">
                   Calle Fraternidad Vía Ppal Los Robles,<br />
                   Quinta Giraluna, Sector Mundo Nuevo,<br />
@@ -44,14 +54,36 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3 group">
-                <Phone className="h-5 w-5 text-mapis-yellow shrink-0 group-hover:text-white transition-colors" />
+                
+                {/* --- NUEVO ICONO TELÉFONO CIRCULAR --- */}
+                <div className="relative h-10 w-10 shrink-0 group-hover:scale-110 transition-transform rounded-full overflow-hidden">
+                  <Image 
+                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538501/telefono_e7huzj.jpg" 
+                    alt="Icono Teléfono"
+                    fill
+                    className="object-cover scale-110" 
+                  />
+                </div>
+                {/* ------------------------------------- */}
+
                 <div className="flex flex-col text-sm font-medium">
                   <a href="tel:02952672963" className="hover:text-white transition-colors">0295-2672963</a>
                   <a href="tel:04141984093" className="hover:text-white transition-colors">0414-1984093</a>
                 </div>
               </li>
               <li className="flex items-start gap-3 group">
-                <Mail className="h-5 w-5 mt-0.5 text-mapis-yellow shrink-0 group-hover:text-white transition-colors" />
+                
+                {/* --- NUEVO ICONO EMAIL CIRCULAR --- */}
+                <div className="relative h-10 w-10 mt-0.5 shrink-0 group-hover:scale-110 transition-transform rounded-full overflow-hidden">
+                  <Image 
+                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538525/correo_s13oj0.jpg" 
+                    alt="Icono Email"
+                    fill
+                    className="object-cover scale-110" 
+                  />
+                </div>
+                {/* ---------------------------------- */}
+
                 <div className="flex flex-col text-sm gap-1">
                   <a href="mailto:controlestudios@uemapis.org" className="hover:text-white transition-colors break-all">
                     controlestudios@uemapis.org
@@ -68,8 +100,19 @@ export function Footer() {
           <div>
             <h3 className="text-2xl mb-6 text-mapis-yellow tracking-wide">Horario</h3>
             <ul className="space-y-4 text-blue-100">
-              <li className="flex items-start gap-3 bg-blue-900/30 p-3 rounded-lg border border-blue-800/50">
-                <Clock className="h-5 w-5 mt-0.5 text-mapis-yellow shrink-0" />
+              <li className="flex items-start gap-3 bg-blue-900/30 p-3 rounded-lg border border-blue-800/50 group">
+                
+                {/* --- NUEVO ICONO HORARIO CIRCULAR --- */}
+                <div className="relative h-10 w-10 mt-0.5 shrink-0 group-hover:scale-110 transition-transform rounded-full overflow-hidden border border-blue-800/50">
+                  <Image 
+                    src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538477/horario_ugt9n5.jpg" 
+                    alt="Icono Horario"
+                    fill
+                    className="object-cover scale-110" 
+                  />
+                </div>
+                {/* ------------------------------------ */}
+
                 <div>
                   <p className="font-bold text-white uppercase text-xs tracking-wider mb-1">Jornada Escolar</p>
                   <p className="text-sm">Lunes a Viernes</p>
@@ -133,17 +176,6 @@ export function Footer() {
                 >
                     <Instagram className="h-5 w-5" />
                 </a>
-                {/* Icono de Twitter 
-                <a 
-                    href="https://twitter.com/mapis_news" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="bg-white/10 p-2 rounded-full text-white hover:bg-[#1DA1F2] hover:scale-110 transition-all shadow-lg"
-                    aria-label="Twitter"
-                >
-                    <Twitter className="h-5 w-5" />
-                </a>
-                */}
                 {/* Icono de WhatsApp */}
                 <a 
                     href="https://wa.me/584141984093" 
