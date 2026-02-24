@@ -24,18 +24,18 @@ export default function ModeloEducativoPage() {
         <div className="flex flex-col min-h-screen bg-warm-stone">
         
         {/* HERO */}
-        <section className="relative bg-mapis-blue text-white py-24 overflow-hidden">
-            <div className="absolute inset-0 opacity-10">
-            <Image src="/kids-learning.jpg" alt="Modelo Educativo" fill className="object-cover" />
+        <section className="relative bg-mapis-blue text-black py-24 overflow-hidden">
+            <div className="absolute inset-0 opacity-50">
+            <Image src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771538547/fondo_pagina_web_BEIGE_xk6c1x.jpg" alt="Modelo Educativo" fill className="object-cover" />
             </div>
             <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <FadeIn>
-                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-mapis-yellow mb-6 border border-white/20">
+                <div className="inline-flex items-center gap-2 bg-black backdrop-blur-sm px-4 py-2 rounded-full text-mapis-yellow mb-6 border border-white/20">
                 <Target className="w-5 h-5" />
                 <span className="text-sm font-bold uppercase tracking-wider">Nuestra Misión</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Objetivos Institucionales</h1>
-                <p className="text-xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed !text-center">
+                <p className="text-xl text-black max-w-3xl mx-auto font-light leading-relaxed !text-center">
                 Buscamos ser reconocidos como una Institución de calidad académica por nuestro aporte integral a la comunidad margariteña.
                 </p>
             </FadeIn>
