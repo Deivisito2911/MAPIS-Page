@@ -116,7 +116,7 @@ export function Footer() {
                 <div>
                   <p className="font-bold text-white uppercase text-xs tracking-wider mb-1">Jornada Escolar</p>
                   <p className="text-sm">Lunes a Viernes</p>
-                  <p className="text-lg font-bold text-white">7:00 AM - 3:30 PM</p>
+                  <p className="text-lg font-bold text-white">8:00 AM - 3:30 PM</p>
                 </div>
               </li>
               <li>

@@ -45,7 +45,7 @@ export default function ContactoPage() {
                 <Phone className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Llámanos</h3>
-                <p className="text-gray-500 mb-4 text-sm">Atención inmediata vía Telefónica o WhatsApp.</p>
+                <p className="text-gray-500 mb-4 text-sm text-center">Atención inmediata vía Telefónica o WhatsApp.</p>
                 <a href="tel:02952672963" className="block text-lg font-bold text-mapis-blue hover:underline">0295-2672963</a>
                 {/* ENLACE A WHATSAPP */}
                 <a 
@@ -64,7 +64,7 @@ export default function ContactoPage() {
                 <Mail className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Escríbenos</h3>
-                <p className="text-gray-500 mb-4 text-sm">Responderemos a tu solicitud en breve.</p>
+                <p className="text-gray-500 mb-4 text-sm text-center">Responderemos a tu solicitud en breve.</p>
                 <a href="mailto:administracion@uemapis.org" className="block font-medium text-gray-700 hover:text-mapis-blue break-all">
                 administracion@uemapis.org
                 </a>
@@ -78,7 +78,7 @@ export default function ContactoPage() {
                 <Clock className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Horario de Atención</h3>
-                <p className="text-gray-500 mb-4 text-sm">Visitas presenciales y atención telefónica.</p>
+                <p className="text-gray-500 mb-4 text-sm text-center">Visitas presenciales y atención telefónica.</p>
                 <p className="text-lg font-bold text-gray-800">Lunes a Viernes</p>
                 <p className="text-mapis-blue font-medium">7:30 AM - 12:30 PM</p>
             </FadeIn>

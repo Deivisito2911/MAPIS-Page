@@ -311,10 +311,10 @@ export default function CalendarioPage() {
                 <h2 className="text-2xl font-bold text-gray-800 mb-8">Horarios Habituales</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                     <div className="p-6 bg-blue-50 rounded-2xl border border-blue-100 hover:border-blue-300 transition-colors">
-                        <h3 className="font-bold text-mapis-blue mb-2 text-lg">Turno de la Mañana</h3>
+                        <h3 className="font-bold text-mapis-blue mb-2 text-lg">Jornada Académica</h3>
                         <div className="flex items-center justify-center gap-2 text-gray-700">
                             <Clock className="w-5 h-5 text-mapis-yellow" />
-                            <span className="font-medium">7:00 AM - 12:00 PM</span>
+                            <span className="font-medium">8:00 AM -3:30 PM</span>
                         </div>
                         <p className="text-xs text-gray-500 mt-2">Primaria y Bachillerato</p>
                     </div>
@@ -322,7 +322,7 @@ export default function CalendarioPage() {
                         <h3 className="font-bold text-mapis-blue mb-2 text-lg">Actividades Extra-Cátedra</h3>
                         <div className="flex items-center justify-center gap-2 text-gray-700">
                             <Clock className="w-5 h-5 text-mapis-yellow" />
-                            <span className="font-medium">1:30 PM - 4:00 PM</span>
+                            <span className="font-medium">3:30 PM - 5:30 PM</span>
                         </div>
                         <p className="text-xs text-gray-500 mt-2">Deporte y Cultura (Según selección)</p>
                     </div>
