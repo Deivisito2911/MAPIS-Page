@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/animations/fade-in"
 
@@ -14,12 +13,22 @@ export function CallToAction() {
             El proceso de admisión 2025-2026 está abierto. Agenda una visita y descubre por qué somos el mejor lugar para el crecimiento de tus hijos.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="xl" className="bg-mapis-yellow text-mapis-blue hover:bg-white hover:scale-105 transition-all font-bold text-lg px-10 shadow-lg shadow-yellow-500/20">
-                Iniciar Admisión Online
+            
+            {/* BOTÓN ADMISIÓN ONLINE */}
+            <Button asChild size="xl" className="bg-mapis-yellow text-mapis-blue hover:bg-white hover:scale-105 transition-all font-bold text-lg px-10 shadow-lg shadow-yellow-500/20">
+                <a href="https://form.jotform.com/U_EMapis/Formulario_de_PreInsripcion_Mapis" target="_blank" rel="noopener noreferrer">
+                    Iniciar Admisión Online
+                </a>
             </Button>
-            <Button size="xl" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-mapis-blue hover:scale-105 transition-all font-bold text-lg px-10">
-                Solicitar Visita Guiada
+            
+            {/* BOTÓN VISITA GUIADA */}
+            <Button asChild size="xl" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-mapis-blue hover:scale-105 transition-all font-bold text-lg px-10">
+                {/* El parámetro ?text= añade el mensaje predeterminado codificado para URLs */}
+                <a href="https://wa.me/584129672251?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20guiada%20para%20conocer%20el%20colegio." target="_blank" rel="noopener noreferrer">
+                    Solicitar Visita Guiada
+                </a>
             </Button>
+            
             </div>
         </div>
         </FadeIn>
