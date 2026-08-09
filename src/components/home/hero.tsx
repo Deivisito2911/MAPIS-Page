@@ -41,7 +41,7 @@ export function HomeHero() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-white drop-shadow-xl tracking-tight">
-                            17 AÑOS FORMANDO CIUDADANOS <span className="text-mapis-yellow relative inline-block">
+                            18 AÑOS FORMANDO CIUDADANOS <span className="text-mapis-yellow relative inline-block">
                                 EJEMPLARES
                                 <svg className="absolute w-full h-3 -bottom-2 left-0 text-mapis-orange opacity-80" viewBox="0 0 100 10" preserveAspectRatio="none">
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" />

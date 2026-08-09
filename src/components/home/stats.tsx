@@ -12,7 +12,7 @@ export function StatsBar() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-black/10">
             <div>
                 <div className="text-4xl lg:text-5xl font-bold text-mapis-blue mb-2 tabular-nums">
-                + <CountUp end={17} duration={2.5} start={inView ? null : 0} />
+                + <CountUp end={18} duration={2.5} start={inView ? null : 0} />
                 </div>
                 <div className="text-sm font-medium text-blue-900 uppercase tracking-wide">Años de Historia</div>
             </div>
