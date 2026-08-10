@@ -120,9 +120,18 @@ export default function FacilitiesPage() {
                         <p className="text-gray-700 mb-8 text-lg !text-center">
                             Nada se compara con recorrer nuestros pasillos y sentir la energía del MAPIS.
                         </p>
-                        <a href="/admisiones" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all bg-mapis-blue rounded-full shadow-lg hover:bg-blue-900 hover:scale-105 hover:shadow-xl">
+                        
+                        {/* --- ENLACE A WHATSAPP ACTUALIZADO --- */}
+                        <a 
+                            href="https://wa.me/584129672251?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20guiada%20para%20conocer%20el%20colegio." 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all bg-mapis-blue rounded-full shadow-lg hover:bg-blue-900 hover:scale-105 hover:shadow-xl"
+                        >
                             Agendar Visita Guiada
                         </a>
+                        {/* ------------------------------------- */}
+                        
                     </FadeIn>
                 </div>
             </section>
