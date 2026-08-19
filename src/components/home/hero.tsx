@@ -41,8 +41,8 @@ export function HomeHero() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-white drop-shadow-xl tracking-tight">
-                            18 AÑOS FORMANDO CIUDADANOS <span className="text-mapis-yellow relative inline-block">
-                                EJEMPLARES
+                            EDUCAMOS CON PROPÓSITO<span className="text-mapis-yellow relative inline-block">
+                                FORMAMOS PARA LA VIDA Y EL FUTURO
                                 <svg className="absolute w-full h-3 -bottom-2 left-0 text-mapis-orange opacity-80" viewBox="0 0 100 10" preserveAspectRatio="none">
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" />
                                 </svg>
@@ -50,7 +50,7 @@ export function HomeHero() {
                         </h1>
 
                         <p className="text-lg md:text-xl text-blue-100 max-w-xl leading-relaxed font-medium drop-shadow-md">
-                            En la U.E. Mariano Picón Salas, cultivamos una mentalidad de crecimiento, curiosidad y un compromiso inquebrantable con la excelencia académica y humana.
+                            En Mapis desarrollamos el talento y fortalecemos el carácter de cada estudiante, mediante una formación integral e innovadora.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-5 pt-0">
