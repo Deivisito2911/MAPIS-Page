@@ -94,9 +94,9 @@ export function Navbar() {
             <div className="h-6 w-px bg-gray-200 hidden lg:block" />
 
             {/* BOTÓN CONTACTO ESCRITORIO */}
-            <Button asChild variant="ghost" size="icon" className="rounded-full hover:bg-blue-50" title="Contáctanos">
+            <Button asChild variant="ghost" size="icon" className="rounded-full hover:bg-blue-50" title="Contáctanos" aria-label="Contáctanos">
                 <Link href="/contacto">
-                    <div className="relative w-15 h-15">
+                    <div className="relative w-7 h-7">
                         <Image 
                             src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771542095/telefono-removebg-preview_bs5oc6.png" 
                             alt="Icono Contacto"
@@ -129,6 +129,8 @@ export function Navbar() {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+              aria-expanded={isOpen}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-mapis-blue focus:outline-none bg-gray-50"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -187,9 +189,9 @@ export function Navbar() {
                 <Link
                     href="/admisiones"
                     onClick={closeMenu}
-                    className="flex items-center justify-center w-full px-4 py-3 text-center rounded-lg bg-mapis-orange text-white font-bold shadow-md hover:bg-orange-600 transition-colors"
+                    className="flex items-center justify-center w-full px-4 py-3 text-center rounded-lg bg-mapis-orange text-white font-bold shadow-md hover:bg-orange-600 transition-colors uppercase tracking-wide"
                 >
-                    ADMISIONES 2025
+                    PROCESO DE ADMISIONES 2026
                 </Link>
             </div>
             

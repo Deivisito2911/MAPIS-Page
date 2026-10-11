@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/animations/fade-in"
 
 export const metadata: Metadata = {
-    title: "Admisiones 2025-2026 | U.E. Mariano Picón Salas",
+    title: "Admisiones 2026-2027 | U.E. Mariano Picón Salas",
     description: "Información sobre el proceso de inscripción, requisitos y fechas para nuevos ingresos.",
 }
 
@@ -41,7 +41,7 @@ export default function AdmisionesPage() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-mapis-yellow"></span>
                 </span>
-                <span className="text-sm font-bold uppercase tracking-wider">Proceso Abierto 2025-2026</span>
+                <span className="text-sm font-bold uppercase tracking-wider">Proceso Abierto 2026-2027</span>
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 uppercase">Únete a la Familia MAPIS</h1>
                 <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
@@ -144,7 +144,7 @@ export default function AdmisionesPage() {
                 <CalendarDays className="w-6 h-6 text-mapis-blue shrink-0" />
                 <div>
                     <h4 className="font-bold text-mapis-blue text-sm">Horario de Atención Administrativa</h4>
-                    <p className="text-sm text-gray-600 mt-1">Lunes a Viernes: 7:30 AM - 12:30 PM</p>
+                    <p className="text-sm text-gray-600 mt-1">Lunes a Viernes: 8:00 AM - 3:30 PM</p>
                 </div>
                 </div>
             </FadeIn>

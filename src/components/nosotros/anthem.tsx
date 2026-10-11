@@ -25,37 +25,40 @@ import { FadeIn } from "@/components/animations/fade-in"
             </div>
             </FadeIn>
 
-            <FadeIn delay={200} className="space-y-8 font-serif italic text-lg md:text-xl leading-relaxed text-blue-100 opacity-90 max-w-2xl mx-auto px-25"> /* Letra del Himno del Colegio Mariano Picón Salas */
+            <FadeIn delay={200} className="space-y-8 font-serif italic text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose text-blue-100 opacity-95 max-w-2xl mx-auto text-center px-4 sm:px-6">
+            {/* Letra del Himno del Colegio Mariano Picón Salas */}
             <p>
-                En el 2008, un sueño nació, Mariano Picón Salas,<br />
-                sus puertas abrió, ladrillo a ladrillo, salón por salón,<br />
-                de la mano de los padres el colegio creció.
+                En el 2008, un sueño nació,<br />
+                Mariano Picón Salas sus puertas abrió,<br />
+                Ladrillo a ladrillo, salón por salón,<br />
+                De la mano de los padres el colegio creció.
             </p>
             <p>
                 En su emblema lleva un violín y un libro,<br />
-                pues en el MAPIS el arte es parte integral del niño.<br />
+                Pues en el MAPIS el arte es parte integral del niño,<br />
                 Y un globo terráqueo, símbolo de expansión,<br />
-                a nuevos horizontes, a la investigación.
+                A nuevos horizontes, a la investigación.
             </p>
-            <p className="font-bold text-mapis-yellow not-italic font-sans">
+            <p className="font-bold text-mapis-yellow not-italic font-sans text-lg sm:text-xl md:text-2xl tracking-wide py-2">
                 MAPIS es mi segunda familia,<br />
-                donde crecemos juntos cada día.<br />(x2)
+                Donde crecemos juntos cada día.<br />
+                <span className="text-sm md:text-base opacity-80 font-normal">(x2)</span>
             </p>
             <p>
                 MAPIS es mi segundo hogar,<br />
-                me enseña valores y conciencia ambiental.<br />
+                Me enseña valores y conciencia ambiental,<br />
                 Mariano Picón Salas cumple una gran misión,<br />
-                formar ciudadanos completos que ayuden a la nación.
+                Formar ciudadanos completos que ayuden a la nación.
             </p>
             <p>
                 MAPIS representa con orgullo y alegría,<br />
-                calidad de innovación y tecnología.<br />
+                Calidad de innovación y tecnología,<br />
                 Y en su escudo lleva escrito en latín:<br />
-                "Ars, Veritas, Humanitas", ese es nuestro fin.
+                <span className="text-white font-semibold">"Ars, Veritas, Humanitas"</span>, ese es nuestro fin.
             </p>
-            <p className="font-bold text-mapis-yellow not-italic font-sans">
+            <p className="font-bold text-mapis-yellow not-italic font-sans text-lg sm:text-xl md:text-2xl tracking-wide pt-2">
                 MAPIS es mi segunda familia,<br />
-                donde crecemos juntos cada día.
+                Donde crecemos juntos cada día.
             </p>
             </FadeIn>
         </div>

@@ -12,46 +12,65 @@ import { Button } from "@/components/ui/button"
 const NOTICIAS = [
     {
         id: "1",
-        titulo: "¡Se acerca la Semana MAPIS 2026!",
-        fecha: "06 Feb, 2026",
-        categoria: "Vida Escolar",
-        imagen: "https://res.cloudinary.com/dnwyno39r/image/upload/v1770297767/logo_semana_mapis-1_dfrnnh.png",
-        descripcionCorta: "Prepárate para la semana más emocionante del año. Las 6 alianzas están listas para competir.",
-        descripcionLarga: "La Semana MAPIS es una tradición que une a toda nuestra comunidad. Este año contaremos con competencias deportivas, retos intelectuales y muestras artísticas donde Guayacanes, Frailejones, Iguanas, Chipi-Chipis, Cóndores y Truchas darán lo mejor de sí. ¡No olvides traer tu camisa del color de tu alianza!",
-        enlaceExterno: "https://instagram.com/colegiomapis",
+        titulo: "MAPIS ROBOTIC TEAM: 2do Lugar Nacional",
+        fecha: "30 May, 2026",
+        categoria: "Robótica",
+        imagen: "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932329/IMG-20260531-WA0107_gfp8lf.jpg",
+        descripcionCorta: "El Mapis Robotic Team obtuvo el 2do lugar en la Olimpiada Regional de Robótica y clasificó a la Final Nacional por segundo año consecutivo.",
+        descripcionLarga: "El Mapis Robotic Team obtuvo el 2do lugar en la Olimpiada Regional de Robótica, organizada por el Mincyt en Maturín, clasificando a la Final Nacional por segundo año consecutivo en la Competencia Sigue Líneas Creativas (Categoría Aventura). Felicitaciones a Arantza, Isabella y Adriel junto a sus preparadores Deivith y Lérida, y al equipo Mapis Mechatronic Team (Dhana, Dámaso y Martín) por ubicarse entre los 10 mejores.",
+        enlaceExterno: "https://www.instagram.com/p/DY0yG4ZFrYA/?srtk=MzRlODBiNWFlZA==",
         textoEnlace: "Ver en Instagram"
     },
     {
         id: "2",
-        titulo: "Inicio del Mundialito de Fútbol",
-        fecha: "10 Feb, 2026",
-        categoria: "Deportes",
-        imagen: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769951828/fondo_logo_vu42iq.jpg", // Placeholder
-        descripcionCorta: "El evento deportivo más esperado arranca este martes con el desfile inaugural.",
-        descripcionLarga: "Invitamos a todos los padres y representantes a acompañarnos en la inauguración del Mundialito MAPIS 2026. Veremos desfilar a nuestros futuros campeones en una jornada llena de energía y pasión por el deporte. El primer partido será entre 4to y 5to grado.",
-        enlaceExterno: "https://www.mapis.com.ve",
-        textoEnlace: "Ver Cronograma"
+        titulo: "¡Caracas fue testigo de nuestra historia! SIMUN 2026 ✨",
+        fecha: "17 May, 2026",
+        categoria: "Cultura",
+        imagen: "https://res.cloudinary.com/dnwyno39r/image/upload/v1791681016/702144565_18605250697024807_8934291634055523870_n_neyc42.webp",
+        descripcionCorta: "Histórica participación de nuestra delegación MAPIS MUN en SIMUN 2026 en el Colegio San Ignacio de Loyola con destacados reconocimientos.",
+        descripcionLarga: "Del 15 al 17 de mayo, la delegación MAPIS MUN brilló en el Colegio San Ignacio de Loyola (Caracas), obteniendo Mención Verbal para Mariam Maklad (CDH), Mención Honorífica para Sofía Clavijo (Corte) y Mejor Delegado para Isabella Escalona (Corte), junto al notable desempeño de toda la delegación y su Faculty Advisor Manuel Corcida.",
+        enlaceExterno: "https://www.instagram.com/p/DYgR6iAMrR4/?psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+        textoEnlace: "Ver en Instagram"
     },
     {
         id: "3",
-        titulo: "Jornada de Admisiones Abierta",
-        fecha: "01 Feb, 2026",
-        categoria: "Institucional",
-        imagen: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769951195/mascota_cuerpo_completo_yyms95.png",
-        descripcionCorta: "Ya puedes solicitar tu cupo para el año escolar 2025-2026.",
-        descripcionLarga: "Queremos que formes parte de la familia MAPIS. Nuestro proceso de admisión ya está activo a través de nuestra página web. Conoce nuestro modelo educativo y agenda una visita guiada para descubrir por qué somos más que un colegio.",
-        enlaceExterno: "/admisiones",
-        textoEnlace: "Ir a Admisiones"
+        titulo: "¡Margarita se conecta con el futuro universitario! PDU UNIMET 🎓",
+        fecha: "Abr 2026",
+        categoria: "Académico",
+        imagen: "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932507/Screenshot_2026-07-01_150131_w2vybg.png",
+        descripcionCorta: "Recibimos en la UE Mariano Picón Salas a estudiantes de Nueva Esparta para la Prueba de Ubicación (PDU) de la Universidad Metropolitana.",
+        descripcionLarga: "Como colegio asociado a la UNIMET, fuimos sede para que estudiantes de 5to año de destacadas instituciones de la isla presentaran la Prueba de Ubicación (PDU) en áreas cuantitativa, verbal e inglés, reafirmando nuestro compromiso de ser el centro regional de referencia académica.",
+        enlaceExterno: "https://www.instagram.com/p/DV3ky8_AD7c/?rpxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+        textoEnlace: "Ver en Instagram"
+    },
+    {
+        id: "4",
+        titulo: "¡Mapis a la Vanguardia en Robótica! Medalla de Bronce 🥉🤖",
+        fecha: "22 Mar, 2026",
+        categoria: "Robótica",
+        imagen: "https://res.cloudinary.com/dnwyno39r/image/upload/v1791681209/IMG-20260322-WA0181_g5gmx7.jpg",
+        descripcionCorta: "Nuestras estudiantes hicieron historia obteniendo medalla de bronce en la Final Nacional del Robotics For Good Youth Challenge.",
+        descripcionLarga: "Nuestras estudiantes Tiana, Ana Elvira, Miranda y Marinetti obtuvieron medalla de bronce en la Final Nacional del Robotics For Good Youth Challenge con su robot diseñado para procesos agrícolas, demostrando que el talento y el liderazgo femenino no tienen límites.",
+        enlaceExterno: "https://www.instagram.com/reel/DX9wfDpSgLd/?srtk=MzRlODBiNWFlZA==",
+        textoEnlace: "Ver en Instagram"
     }
 ]
 
+const CATEGORIAS = ["Todas", "Robótica", "Cultura", "Académico"] as const
+
 export default function EventosPage() {
+    // Estado para categoría activa
+    const [categoriaSeleccionada, setCategoriaSeleccionada] = useState<string>("Todas")
     // Estado para controlar qué noticia está expandida
     const [expandedId, setExpandedId] = useState<string | null>(null)
 
     const toggleExpand = (id: string) => {
         setExpandedId(expandedId === id ? null : id)
     }
+
+    const noticiasFiltradas = categoriaSeleccionada === "Todas"
+        ? NOTICIAS
+        : NOTICIAS.filter(n => n.categoria.toLowerCase() === categoriaSeleccionada.toLowerCase())
 
     return (
         <div className="min-h-screen bg-gray-50 pb-24">
@@ -71,10 +90,55 @@ export default function EventosPage() {
                 </div>
             </section>
 
-            {/* 2. LISTA DE NOTICIAS (Vertical) */}
-            <div className="max-w-4xl mx-auto px-4 mt-12 space-y-8">
-                {NOTICIAS.map((noticia, idx) => {
-                    const isExpanded = expandedId === noticia.id
+            {/* 2. FILTRO POR CATEGORÍAS */}
+            <section className="max-w-4xl mx-auto px-4 mt-10">
+                <FadeIn>
+                    <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                        {CATEGORIAS.map((cat) => {
+                            const isActive = categoriaSeleccionada === cat
+                            const count = cat === "Todas" 
+                                ? NOTICIAS.length 
+                                : NOTICIAS.filter(n => n.categoria.toLowerCase() === cat.toLowerCase()).length
+
+                            return (
+                                <button
+                                    key={cat}
+                                    onClick={() => {
+                                        setCategoriaSeleccionada(cat)
+                                        setExpandedId(null)
+                                    }}
+                                    className={`px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all duration-200 cursor-pointer flex items-center gap-2 ${
+                                        isActive
+                                            ? "bg-mapis-blue text-white shadow-md shadow-blue-900/20 scale-105"
+                                            : "bg-white text-gray-600 hover:text-mapis-blue hover:border-mapis-blue/40 border border-gray-200"
+                                    }`}
+                                >
+                                    <span>{cat}</span>
+                                    <span className={`text-xs px-2 py-0.5 rounded-full font-bold ${
+                                        isActive ? "bg-white/20 text-white" : "bg-gray-100 text-gray-500"
+                                    }`}>
+                                        {count}
+                                    </span>
+                                </button>
+                            )
+                        })}
+                    </div>
+                </FadeIn>
+            </section>
+
+            {/* 3. LISTA DE NOTICIAS (Vertical) */}
+            <div className="max-w-4xl mx-auto px-4 mt-10 space-y-8">
+                {noticiasFiltradas.length === 0 ? (
+                    <FadeIn>
+                        <div className="bg-white rounded-3xl p-12 text-center border border-gray-100 shadow-sm">
+                            <p className="text-gray-500 font-medium">
+                                No hay noticias disponibles en esta categoría por el momento.
+                            </p>
+                        </div>
+                    </FadeIn>
+                ) : (
+                    noticiasFiltradas.map((noticia, idx) => {
+                        const isExpanded = expandedId === noticia.id
 
                     return (
                         <FadeIn key={noticia.id} delay={idx * 100}>
@@ -89,6 +153,8 @@ export default function EventosPage() {
                                             src={noticia.imagen} 
                                             alt={noticia.titulo}
                                             fill
+                                            unoptimized
+                                            sizes="(max-width: 768px) 100vw, 33vw"
                                             className="object-cover transition-transform duration-500 hover:scale-105"
                                         />
                                         <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase text-mapis-blue flex items-center gap-1 shadow-sm">
@@ -151,7 +217,7 @@ export default function EventosPage() {
                             </article>
                         </FadeIn>
                     )
-                })}
+                }))}
             </div>
 
             {/* CTA Final */}

@@ -31,8 +31,7 @@ export function AboutSummary() {
                 <div className="flex flex-col gap-4">
                     {/* Propósito - NUEVO ICONO */}
                     <div className="flex gap-4 items-start bg-warm-cream p-4 rounded-xl border border-yellow-100">
-                        {/* Se ajustó el padding (p-1) y se le dio tamaño fijo (w-10 h-10) al contenedor */}
-                        <div className="relative w-15 h-15 bg-yellow-100 p-1 rounded-lg shrink-0 overflow-hidden">
+                        <div className="relative w-15 h-15 bg-yellow-100 p-1 rounded-xl shrink-0 overflow-hidden">
                             <Image 
                                 src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771541682/proposito-removebg-preview_l0v1de.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE PROPÓSITO */
                                 alt="Icono Propósito"
@@ -48,8 +47,7 @@ export function AboutSummary() {
                     
                     {/* Visión - NUEVO ICONO */}
                     <div className="flex gap-4 items-start bg-blue-50 p-4 rounded-xl border border-blue-100">
-                        {/* Se ajustó el padding (p-1) y se le dio tamaño fijo (w-10 h-10) al contenedor */}
-                        <div className="relative w-15 h-15 bg-blue-100 p-1 rounded-lg shrink-0 overflow-hidden">
+                        <div className="relative w-15 h-15 bg-blue-100 p-1 rounded-xl shrink-0 overflow-hidden">
                             <Image 
                                 src="https://res.cloudinary.com/dnwyno39r/image/upload/v1771541680/vision-removebg-preview_s5pnpf.png" /* <--- PEGA AQUÍ EL LINK DEL ICONO DE VISIÓN */
                                 alt="Icono Visión"

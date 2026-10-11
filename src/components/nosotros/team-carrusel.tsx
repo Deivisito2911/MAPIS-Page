@@ -13,36 +13,36 @@ const TEAM_MEMBERS = [
     name: "Lic. Gisella Menoni",
     role: "Directora General",
     image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769774001/Gisella_Minoni_lpv5lq.jpg",
-    shortBio: "Magíster en Educación con 25 años de trayectoria.",
-    fullBio: "La Dra. Gisella Menoni es una líder educativa con más de dos décadas de experiencia en gestión escolar. Su trayectoria se centra en la mejora continua del proceso educativo y el fortalecimiento de la cultura institucional. Ha liderado proyectos innovadores en educación técnica y ha sido reconocida por su compromiso con la excelencia académica."
+    shortBio: "Magíster en Educación con más de dos décadas de trayectoria en gestión escolar.",
+    fullBio: "La Lic. Gisella Menoni es una líder educativa con más de dos décadas de experiencia en gestión escolar. Su trayectoria se centra en la mejora continua del proceso formativo y el fortalecimiento de la cultura institucional en Nueva Esparta. Ha liderado proyectos innovadores en el ámbito pedagógico y es ampliamente reconocida por su compromiso con la excelencia académica y la formación integral de los estudiantes."
 },
 {
-    name: "Lic. Barbara Hernandez",
-    role: "Consejo Superior",
+    name: "Lic. Bárbara Hernández",
+    role: "Directiva y Finanzas ANDIEP",
     image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769773917/Barbara_Hernandez_cmw8an.jpg",
-    shortBio: "Especialista en planificación curricular y evaluación.",
-    fullBio: "Licenciada en Educación con mención en Ciencias Pedagógicas. Carlos es el arquitecto detrás de nuestro robusto plan de estudios. Su enfoque se basa en el desarrollo de competencias críticas y el aprendizaje basado en proyectos. Es un apasionado de la lectura y promotor de clubes de debate estudiantil."
+    shortBio: "Directiva de MAPIS y Directora de Finanzas de ANDIEP Nueva Esparta (2025-2027).",
+    fullBio: "Destacada educadora, administradora y líder gremial venezolana. Ejerce funciones directivas en la Unidad Educativa Mariano Picón Salas y es la Directora de Finanzas de la Asociación Nacional de Institutos Educativos Privados (ANDIEP) Seccional Nueva Esparta (período 2025-2027). Su gestión se enfoca en la innovación de soluciones financieras y métodos de pago flexibles, la defensa de estructuras de costos justas y equilibradas para las familias, y la garantía de la continuidad del calendario escolar y la sostenibilidad institucional."
 },
 {
-    name: "Lic. Carolina",
-    role: "Coord. de Relaciones Institucionales",
+    name: "Lic. Carolina Real",
+    role: "Coord. de Relaciones Interinstitucionales",
     image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769774001/Carolina_Real_cn0jhj.jpg",
-    shortBio: "Dedicada a la formación integral en la primera infancia.",
-    fullBio: "Con una especialización en Psicopedagogía, la profesora Ana vela por el bienestar emocional y académico de nuestros alumnos más jóvenes. Cree firmemente que 'un niño feliz aprende mejor'. Ha implementado programas de inteligencia emocional que son pilar fundamental de nuestra primaria."
+    shortBio: "Directora del C.E.I. Garabatos y Coordinadora de Relaciones Interinstitucionales de MAPIS.",
+    fullBio: "Directiva educativa con amplia visión estratégica, especializada en desarrollo infantil temprano y el establecimiento de alianzas institucionales de alto impacto en Nueva Esparta. Como Directora del Centro de Educación Inicial Garabatos lidera la innovación pedagógica en primera infancia con más de 21 años de trayectoria. En MAPIS, coordina los vínculos estratégicos con la comunidad, entes gremiales e instituciones internacionales, facilitando proyectos de alto perfil como intercambios lingüísticos y torneos de robótica."
 },
 {
-    name: "Lic. Santiago Perera",
-    role: "Consejo Superior",
-    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769694057/Yusmely_Albarran_tzuej3.jpg",
-    shortBio: "Experta en orientación vocacional y desarrollo estudiantil.",
-    fullBio: "La Lic. Yusmely Albarrán es la guía de nuestros estudiantes de bachillerato en su camino hacia la educación superior y el desarrollo personal. Con una maestría en Orientación Educativa, ha ayudado a innumerables jóvenes a descubrir sus pasiones y fortalezas académicas. Es una ferviente defensora del aprendizaje experiencial y las actividades extracurriculares."
+    name: "Dr. Luis Santiago Perera",
+    role: "Socio Fundador",
+    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1791726295/FOTO-SANTIAGO-PERERA-2026_vlzdwc.jpg",
+    shortBio: "Socio fundador de MAPIS, Director Fundador del Colegio Guayamurí y Secretario General de la UNIMET.",
+    fullBio: "Educador, investigador y estratega de la innovación curricular. Es socio y miembro fundador de la U.E. Mariano Picón Salas, asesorando su creación desde 2006 y diseñando su estructura legal, financiera y proyecto pedagógico original. Licenciado en Educación (UCAB), posee Maestría en Tecnología Educativa (Universidad de Hartford, EE. UU.) y Doctorado en Innovación Educativa (Universidad de Córdoba, España). Es Director Fundador del Colegio Guayamurí, actual Secretario General de la Universidad Metropolitana (UNIMET), consultor del BID y asesor de la red internacional de escuelas transformadoras Ashoka."
 },
 {
     name: "Lic. Jaime Picón",
-    role: "Consejo Superior",
-    image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769694057/Yusmely_Albarran_tzuej3.jpg",
-    shortBio: "Experta en orientación vocacional y desarrollo estudiantil.",
-    fullBio: "La Lic. Yusmely Albarrán es la guía de nuestros estudiantes de bachillerato en su camino hacia la educación superior y el desarrollo personal. Con una maestría en Orientación Educativa, ha ayudado a innumerables jóvenes a descubrir sus pasiones y fortalezas académicas. Es una ferviente defensora del aprendizaje experiencial y las actividades extracurriculares."
+    role: "Socio Fundador",
+    image: "/images/logo.png",
+    shortBio: "Socio Fundador y Miembro de la Junta Directiva de la U.E. Mariano Picón Salas.",
+    fullBio: "Socio Fundador y miembro de la Junta Directiva de la Unidad Educativa Mariano Picón Salas. Formó parte del grupo originario de ciudadanos y educadores que conceptualizaron y sentaron las bases legales e institucionales para el nacimiento del plantel en Los Robles en el año 2008. Su gestión inicial y continua ha estado vinculada a la viabilidad institucional, el desarrollo de la infraestructura y el respaldo a la visión de excelencia educativa integral del colegio."
 },
 ]
 
@@ -80,7 +80,7 @@ return (
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={member.image.includes("logo") ? "object-contain p-3 bg-white" : "object-cover group-hover:scale-110 transition-transform duration-500"}
                 />
                 </div>
                 <h3 className="text-xl font-bold text-mapis-blue mb-1 group-hover:text-blue-700 transition-colors">{member.name}</h3>
@@ -142,7 +142,7 @@ return (
                     src={selectedMember.image}
                     alt={selectedMember.name}
                     fill
-                    className="object-cover"
+                    className={selectedMember.image.includes("logo") ? "object-contain p-4 bg-white" : "object-cover"}
                 />
             </div>
             <h3 className="text-lg font-bold leading-tight">{selectedMember.name}</h3>

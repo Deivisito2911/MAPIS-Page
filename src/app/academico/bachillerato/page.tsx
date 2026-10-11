@@ -177,10 +177,9 @@ return (
             <div className="flex flex-wrap justify-center gap-12 items-center">
                 {/* UNIMET */}
                 <FadeIn className="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col items-center max-w-sm">
-                    {/* Nota: Pide el logo oficial a la diseñadora, usa un placeholder por ahora */}
                     <div className="w-48 h-24 relative mb-6">
                             <Image 
-                                src="https://res.cloudinary.com/dnwyno39r/image/upload/v1770570376/Logo-unimet-6_cfcsgv.png" // <--- PENDIENTE LOGO
+                                src="https://res.cloudinary.com/dnwyno39r/image/upload/v1770570376/Logo-unimet-6_cfcsgv.png"
                                 alt="Universidad Metropolitana" 
                                 fill 
                                 className="object-contain" 
@@ -235,7 +234,12 @@ return (
                 
                 {/* Imagen Ilustrativa */}
                 <div className="relative h-[300px] w-full rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
-                    <Image src="/school-building-architecture-modern.jpg" alt="Graduación" fill className="object-cover" />
+                    <Image 
+                        src="https://res.cloudinary.com/dnwyno39r/image/upload/v1782932507/Screenshot_2026-07-01_150131_w2vybg.png" 
+                        alt="Orientación Vocacional y Futuro Universitario" 
+                        fill 
+                        className="object-cover" 
+                    />
                 </div>
                 </div>
             </div>

@@ -64,8 +64,8 @@ const ALIANZAS = [
         textColor: "text-blue-900",
         description: "Representa la fortaleza y la belleza del árbol que florece con esplendor en las tierras cálidas de la Isla de Margarita.",
         gallery: [
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698612/guayacanes__1_-removebg-preview_zcycur.png",
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698612/guayacanes__1_-removebg-preview_zcycur.png"
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932572/Screenshot_2026-07-01_150240_meuqjf.png",
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709438/Patio_central_hguwjl.jpg"
         ]
     },
     {
@@ -76,8 +76,8 @@ const ALIANZAS = [
         textColor: "text-green-900",
         description: "Simboliza la sabiduría y protección de los llamados “guardianes del páramo”, por ser plantas vitales para el ciclo del agua en las alturas.",
         gallery: [
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698624/mascotas_frailejones_ltoc5n.png",
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698624/mascotas_frailejones_ltoc5n.png"
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg",
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709438/Cancha_techada_ib1ctf.jpg"
         ]
     },
     {
@@ -88,8 +88,8 @@ const ALIANZAS = [
         textColor: "text-white", 
         description: "Refleja la energía, la paciencia y la capacidad de adaptación de este emblemático reptil de nuestro clima tropical, en peligro de extinción.",
         gallery: [
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698631/mascotas_iguana_hnjyaw.png",
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698631/mascotas_iguana_hnjyaw.png"
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692394/Voleibol_hzkrzw.jpg",
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1791681209/IMG-20260322-WA0181_g5gmx7.jpg"
         ]
     },
     {
@@ -100,8 +100,8 @@ const ALIANZAS = [
         textColor: "text-white", 
         description: "Evoca la esencia de las costas neoespartanas y la fuerza que surge cuando muchos elementos pequeños se unen en una gran comunidad.",
         gallery: [
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698615/mascotas_chipichipi_zosj1i.png",
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698615/mascotas_chipichipi_zosj1i.png"
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1791681016/702144565_18605250697024807_8934291634055523870_n_neyc42.webp",
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709469/Cancha_de_futbol_zwq5on.jpg"
         ] 
     },
     {
@@ -112,8 +112,8 @@ const ALIANZAS = [
         textColor: "text-white", 
         description: "Representa la majestuosidad, el liderazgo y el espíritu de libertad que vuela sobre las cumbres más altas de Mérida.",
         gallery: [
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698622/mascotas_condor_jjsfom.png",
-            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698622/mascotas_condor_jjsfom.png"
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692841/baloncesto_a9vu8f.jpg",
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932329/IMG-20260531-WA0107_gfp8lf.jpg"
         ]
     },
     {
@@ -124,8 +124,8 @@ const ALIANZAS = [
         textColor: "text-white", 
         description: "Simboliza la agilidad, la pureza y la perseverancia de quienes nadan con determinación en las corrientes cristalinas de la montaña.",
         gallery: [
-                "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698632/mascotas_trucha_xpomjl.png",
-                "https://res.cloudinary.com/dnwyno39r/image/upload/v1769698632/mascotas_trucha_xpomjl.png"
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1791680462/WA_1790718611801_akoz4o.jpg",
+            "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932507/Screenshot_2026-07-01_150131_w2vybg.png"
         ]
     },
 ]

@@ -23,39 +23,153 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 // --- CONFIGURACIÓN DE RUTAS ---
-// Asegúrate de que los archivos estén en la carpeta 'public' con estos nombres exactos
+// Archivos disponibles en la carpeta 'public'
 const CALENDARIOS_DISPONIBLES = [
+    { 
+        id: "oct-2026", 
+        nombre: "Octubre 2026", 
+        archivo: "/Calendario_académico_octubre_2026.png",
+        etiqueta: "Actualizado Octubre 2026" 
+    },
     { 
         id: "feb-2026", 
         nombre: "Febrero 2026", 
-        archivo: "/calendario-academico.pdf", // Este es el actual
-        etiqueta: "Actualizado Febrero 2026" 
+        archivo: "/calendario-academico.pdf",
+        etiqueta: "Archivo Febrero 2026" 
     },
     { 
         id: "ene-2026", 
         nombre: "Enero 2026", 
-        archivo: "/Enero-2026.pdf", // Ruta corregida: directo en public
+        archivo: "/Enero-2026.pdf",
         etiqueta: "Archivo Enero 2026" 
     },
     { 
         id: "dic-2025", 
         nombre: "Diciembre 2025", 
-        archivo: "/Diciembre-2025.pdf", // Ruta corregida: directo en public
+        archivo: "/Diciembre-2025.pdf",
         etiqueta: "Archivo Diciembre 2025" 
     },
     { 
         id: "nov-2025", 
         nombre: "Noviembre 2025", 
-        archivo: "/Noviembre-2025.pdf", // Ruta corregida: directo en public
+        archivo: "/Noviembre-2025.pdf",
         etiqueta: "Archivo Noviembre 2025" 
     }
 ]
 
-export default function CalendarioPage() {
-    const [mesSeleccionado, setMesSeleccionado] = useState(CALENDARIOS_DISPONIBLES[0])
+type EventoHito = {
+    titulo: string
+    descripcion: string
+}
 
-    // --- DATOS DEL TIMELINE (NO SE TOCAN) ---
-    const cronograma = [
+type BloqueCronograma = {
+    mes: string
+    dia: string
+    eventos: EventoHito[]
+}
+
+const CRONOGRAMAS_POR_MES: Record<string, BloqueCronograma[]> = {
+    "oct-2026": [
+        {
+            mes: "Octubre",
+            dia: "01",
+            eventos: [
+                { titulo: "Open House y Clubes de Aptitud", descripcion: "Open House para 2do, 3ero y 4to año. Publicación de grupos de electivas y clubes de tardes de aptitud." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "02",
+            eventos: [
+                { titulo: "Tryouts y Día de la No Violencia", descripcion: "Anuncio de resultados de tryouts deportivos y conmemoración del Día Internacional de la No Violencia." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "05",
+            eventos: [
+                { titulo: "Día Mundial de los Docentes", descripcion: "Homenaje a nuestro equipo docente y concienciación sobre educación vial." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "06",
+            eventos: [
+                { titulo: "Consejo Educativo y Estudiantil", descripcion: "Asamblea de conformación del Consejo Educativo y Consejo Estudiantil." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "07 - 08",
+            eventos: [
+                { titulo: "Toma de Fotos Institucionales", descripcion: "Jornada fotográfica oficial de toda la comunidad MAPIS (Inicial, Primaria, Bachillerato y personal)." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "09",
+            eventos: [
+                { titulo: "Cierre Inscripción Masterchef", descripcion: "Vence el plazo de inscripción para el III Masterchef Challenge MAPIS." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "12",
+            eventos: [
+                { titulo: "Día de la Resistencia Indígena", descripcion: "Feriado nacional conmemorativo. No hay actividades escolares." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "14",
+            eventos: [
+                { titulo: "Masterchef: Recepción y Degustación", descripcion: "Recepción de videos y degustación de recetas del Masterchef Challenge. 213° Aniversario de Bolívar Libertador." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "16",
+            eventos: [
+                { titulo: "Final III Masterchef Challenge MAPIS", descripcion: "Gran final culinaria institucional y celebración del Día Mundial de la Alimentación ('Nutre tu cuerpo, alimenta tu mente')." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "19",
+            eventos: [
+                { titulo: "Visita de Zona Escolar y Lucha contra el Cáncer", descripcion: "Acompañamiento institucional y acto cívico por el Día Internacional contra el Cáncer de Mama." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "22 - 23",
+            eventos: [
+                { titulo: "Show & Tell Week", descripcion: "Presentaciones especiales bilingües de expresión oral y proyectos estudiantiles." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "26 - 30",
+            eventos: [
+                { titulo: "Unit 1 Assessment Week (Elementary)", descripcion: "Semana formal de evaluaciones y consolidación de contenidos de la Unidad 1 en Primaria." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "28",
+            eventos: [
+                { titulo: "Simulacro de Desalojo Institucional", descripcion: "Simulacro preventivo de desalojo ante sismos y desastres naturales con brigadas escolares." }
+            ]
+        },
+        {
+            mes: "Octubre",
+            dia: "30",
+            eventos: [
+                { titulo: "Fun Friday: Freakout Friday", descripcion: "Jornada temática recreativa escolar y celebración del Día Mundial del Ahorro." }
+            ]
+        }
+    ],
+    "feb-2026": [
         {
             mes: "Febrero",
             dia: "04",
@@ -141,7 +255,187 @@ export default function CalendarioPage() {
                 { titulo: "Competencia de Robótica", descripcion: "Evento 'IA For Good' y natalicio de José María España." }
             ]
         }
+    ],
+    "ene-2026": [
+        {
+            mes: "Enero",
+            dia: "07",
+            eventos: [
+                { titulo: "Consejo General Docente", descripcion: "Reunión de planificación y alineación pedagógica para el arranque del II Momento." }
+            ]
+        },
+        {
+            mes: "Enero",
+            dia: "08",
+            eventos: [
+                { titulo: "Inicio de Actividades del II Momento", descripcion: "Reincorporación de los estudiantes a clases tras el receso decembrino." }
+            ]
+        },
+        {
+            mes: "Enero",
+            dia: "15",
+            eventos: [
+                { titulo: "Día del Maestro", descripcion: "Homenaje a los educadores venezolanos (asueto escolar)." }
+            ]
+        },
+        {
+            mes: "Enero",
+            dia: "16",
+            eventos: [
+                { titulo: "Publicación de Concursos y Cuentos", descripcion: "Publicación en Classroom de listas para Deletreo, Spelling Bee, Show & Tell y Cuento en Familia." }
+            ]
+        },
+        {
+            mes: "Enero",
+            dia: "19",
+            eventos: [
+                { titulo: "Inicio de Proyectos de Aprendizaje", descripcion: "Arranque formal de los proyectos interdisciplinarios en Primaria y Bachillerato." }
+            ]
+        },
+        {
+            mes: "Enero",
+            dia: "23",
+            eventos: [
+                { titulo: "Acto Cívico y Día del Abrazo", descripcion: "Conmemoración del 23 de Enero de 1958 y celebración del Día Internacional del Abrazo." }
+            ]
+        },
+        {
+            mes: "Enero",
+            dia: "26 - 30",
+            eventos: [
+                { titulo: "Coffee Talk Week", descripcion: "Encuentros de diálogo cercano entre padres, representantes y equipo directivo." }
+            ]
+        },
+        {
+            mes: "Enero",
+            dia: "30",
+            eventos: [
+                { titulo: "Fun Friday: Crazy Socks Day", descripcion: "Viernes temático escolar, Día Escolar de la No Violencia y la Paz, y Cantinazo de la Promo X." }
+            ]
+        }
+    ],
+    "dic-2025": [
+        {
+            mes: "Diciembre",
+            dia: "02",
+            eventos: [
+                { titulo: "II MAPIS Global ExpoFair", descripcion: "Feria de orientación vocacional y charla sobre educación superior internacional." }
+            ]
+        },
+        {
+            mes: "Diciembre",
+            dia: "05",
+            eventos: [
+                { titulo: "Ganadores de Concursos I Lapso", descripcion: "Publicación de ganadores del I Lapso, Cantinazo Promo X y Festival Navideño ANDIEP." }
+            ]
+        },
+        {
+            mes: "Diciembre",
+            dia: "08",
+            eventos: [
+                { titulo: "Campaña 'Dona un Juguete'", descripcion: "Entrega de juguetes con Rotary Maneiro por la Promo X para pacientes oncológicos de Funpiedes." }
+            ]
+        },
+        {
+            mes: "Diciembre",
+            dia: "11",
+            eventos: [
+                { titulo: "Christmas Concerts", descripcion: "Conciertos de villancicos y música navideña de 1ero, 2do y 3er grado de Primaria." }
+            ]
+        },
+        {
+            mes: "Diciembre",
+            dia: "12",
+            eventos: [
+                { titulo: "Christmas Show & Torneo Deportivo", descripcion: "Muestra de fin de año de Tardes de Aptitud y Torneo Deportivo Pro Fondos MapisMun." }
+            ]
+        },
+        {
+            mes: "Diciembre",
+            dia: "15 - 18",
+            eventos: [
+                { titulo: "Entrega de Boletas I Momento", descripcion: "Reuniones pedagógicas con padres y representantes para el balance académico del I Lapso." }
+            ]
+        },
+        {
+            mes: "Diciembre",
+            dia: "18",
+            eventos: [
+                { titulo: "Despedida de Navidad MAPIS", descripcion: "Celebración navideña escolar para Primaria y Bachillerato." }
+            ]
+        },
+        {
+            mes: "Diciembre",
+            dia: "19",
+            eventos: [
+                { titulo: "Inicio del Receso Decembrino", descripcion: "Comienzo del periodo de vacaciones navideñas para toda la comunidad educativa." }
+            ]
+        }
+    ],
+    "nov-2025": [
+        {
+            mes: "Noviembre",
+            dia: "01",
+            eventos: [
+                { titulo: "Tarde Rosa: Tardes de Aptitud", descripcion: "Actividad especial formativa y recreativa en el marco del Día de Todos los Santos." }
+            ]
+        },
+        {
+            mes: "Noviembre",
+            dia: "06",
+            eventos: [
+                { titulo: "Concurso de Cuentos Infantiles", descripcion: "Apertura oficial del concurso y semana de canje de premios del Cartel de Conducta." }
+            ]
+        },
+        {
+            mes: "Noviembre",
+            dia: "07",
+            eventos: [
+                { titulo: "Homenaje al Obrero Educacional", descripcion: "Acto Cívico especial de reconocimiento a nuestro personal y Cantinazo de la Promo X." }
+            ]
+        },
+        {
+            mes: "Noviembre",
+            dia: "10 - 14",
+            eventos: [
+                { titulo: "Semana del Abrazo en Familia", descripcion: "Jornadas de integración familiar y convocatorias para concursos de deletreo y Spelling Bee." }
+            ]
+        },
+        {
+            mes: "Noviembre",
+            dia: "17 - 21",
+            eventos: [
+                { titulo: "Unit 2 Assessment & 2nd Show and Tell", descripcion: "Semana de evaluaciones de Unidad 2 en Primaria y segunda ronda de Show & Tell." }
+            ]
+        },
+        {
+            mes: "Noviembre",
+            dia: "21",
+            eventos: [
+                { titulo: "Bienvenida a la Navidad", descripcion: "Encendido navideño en el colegio, villancicos y celebración de la identidad mapisiana." }
+            ]
+        },
+        {
+            mes: "Noviembre",
+            dia: "26",
+            eventos: [
+                { titulo: "2do Encuentro de Robótica Educativa", descripcion: "Demostraciones prácticas de robótica y programación estudiantil." }
+            ]
+        },
+        {
+            mes: "Noviembre",
+            dia: "28",
+            eventos: [
+                { titulo: "Fun Friday: Thanksgiving Spirit Day", descripcion: "Celebración del valor de la gratitud, Cantinazo Promo X y sesión de Coffee Talk." }
+            ]
+        }
     ]
+}
+
+export default function CalendarioPage() {
+    const [mesSeleccionado, setMesSeleccionado] = useState(CALENDARIOS_DISPONIBLES[0])
+
+    const cronograma = CRONOGRAMAS_POR_MES[mesSeleccionado.id] || CRONOGRAMAS_POR_MES["oct-2026"]
 
     const colors = [
         { border: "border-mapis-blue", bg: "bg-mapis-blue", text: "text-mapis-blue", icon: "text-white" },
@@ -165,7 +459,7 @@ export default function CalendarioPage() {
             <FadeIn>
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-mapis-yellow mb-6 border border-white/20">
                 <CalendarDays className="w-5 h-5" />
-                <span className="text-sm font-bold uppercase tracking-wider">Año Escolar 2025-2026</span>
+                <span className="text-sm font-bold uppercase tracking-wider">Año Escolar 2026-2027</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Planificación y Organización</h1>
                 <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light">
@@ -180,31 +474,31 @@ export default function CalendarioPage() {
             <div className="max-w-4xl mx-auto">
             <FadeIn className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border-t-8 border-mapis-yellow flex flex-col md:flex-row items-center justify-between gap-8">
                 
-                <div className="text-center md:text-left">
+                <div className="text-center md:text-left flex-1">
                     <h2 className="text-2xl font-bold text-gray-800 mb-2">Cronograma Mensual</h2>
-                    <p className="text-gray-600 max-w-md">
+                    <p className="text-gray-600 max-w-lg">
                         Descarga el calendario detallado de actividades, evaluaciones y eventos especiales.
                     </p>
                 </div>
 
                 {/* BOTÓN CON SELECTOR DE MESES */}
-                <div className="flex flex-col gap-3 w-full md:w-auto">
+                <div className="flex flex-col gap-3 w-full sm:w-auto shrink-0">
                     
                     {/* Grupo de botones pegados */}
                     <div className="flex items-center shadow-lg rounded-md transition-transform hover:scale-105">
                         
                         {/* Botón Principal (Descarga) */}
-                        <Button asChild size="xl" className="bg-mapis-blue text-white hover:bg-blue-900 rounded-r-none border-r border-blue-800 flex-1">
+                        <Button asChild size="xl" className="bg-mapis-blue text-white hover:bg-blue-900 rounded-r-none border-r border-blue-800 flex-1 whitespace-nowrap">
                             <a href={mesSeleccionado.archivo} download target="_blank" rel="noopener noreferrer">
                                 <Download className="w-5 h-5 mr-2" />
-                                PDF {mesSeleccionado.nombre}
+                                Descargar {mesSeleccionado.nombre}
                             </a>
                         </Button>
 
                         {/* Botón Flecha (Dropdown) */}
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
-                                <Button size="xl" className="bg-mapis-blue text-white hover:bg-blue-900 rounded-l-none px-3">
+                                <Button size="xl" className="bg-mapis-blue text-white hover:bg-blue-900 rounded-l-none px-3" aria-label="Seleccionar otro mes">
                                     <ChevronDown className="w-5 h-5" />
                                 </Button>
                             </DropdownMenuTrigger>
@@ -238,7 +532,7 @@ export default function CalendarioPage() {
         <section className="py-5 px-4 bg-gradient-to-b from-transparent via-blue-50/50 to-transparent">
             <div className="max-w-3xl mx-auto">
             <FadeIn className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-mapis-blue">Hitos del Mes</h2>
+                <h2 className="text-3xl font-bold text-mapis-blue">Hitos de {mesSeleccionado.nombre}</h2>
                 <p className="text-gray-600 mt-2 !text-center">Las fechas más importantes que debes tener en cuenta.</p>
             </FadeIn>
 

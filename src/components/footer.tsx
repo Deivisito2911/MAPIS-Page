@@ -25,7 +25,7 @@ export function Footer() {
                 <p className="text-mapis-yellow font-serif italic text-xl tracking-wide">"Ars - Veritas - Humanitas"</p>
                 <p className="text-blue-100 text-sm leading-relaxed opacity-80">
                 Fundada el 01 de Septiembre de 2008. <br />
-                17 años de servicio formando líderes integrales con excelencia académica en Nueva Esparta.
+                18 años de servicio formando líderes integrales con excelencia académica en Nueva Esparta.
                 </p>
             </div>
           </div>

@@ -37,11 +37,12 @@ export function HomeHero() {
                     <FadeIn delay={200} className="space-y-8 relative z-20">
                         <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-mapis-yellow border border-mapis-yellow/30 text-sm font-bold backdrop-blur-md shadow-sm">
                             <span className="w-2 h-2 rounded-full bg-mapis-yellow mr-3 animate-pulse shadow-[0_0_10px_#FEBF0F]" />
-                            INSCRIPCIONES ABIERTAS 2025-2026
+                            INSCRIPCIONES ABIERTAS 2026-2027
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-white drop-shadow-xl tracking-tight">
-                            EDUCAMOS CON PROPÓSITO<span className="text-mapis-yellow relative inline-block">
+                            EDUCAMOS CON PROPÓSITO<br className="hidden md:inline" />{" "}
+                            <span className="text-mapis-yellow relative inline-block">
                                 FORMAMOS PARA LA VIDA Y EL FUTURO
                                 <svg className="absolute w-full h-3 -bottom-2 left-0 text-mapis-orange opacity-80" viewBox="0 0 100 10" preserveAspectRatio="none">
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" />

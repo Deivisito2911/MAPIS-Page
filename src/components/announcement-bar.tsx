@@ -4,9 +4,11 @@ import { Bell, CalendarDays } from "lucide-react"
 
 export function AnnouncementBar() {
     const anuncios = [
-        "📅 Viernes 30/01 Fun Friday: Medias Locas",
-        "⚽ Jueves 29/01 Evento MAPIS MUN",
-        "📢 Coffe Talks de I y II Etapa"
+        "👨‍🍳 Viernes 16/10 Final III Masterchef Challenge MAPIS",
+        "🌟 22 y 23/10 Show & Tell Week",
+        "🚨 Miércoles 28/10 Simulacro de Desalojo Institucional",
+        "🎭 Viernes 30/10 Fun Friday: Freakout Friday",
+        "📝 26 al 30/10 Unit 1 Assessment Week (Elementary)"
     ]
 
     return (

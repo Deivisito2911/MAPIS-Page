@@ -195,7 +195,7 @@ export default function PrimariaPage() {
                         <FadeIn 
                             key={idx} 
                             delay={idx * 100} 
-                            className="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl border-t-4 border-mapis-yellow transition-all duration-300 group flex flex-col"
+                            className="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-[0_25px_50px_rgba(17,14,66,0.20)] hover:-translate-y-2.5 border-t-4 border-mapis-yellow transition-all duration-500 transform-gpu group flex flex-col"
                         >
                             {/* --- CONTENEDOR CIRCULAR DEL ICONO DE MARCA (Cloudinary) --- */}
                             <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-md mb-6 border-2 border-mapis-yellow/40 bg-mapis-blue group-hover:scale-110 transition-transform duration-300 flex-shrink-0">

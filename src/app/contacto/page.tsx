@@ -80,7 +80,7 @@ export default function ContactoPage() {
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Horario de Atención</h3>
                 <p className="text-gray-500 mb-4 text-sm text-center">Visitas presenciales y atención telefónica.</p>
                 <p className="text-lg font-bold text-gray-800">Lunes a Viernes</p>
-                <p className="text-mapis-blue font-medium">7:30 AM - 12:30 PM</p>
+                <p className="text-mapis-blue font-medium">8:00 AM - 3:30 PM</p>
             </FadeIn>
 
             </div>

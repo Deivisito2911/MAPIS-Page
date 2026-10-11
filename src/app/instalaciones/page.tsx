@@ -15,7 +15,7 @@ const SPACES = [
         items: [
             { name: "Salón Maker", desc: "Laboratorio de robótica, programación y STEM donde las ideas cobran vida.", icon: Calculator, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709436/Salon_Maker_cmrhkd.jpg" },
             { name: "Teatrino", desc: "Espacio mágico para artes plásticas y manualidades.", icon: Palette, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709450/Salon_de_arte_ykn2so.jpg" },
-            { name: "Salón de Música", desc: "Donde desarrollamos el oído y el talento artístico.", icon: Music, image: "/kids-learning.jpg" },
+            { name: "Salón de Música", desc: "Donde desarrollamos el oído y el talento artístico.", icon: Music, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692102/13988190_1444960418864013_2553848460531388932_o_jgjltj.jpg" },
             { name: "HUB", desc: "Más que una biblioteca, un espacio libre de encuentro y lectura.", icon: Book, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709437/HUB_3_kdf7rl.jpg" },
             { name: "Aulas de Clase", desc: "Espacios iluminados y cómodos para el aprendizaje diario.", icon: Book, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769815493/IMG_20260130_084408_pfjou6.jpg" },
         ]
@@ -26,7 +26,7 @@ const SPACES = [
             { name: "Cancha de Fútbol", desc: "El corazón de nuestra pasión deportiva.", icon: Dumbbell, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709469/Cancha_de_futbol_zwq5on.jpg" },
             { name: "Cancha Techada", desc: "Espacio polideportivo protegido del sol y la lluvia.", icon: Dumbbell, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709438/Cancha_techada_ib1ctf.jpg" },
             { name: "Cancha de Pickleball", desc: "Innovando con nuevos deportes de tendencia.", icon: Dumbbell, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769816045/Cancha_de_pickenball_gbmbh0.jpg" },
-            { name: "Cancha de Kikinball", desc: "Para la diversión y competencia sana.", icon: Dumbbell, image: "/school-building-architecture-modern.jpg" },
+            { name: "Cancha de Kikinball", desc: "Para la diversión y competencia sana.", icon: Dumbbell, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692610/kickingball_ahntej.jpg" },
             { name: "Patio Central", desc: "El lugar de encuentro, juegos y amistades.", icon: Heart, image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769709438/Patio_central_hguwjl.jpg" },
         ]
     },
@@ -79,7 +79,7 @@ export default function FacilitiesPage() {
                                         Esto fuerza al navegador a respetar el borde redondo durante la animación.
                                     */}
                                     <div 
-                                        className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-100 h-full flex flex-col"
+                                        className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-[0_25px_50px_rgba(17,14,66,0.20)] hover:-translate-y-2.5 border-2 border-transparent hover:border-mapis-yellow/60 transition-all duration-500 transform-gpu h-full flex flex-col"
                                         style={{ WebkitMaskImage: "-webkit-radial-gradient(white, black)" }} 
                                     >
                                         {/* Imagen con Zoom suave */}
@@ -123,7 +123,7 @@ export default function FacilitiesPage() {
                         
                         {/* --- ENLACE A WHATSAPP ACTUALIZADO --- */}
                         <a 
-                            href="https://wa.me/584129672251?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20guiada%20para%20conocer%20el%20colegio." 
+                            href="https://wa.me/584141984093?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20guiada%20para%20conocer%20el%20colegio." 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all bg-mapis-blue rounded-full shadow-lg hover:bg-blue-900 hover:scale-105 hover:shadow-xl"

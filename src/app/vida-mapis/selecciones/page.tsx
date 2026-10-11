@@ -152,7 +152,7 @@ export default function SeleccionesPage() {
                             </div>
                             {/* ------------------------------------------ */}
                             <h2 className={`text-3xl md:text-4xl font-bold uppercase tracking-tight ${
-                            isEven ? "text-mapis-yellow" : "text-white"
+                            isEven ? "text-mapis-yellow" : "text-mapis-blue"
                             }`}>
                             {item.name}
                             </h2>
@@ -166,7 +166,7 @@ export default function SeleccionesPage() {
                     {/* LADO DE LA DESCRIPCIÓN */}
                     <div className="w-full md:w-1/2">
                         <FadeIn direction={isEven ? "left" : "right"} delay={200}>
-                        <div className={`h-1 w-20 mb-6 rounded-full ${isEven ? "bg-white" : "bg-white"}`} />
+                        <div className={`h-1 w-20 mb-6 rounded-full ${isEven ? "bg-white" : "bg-mapis-blue"}`} />
                         <p className={`text-lg md:text-xl leading-relaxed font-medium ${
                             isEven ? "text-blue-50" : "text-blue-900"
                         }`}>
