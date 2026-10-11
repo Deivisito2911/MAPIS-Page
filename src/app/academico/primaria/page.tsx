@@ -7,21 +7,16 @@ import { CurvedArrow } from "@/components/ui/curved-arrow"
 import { Button } from "@/components/ui/button"
 import { 
     BookOpen, 
-    Brain, 
-    Users, 
     Heart, 
     Sun, 
     Palette, 
     Cpu, 
     Globe,
-    UserCheck,
     Clock,
     Trophy,
     Award,
     Lightbulb,
-    Shield,
-    Zap,
-    Rocket
+    Shield
 } from "lucide-react"
 
 // Agregamos títulos cortos y colores (border y bg) a cada punto para que la línea de tiempo se vea increíble
@@ -39,12 +34,36 @@ const UNIQUE_FEATURES = [
 ]
 
 const WHY_MAPIS = [
-    { title: "ATENCIÓN PERSONALIZADA", icon: UserCheck, text: "Mapis es una comunidad cercana, conocemos a cada estudiante y a su familia. Eso nos permite identificar sus fortalezas, atender sus necesidades y favorecer su desarrollo pleno, potenciando sus talentos." },
-    { title: "HABILIDADES PARA LA VIDA", icon: Brain, text: "Desarrollamos competencias personales, sociales y emocionales que permiten a nuestros estudiantes liderar, colaborar, comunicarse efectivamente y afrontar con éxito los desafíos de la vida." },
-    { title: "APRENDIZAJE ACTIVO", icon: Zap, text: "Nuestros estudiantes aprenden haciendo, explorando, creando y resolviendo problemas reales. Así se construye un aprendizaje significativo y duradero." },
-    { title: "BIENESTAR SOCIOEMOCIONAL", icon: Heart, text: "Promovemos un ambiente seguro y cercano donde cada estudiante se siente visto, valorado y acompañado. Cuidamos el desarrollo emocional tanto como el académico." },
-    { title: "PREPARACIÓN PARA EL FUTURO", icon: Rocket, text: "Formamos a nuestros estudiantes con herramientas académicas, humanas y tecnológicas necesarias para desenvolverse con éxito en un mundo en constante evolución." },
-    { title: "COMUNIDAD QUE EDUCA EN CONJUNTO", icon: Users, text: "Trabajamos en alianza con las familias, acompañado de manera cercana el desarrollo integral de cada estudiante." },
+    { 
+        title: "ATENCIÓN PERSONALIZADA", 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538497/talento_mapis_bbzsob.jpg", 
+        text: "Mapis es una comunidad cercana, conocemos a cada estudiante y a su familia. Eso nos permite identificar sus fortalezas, atender sus necesidades y favorecer su desarrollo pleno, potenciando sus talentos." 
+    },
+    { 
+        title: "HABILIDADES PARA LA VIDA", 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538484/liderazgo_jalkzj.jpg", 
+        text: "Desarrollamos competencias personales, sociales y emocionales que permiten a nuestros estudiantes liderar, colaborar, comunicarse efectivamente y afrontar con éxito los desafíos de la vida." 
+    },
+    { 
+        title: "APRENDIZAJE ACTIVO", 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538478/innovacion_dqwnyi.jpg", 
+        text: "Nuestros estudiantes aprenden haciendo, explorando, creando y resolviendo problemas reales. Así se construye un aprendizaje significativo y duradero." 
+    },
+    { 
+        title: "BIENESTAR SOCIOEMOCIONAL", 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538495/respeto_xf9u9u.jpg", 
+        text: "Promovemos un ambiente seguro y cercano donde cada estudiante se siente visto, valorado y acompañado. Cuidamos el desarrollo emocional tanto como el académico." 
+    },
+    { 
+        title: "PREPARACIÓN PARA EL FUTURO", 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538531/excelencia_coxid3.jpg", 
+        text: "Formamos a nuestros estudiantes con herramientas académicas, humanas y tecnológicas necesarias para desenvolverse con éxito en un mundo en constante evolución." 
+    },
+    { 
+        title: "COMUNIDAD QUE EDUCA EN CONJUNTO", 
+        iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538515/compromiso_ov8utq.jpg", 
+        text: "Trabajamos en alianza con las familias, acompañado de manera cercana el desarrollo integral de cada estudiante." 
+    },
 ]
 
 export default function PrimariaPage() {
@@ -176,13 +195,19 @@ export default function PrimariaPage() {
                         <FadeIn 
                             key={idx} 
                             delay={idx * 100} 
-                            className="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl border-t-4 border-mapis-yellow transition-all duration-300 group"
+                            className="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl border-t-4 border-mapis-yellow transition-all duration-300 group flex flex-col"
                         >
-                            <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-mapis-blue mb-6 group-hover:rotate-12 transition-transform">
-                                <item.icon className="w-8 h-8" />
+                            {/* --- CONTENEDOR CIRCULAR DEL ICONO DE MARCA (Cloudinary) --- */}
+                            <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-md mb-6 border-2 border-mapis-yellow/40 bg-mapis-blue group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                                <Image 
+                                    src={item.iconImage}
+                                    alt={`Icono ${item.title}`}
+                                    fill
+                                    className="object-cover scale-110"
+                                />
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-4">{item.title}</h3>
-                            <p className="text-gray-600 leading-relaxed">
+                            <h3 className="text-xl font-bold text-mapis-blue mb-4 uppercase tracking-tight">{item.title}</h3>
+                            <p className="text-gray-600 leading-relaxed flex-grow">
                                 {item.text}
                             </p>
                         </FadeIn>

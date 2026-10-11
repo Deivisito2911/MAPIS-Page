@@ -22,3 +22,6 @@ yarn-debug.log*
 ts-debug.log*
 .DS_Store
 Thumbs.db
+
+# Playwright MCP testing artifacts
+.playwright-mcp/

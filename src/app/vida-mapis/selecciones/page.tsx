@@ -19,7 +19,7 @@ const ACTIVIDADES = [
         name: "Fútbol",
         category: "Deporte",
         description: "Nuestra selección más laureada. Fomentamos la táctica, velocidad y juego limpio en cada partido. Nuestros atletas aprenden que la verdadera victoria está en el esfuerzo compartido.",
-        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692472/Futbol_aytopv.png",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932572/Screenshot_2026-07-01_150240_meuqjf.png",
         iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538476/futbol_dr2jn0.jpg",
     },
     // ... resto de las actividades ...
@@ -27,7 +27,7 @@ const ACTIVIDADES = [
         name: "MAPIS ROBOTIC TEAM",
         category: "Ciencia",
         description: "Programación y construcción con LEGO y Arduino. Nuestro equipo ha sido galardonado a nivel nacional, demostrando que la ingeniería y la creatividad van de la mano.",
-        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769690548/Mapis_Robotic_Team_2_zhnoor.png",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1791680462/WA_1790718611801_akoz4o.jpg",
         iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538496/robotica_e017xw.jpg",
     },
     {

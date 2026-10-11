@@ -8,39 +8,100 @@ import { Button } from "@/components/ui/button"
 
 const EVENTS = [
     {
-        title: "Mapis Robotic Team: 3er Lugar Nacional",
+        title: "MAPIS ROBOTIC TEAM: 2do Lugar Nacional",
         category: "Robótica",
-        date: "Ene 2025",
-        image: "/kids-learning.jpg", 
-        description: "3er Lugar en la Categoría Aventura, Sigue Líneas en la Final Nacional de Robótica Creativa.",
-        fullDescription: "Recordamos la exitosa participación del Mapis Robotic Team en la final nacional de la Olimpiada de Robótica Creativa, organizada por el Ministerio de Ciencia y Tecnología (MinCyT), logrando el 🥉 tercer lugar en la Categoría Aventura, Sigue Líneas. ¡Ustedes son un orgullo para nuestro colegio y el estado Nueva Esparta! #somosmapis #orgullomapis #innovacioneducativa",
-        instagramUrl: "https://www.instagram.com/reel/DOeW7J9jwTE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    },{
-        title: "Concierto navidad",
+        date: "30 May, 2026",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932329/IMG-20260531-WA0107_gfp8lf.jpg", 
+        description: "El Mapis Robotic Team obtuvo el 2do lugar en la Olimpiada Regional de Robótica y clasificó a la Final Nacional por segundo año consecutivo.",
+        fullDescription: `🤖¡RUMBO A LA FINAL NACIONAL!
+
+El Mapis Robotic Team obtuvo el 2do lugar en la Olimpiada Regional de Robótica, organizada por el Mincyt en la ciudad de Maturín, y clasificó a la Final Nacional por segundo año consecutivo! 🥈
+
+El Equipo se midió ante los mejores de la Región Oriental en la Competencia Sigue Líneas Creativas, Categoría Aventura y ahora formará parte de la delegación del Oriente del país 💥
+
+🎉 Felicidades para Arantza, Isabella y Adriel, junto a sus preparadores Deivith y Lérida.
+
+Mención especial al equipo Mapis Mechatronic Team conformado por Dhana, Dámaso y Martín, por una extraordinaria participación que los llevó a ubicarse entre los 10 mejores equipos en la categoría desafío👏🏻👏🏻
+
+Déjales un comentario de apoyo a estos cracks de la robótica🤖👇🏻
+
+✈️Caracas, allá vamos!!!!`,
+        instagramUrl: "https://www.instagram.com/p/DY0yG4ZFrYA/?srtk=MzRlODBiNWFlZA=="
+    },
+    {
+        title: "¡Caracas fue testigo de nuestra historia! ✨",
         category: "Cultura",
-        date: "Dic 2024",
-        image: "/happy-students-in-school-uniforms-studying.jpg", 
-        description: "Una noche mágica llena de música, teatro y tradiciones navideñas.",
-        fullDescription: "Nuestro tradicional encendido de luces estuvo acompañado por el coro de voces blancas y la obra de teatro 'Navidad en Margarita', escrita y dirigida por nuestros docentes de cultura. Más de 500 padres asistieron al evento.",
-        instagramUrl: "https://instagram.com/colegiomapis"
+        date: "17 May, 2026",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1791681016/702144565_18605250697024807_8934291634055523870_n_neyc42.webp", 
+        description: "Histórica participación de nuestra delegación MAPIS MUN en SIMUN 2026 en el Colegio San Ignacio de Loyola con destacados reconocimientos.",
+        fullDescription: `¡Caracas fue testigo de nuestra historia! ✨
+
+El primer viaje académico siempre es un hito, pero lo vivido en SIMUN 2026 @sanignaciomun superó todas las expectativas. Del 15 al 17 de mayo, la delegación se trasladó a las instalaciones del Colegio San Ignacio de Loyola para asumir un reto enorme, y la respuesta fue sencillamente extraordinaria. Ver cada debate, cada estrategia y todo el esfuerzo construido tomar vida en escenarios tan competitivos ha sido una de las experiencias más significativas hasta la fecha.
+
+El compromiso se sintió con fuerza en cada rincón del modelo:
+
+🛡️ DISEC: Excelente representación y constancia por parte de Ana Benítez y Camila Naranjo.
+🌍 CDH: Un desempeño impecable liderado por Mariam Maklad.
+💥 Crisis Unicameral: Adrenalina pura y agilidad mental con Mathias Briceño y Fabiana Navarro.
+⚖️ Corte: Argumentación técnica y firmeza jurídica con Isabella Escalona y Sofía Clavijo.
+⚔️ Crisis Bicameral: Estrategia y planificación de ataques de la mano de Moisés Reyes, Maximiliano Navarro y Juan Alzurutt.
+
+El esfuerzo y la preparación rindieron frutos, reflejándose en importantes reconocimientos para la delegación:
+
+🏅 Mención Verbal: Mariam Maklad
+🎖️ Mención Honorífica: Sofía Clavijo
+🏆 Mejor Delegado: Isabella Escalona
+
+Se regresa a casa con el corazón lleno de orgullo, con valiosos aprendizajes y con la certeza de que este es apenas el primer paso de nuevos logros que alcanzar.
+
+¡Felicidades a toda la delegación por dejar una huella tan impecable! 💼🌟 No habría sido posible sin el apoyo de nuestro colegio @colegiomapis y nuestro Faculty Advisor @manuelcorcida por siempre estar presente como figuras fijas de apoyo.
+
+#mapismun`,
+        instagramUrl: "https://www.instagram.com/p/DYgR6iAMrR4/?psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
     },
     {
-        title: "Feria Científica 2024",
+        title: "¡Margarita se conecta con el futuro universitario! ✨🎓",
         category: "Académico",
-        date: "15 Nov, 2024",
-        image: "/kids-learning.jpg", 
-        description: "Nuestros estudiantes presentaron proyectos innovadores de robótica y ecología.",
-        fullDescription: "La Feria Científica de este año rompió récords de participación. Desde robots hechos con material reciclado hasta soluciones de energía solar, nuestros alumnos de Primaria y Bachillerato demostraron que el futuro está en buenas manos. El jurado estuvo compuesto por ingenieros de la UDO y Unimar.",
-        instagramUrl: "https://instagram.com/colegiomapis"
+        date: "Abr 2026",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1782932507/Screenshot_2026-07-01_150131_w2vybg.png", 
+        description: "Recibimos en la UE Mariano Picón Salas a estudiantes de Nueva Esparta para la Prueba de Ubicación (PDU) de la Universidad Metropolitana.",
+        fullDescription: `✨🎓 ¡Margarita se conecta con el futuro universitario!
+
+🙌🏻 Nos llena de orgullo haber recibido en la UE Mariano Picón Salas a estudiantes de diversas instituciones de Nueva Esparta para la presentación de la Prueba de Ubicación (PDU) de la Universidad Metropolitana.
+
+Como colegio asociado a la UNIMET, reafirmamos nuestro compromiso de ser el centro regional de referencia para que los jóvenes de nuestra isla den su primer paso hacia la excelencia académica sin tener que salir de casa.✨
+
+👨🏻💻📓En esta jornada, recibimos a un grupo de alumnos de 5to año provenientes de 3 destacados colegios de la Isla, quienes pusieron a prueba sus habilidades y aptitudes en las áreas: cuantitativa, verbal e inglés para determinar su preparación para iniciar estudios universitarios.
+
+¡Felicidades a todos los aspirantes por este gran paso!👏🏻👏🏻
+
+#somosmapis
+#UNIMET
+#innovacioneducativa`,
+        instagramUrl: "https://www.instagram.com/p/DV3ky8_AD7c/?rpxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
     },
     {
-        title: "Campeones Estadales de Futsal",
-        category: "Deporte",
-        date: "20 Oct, 2024",
-        image: "/school-building-architecture-modern.jpg",
-        description: "La selección Sub-15 trajo la copa a casa tras una final emocionante.",
-        fullDescription: "En un partido cardíaco contra el Colegio Guayamurí, nuestra selección Sub-15 se impuso 3-2 en los penales. Este triunfo nos clasifica directamente a los nacionales escolares. ¡Orgullo MAPIS!",
-        instagramUrl: "https://instagram.com/colegiomapis"
+        title: "¡Mapis a la Vanguardia en Robótica! 🥉🤖",
+        category: "Robótica",
+        date: "22 Mar, 2026",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1791681209/IMG-20260322-WA0181_g5gmx7.jpg",
+        description: "Nuestras estudiantes hicieron historia obteniendo medalla de bronce en la Final Nacional del Robotics For Good Youth Challenge.",
+        fullDescription: `¡Mapis a la Vanguardia en Robótica! 🥉🤖
+
+Nuestras estudiantes Tiana, Ana Elvira, Miranda y Marinetti hicieron historia en la Final Nacional del Robotics For Good Youth Challenge.
+
+Con su robot diseñado para procesos agrícolas, demostraron que el liderazgo femenino en la tecnología no tiene límites.
+
+¡Felicidades al equipo y a su instructora Lérida Marcano por este merecido bronce! 🌟
+
+✨ El Mapis Robotic Team nos sigue dando motivos de orgullo y alegría.
+
+Estén atentos a los próximos retos que tenemos por venir💪🏻💪🏻
+
+#somosmapis
+#innovacioneducativa
+#colegiosdemargarita`,
+        instagramUrl: "https://www.instagram.com/reel/DX9wfDpSgLd/?srtk=MzRlODBiNWFlZA=="
     }
 ]
 
@@ -149,7 +210,7 @@ export function EventsCarousel() {
                     onClick={() => setSelectedEvent(null)}
                 >
                     <div 
-                        className="bg-white rounded-[2rem] max-w-4xl w-full overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200 relative flex flex-col md:flex-row border border-gray-100"
+                        className="bg-white rounded-[2rem] max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-in zoom-in-95 duration-200 relative flex flex-col md:flex-row border border-gray-100"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button 
@@ -160,7 +221,7 @@ export function EventsCarousel() {
                             <X className="h-5 w-5" />
                         </button>
 
-                        <div className="relative w-full md:w-2/5 h-64 md:h-auto">
+                        <div className="relative w-full md:w-2/5 h-48 sm:h-56 md:h-auto shrink-0">
                             <Image
                                 src={selectedEvent.image}
                                 alt={selectedEvent.title}
@@ -168,7 +229,7 @@ export function EventsCarousel() {
                                 sizes="(max-width: 768px) 100vw, 40vw"
                                 className="object-cover"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent flex items-end p-8">
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent flex items-end p-6 md:p-8">
                                 <div className="text-white">
                                     <span className="bg-mapis-yellow text-mapis-blue text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block shadow-sm">
                                         {selectedEvent.category}
@@ -180,13 +241,13 @@ export function EventsCarousel() {
                             </div>
                         </div>
 
-                        <div className="p-8 md:p-10 w-full md:w-3/5 flex flex-col bg-white">
-                            <h3 className="text-2xl md:text-3xl font-black text-mapis-blue mb-6 leading-tight">
+                        <div className="p-6 md:p-10 w-full md:w-3/5 flex flex-col bg-white">
+                            <h3 className="text-xl md:text-3xl font-black text-mapis-blue mb-4 md:mb-6 leading-tight">
                                 {selectedEvent.title}
                             </h3>
                             
-                            <div className="text-gray-700 text-base leading-relaxed flex-grow overflow-y-auto max-h-[300px] pr-4 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent">
-                                <p>{selectedEvent.fullDescription}</p>
+                            <div className="text-gray-700 text-sm md:text-base leading-relaxed flex-grow overflow-y-auto max-h-[220px] md:max-h-[300px] pr-2 md:pr-4 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent">
+                                <p className="whitespace-pre-line">{selectedEvent.fullDescription}</p>
                             </div>
 
                             <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
