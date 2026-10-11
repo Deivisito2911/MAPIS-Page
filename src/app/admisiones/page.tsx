@@ -5,9 +5,9 @@ import {
     FileText, 
     Users, 
     CheckCircle2, 
-    Download, 
     CalendarDays,
-    Phone
+    Phone,
+    ExternalLink
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/animations/fade-in"
@@ -54,13 +54,13 @@ export default function AdmisionesPage() {
         {/* 2. LOS 3 PASOS (Con Fondo de Imagen Corregido) */}
         <section className="py-24 px-4 relative overflow-hidden">
             
-            {/* --- CORRECCIÓN AQUÍ: Usamos <Image /> en lugar de CSS --- */}
+            {/* Fondo decorativo con imagen */}
             <div className="absolute inset-0">
                 <Image 
                     src="/happy-students-in-school-uniforms-studying.jpg"
                     alt="Estudiantes estudiando"
                     fill
-                    className="object-cover opacity-80" // Ajusta la opacidad si quieres más/menos intensidad
+                    className="object-cover opacity-80"
                 />
             </div>
             {/* Capa blanca encima de la imagen para suavizar */}
@@ -69,7 +69,9 @@ export default function AdmisionesPage() {
             <div className="max-w-7xl mx-auto relative z-10">
             <FadeIn className="text-center mb-16">
                 <h2 className="text-3xl font-bold text-mapis-blue mb-4">Tu camino hacia el MAPIS</h2>
-                <p className="text-gray-700 font-medium text-lg">Un proceso de admisión diseñado para conocer el potencial de tu hijo.</p>
+                <p className="text-gray-700 font-medium text-lg text-center max-w-2xl mx-auto">
+                    Un proceso de admisión diseñado para conocer el potencial de tu hijo.
+                </p>
             </FadeIn>
 
             <div className="grid md:grid-cols-3 gap-8 relative">
@@ -77,15 +79,22 @@ export default function AdmisionesPage() {
                 <div className="hidden md:block absolute top-12 left-[20%] right-[20%] h-1 bg-gray-300 -z-10" />
 
                 {/* Paso 1 */}
-                <FadeIn delay={100} className="bg-white p-8 rounded-3xl shadow-xl border border-white/50 text-center relative group hover:-translate-y-2 transition-transform">
-                <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-md group-hover:scale-110 transition-transform">
-                    <FileText className="w-10 h-10 text-mapis-blue" />
+                <FadeIn delay={100} className="bg-white p-8 rounded-3xl shadow-xl border border-white/50 text-center relative group hover:-translate-y-2 transition-transform flex flex-col justify-between">
+                <div>
+                    <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-md group-hover:scale-110 transition-transform">
+                        <FileText className="w-10 h-10 text-mapis-blue" />
+                    </div>
+                    <div className="absolute top-6 right-6 w-8 h-8 bg-mapis-yellow rounded-full flex items-center justify-center font-bold text-mapis-blue shadow-sm">1</div>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">Preinscripción Online</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                        Completa el formulario digital con los datos básicos del estudiante y la familia.
+                    </p>
                 </div>
-                <div className="absolute top-6 right-6 w-8 h-8 bg-mapis-yellow rounded-full flex items-center justify-center font-bold text-mapis-blue shadow-sm">1</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">Preinscripción Online</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                    Completa el formulario digital con los datos básicos del estudiante y la familia.
-                </p>
+                <Button asChild size="sm" className="bg-mapis-blue text-white hover:bg-blue-900 w-full mt-2 font-bold shadow-sm">
+                    <Link href="https://form.jotform.com/U_EMapis/Formulario_de_PreInsripcion_Mapis" target="_blank" rel="noopener noreferrer">
+                        Llenar Formulario <ExternalLink className="w-3.5 h-3.5 ml-1.5" />
+                    </Link>
+                </Button>
                 </FadeIn>
 
                 {/* Paso 2 */}
@@ -115,27 +124,30 @@ export default function AdmisionesPage() {
             </div>
         </section>
 
-        {/* 3. REQUISITOS Y DESCARGAS */}
+        {/* 3. RECAUDOS DE INSCRIPCIÓN FORMAL Y PLANILLA ONLINE */}
         <section className="py-20 bg-white relative z-10">
             <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
             
             <FadeIn direction="right">
-                <h2 className="text-3xl font-bold text-mapis-blue mb-6">Requisitos de Admisión</h2>
-                <p className="text-gray-600 mb-8 text-lg">
-                Para formalizar la inscripción, deberás presentar los siguientes documentos en una carpeta manila:
+                <div className="inline-block bg-blue-50 text-mapis-blue text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3 border border-blue-100">
+                    Fase Final del Proceso
+                </div>
+                <h2 className="text-3xl font-bold text-mapis-blue mb-4">Recaudos para Inscripción Formal</h2>
+                <p className="text-gray-600 mb-6 text-base leading-relaxed">
+                    El proceso inicial de admisión es 100% digital y no requiere entrega física de documentos. Una vez completada la preinscripción online y realizada la entrevista familiar, se consignan los siguientes recaudos para formalizar el cupo (Paso 3):
                 </p>
                 
-                <ul className="space-y-4 mb-8">
+                <ul className="space-y-3 mb-8">
                 {[
                     "Partida de Nacimiento (Copia legible)",
-                    "Cédula de Identidad de los padres (Copia)",
-                    "Boleta de Calificaciones del año anterior",
+                    "Cédula de Identidad del estudiante y de los padres (Copia)",
+                    "Boleta de Calificaciones del año anterior / Notas certificadas",
                     "Constancia de Buena Conducta",
                     "Fotos tipo carnet del estudiante (2)"
                 ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                    <li key={i} className="flex items-start gap-3 p-3 rounded-xl bg-gray-50/80 hover:bg-blue-50/50 transition-colors border border-gray-100">
                     <CheckCircle2 className="w-5 h-5 text-mapis-yellow shrink-0 mt-0.5" />
-                    <span className="text-gray-700 font-medium">{item}</span>
+                    <span className="text-gray-700 font-medium text-sm">{item}</span>
                     </li>
                 ))}
                 </ul>
@@ -149,18 +161,30 @@ export default function AdmisionesPage() {
                 </div>
             </FadeIn>
 
-            <FadeIn direction="left" className="bg-warm-stone p-8 rounded-[2rem] border-2 border-dashed border-gray-300 text-center h-fit">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md text-gray-400">
-                <Download className="w-8 h-8" />
+            <FadeIn direction="left" className="bg-gradient-to-br from-blue-50 to-amber-50/40 p-8 md:p-10 rounded-[2rem] border-2 border-mapis-blue/15 text-center h-fit shadow-lg shadow-blue-900/5">
+                <div className="w-20 h-20 bg-mapis-blue rounded-full flex items-center justify-center mx-auto mb-5 shadow-md text-white">
+                    <FileText className="w-10 h-10 text-mapis-yellow" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Planilla de Inscripción</h3>
-                <p className="text-gray-500 text-sm mb-6 px-4">
-                Descarga, imprime y llena la planilla para agilizar tu proceso presencial.
+                <div className="inline-block bg-mapis-yellow/30 text-mapis-blue text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
+                    Paso 1: Preinscripción
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">Planilla de Inscripción</h3>
+                <p className="text-gray-600 text-sm mb-6 px-2 leading-relaxed">
+                    Completa el formulario digital oficial para iniciar el proceso de admisión de tu representado para el período 2026-2027.
                 </p>
-                <Button disabled variant="outline" className="w-full border-gray-300 text-gray-400 cursor-not-allowed bg-white/50">
-                Próximamente disponible (PDF)
+                <Button asChild size="xl" className="w-full bg-mapis-yellow text-mapis-blue hover:bg-yellow-400 font-bold shadow-md hover:scale-[1.02] transition-transform">
+                    <Link 
+                        href="https://form.jotform.com/U_EMapis/Formulario_de_PreInsripcion_Mapis" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2"
+                    >
+                        Llenar Planilla Online <ExternalLink className="w-5 h-5" />
+                    </Link>
                 </Button>
-                <p className="text-xs text-gray-400 mt-3 font-medium">* El enlace se habilitará al iniciar el periodo.</p>
+                <p className="text-xs text-gray-500 mt-4 font-medium">
+                    ✓ Proceso 100% digital · Sin entrega previa de recaudos físicos
+                </p>
             </FadeIn>
 
             </div>
