@@ -24,7 +24,7 @@ export function CallToAction() {
             {/* BOTÓN VISITA GUIADA */}
             <Button asChild size="xl" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-mapis-blue hover:scale-105 transition-all font-bold text-lg px-10">
                 {/* El parámetro ?text= añade el mensaje predeterminado codificado para URLs */}
-                <a href="https://wa.me/584129672251?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20guiada%20para%20conocer%20el%20colegio." target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/584141984093?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20guiada%20para%20conocer%20el%20colegio." target="_blank" rel="noopener noreferrer">
                     Solicitar Visita Guiada
                 </a>
             </Button>
