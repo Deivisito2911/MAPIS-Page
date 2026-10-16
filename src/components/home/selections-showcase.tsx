@@ -12,7 +12,7 @@ const SELECTIONS = [
     }, 
     { 
         name: "MAPIS MUN", 
-        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1769692102/13988190_1444960418864013_2553848460531388932_o_jgjltj.jpg",
+        image: "https://res.cloudinary.com/dnwyno39r/image/upload/v1792110611/848043098_18654264313024807_3297333357799484108_n_kcl0jw.jpg",
         iconImage: "https://res.cloudinary.com/dnwyno39r/image/upload/v1771538489/mun_blzlju.jpg"
     },
     { 
